@@ -2621,7 +2621,7 @@ if test "$skip_meson" = no; then
   test "$tcg" != enabled && meson_option_add "-Dtcg=$tcg"
   test "$vfio_user_server" != auto && meson_option_add "-Dvfio_user_server=$vfio_user_server"
   run_meson() {
-    NINJA=$ninja $meson setup --prefix "$prefix"  "$@" $cross_arg "$PWD" "$source_path"  --backend=vs  --uwp  
+    NINJA=$ninja $meson setup --prefix "$prefix" "$source_path"  --backend=vs  --uwp  --buildtype=release -Dcpp_std=vc++17 -Dcpp_args=["'/D _XBOX_UWP'"] -Dc_args=["'/D _XBOX_UWP'"] -Db_pch=false -Dc_winlibs=[] -Dcpp_winlibs=[]
   }
   eval run_meson $meson_options
   if test "$?" -ne 0 ; then
