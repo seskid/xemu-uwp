@@ -444,7 +444,7 @@ else
   # This is a fatal error, but don't report it yet, because we
   # might be going to just print the --help text, or it might
   # be the result of a missing compiler.
-  targetos=bogus
+  targetos=windows
 fi
 
 # OS specific
@@ -1460,6 +1460,8 @@ fi
 
 if ! has "$pkg_config_exe"; then
   error_exit "pkg-config binary '$pkg_config_exe' not found"
+else
+  echo "pkc config found"
 fi
 
 ##########################################
@@ -2619,7 +2621,7 @@ if test "$skip_meson" = no; then
   test "$tcg" != enabled && meson_option_add "-Dtcg=$tcg"
   test "$vfio_user_server" != auto && meson_option_add "-Dvfio_user_server=$vfio_user_server"
   run_meson() {
-    NINJA=$ninja $meson setup --prefix "$prefix" "$@" $cross_arg "$PWD" "$source_path"
+    NINJA=$ninja $meson setup --prefix "$prefix"  "$@" $cross_arg "$PWD" "$source_path"  --backend=vs  --uwp  
   }
   eval run_meson $meson_options
   if test "$?" -ne 0 ; then

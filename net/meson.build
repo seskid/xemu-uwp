@@ -40,10 +40,12 @@ tap_posix = ['tap.c']
 if not config_host.has_key('CONFIG_LINUX') and not config_host.has_key('CONFIG_BSD') and not config_host.has_key('CONFIG_SOLARIS')
   tap_posix += 'tap-stub.c'
 endif
+
 softmmu_ss.add(when: 'CONFIG_POSIX', if_true: files(tap_posix))
 softmmu_ss.add(when: 'CONFIG_WIN32', if_true: files('tap-win32.c'))
 softmmu_ss.add([libpcap, files('pcap.c')])
-softmmu_ss.add(when: 'CONFIG_WIN32', if_true: files('capture_win_ifnames.c'))
+##softmmu_ss.add(when: 'CONFIG_WIN32', if_true: files('capture_win_ifnames.c'))
+
 if have_vhost_net_vdpa
   softmmu_ss.add(when: 'CONFIG_VIRTIO_NET', if_true: files('vhost-vdpa.c'), if_false: files('vhost-vdpa-stub.c'))
   softmmu_ss.add(when: 'CONFIG_ALL', if_true: files('vhost-vdpa-stub.c'))

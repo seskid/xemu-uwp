@@ -1,3 +1,4 @@
+
 project('qemu', ['c'], meson_version: '>=0.61.3',
         default_options: ['warning_level=1', 'c_std=gnu11', 'cpp_std=c++17', 'b_colorout=auto',
                           'b_staticpic=false', 'stdsplit=false', 'optimization=3', 'b_pie=true'],
@@ -8,6 +9,8 @@ add_test_setup('slow', exclude_suites: ['thorough'], env: ['G_TEST_SLOW=1', 'SPE
 add_test_setup('thorough', env: ['G_TEST_SLOW=1', 'SPEED=thorough'])
 
 meson.add_postconf_script(find_program('scripts/symlink-install-tree.py'))
+message('start meson')
+
 
 not_found = dependency('', required: false)
 keyval = import('keyval')
@@ -59,6 +62,7 @@ if cpu in ['riscv32', 'riscv64']
 endif
 
 targetos = host_machine.system()
+message(targetos)
 
 target_dirs = config_host['TARGET_DIRS'].split()
 have_linux_user = false
@@ -191,6 +195,7 @@ endif
 # The combination is known as "full relro", because .got.plt is read-only too.
 qemu_ldflags += cc.get_supported_link_arguments('-Wl,-z,relro', '-Wl,-z,now')
 
+message(targetos)
 if targetos == 'windows'
   qemu_ldflags += cc.get_supported_link_arguments('-Wl,--no-seh', '-Wl,--nxcompat')
   # Disable ASLR for debug builds to allow debugging with gdb
@@ -3489,6 +3494,7 @@ foreach target : target_dirs
   config_target += config_host
   target_inc = [include_directories('target' / config_target['TARGET_BASE_ARCH'])]
   if targetos == 'linux'
+  message('is linux')
     target_inc += include_directories('linux-headers', is_system: true)
   endif
   if target.endswith('-softmmu')
@@ -4018,6 +4024,7 @@ if targetos not in ['darwin', 'haiku', 'windows']
 elif targetos == 'darwin'
   summary_info += {'CoreAudio support': coreaudio}
 elif targetos == 'windows'
+message('its windows')
   summary_info += {'DirectSound support': dsound}
 endif
 if targetos == 'linux'

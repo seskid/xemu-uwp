@@ -413,11 +413,11 @@ void NetworkInterfaceManager::Refresh(void)
 
     for (iter=alldevs; iter != NULL; iter=iter->next) {
 #if defined(_WIN32)
-        char *friendly_name = get_windows_interface_friendly_name(iter->name);
+        /*char *friendly_name = get_windows_interface_friendly_name(iter->name);
         m_ifaces.emplace_back(new NetworkInterface(iter, friendly_name));
         if (friendly_name) {
             g_free((gpointer)friendly_name);
-        }
+        }*/
 #else
         m_ifaces.emplace_back(new NetworkInterface(iter));
 #endif

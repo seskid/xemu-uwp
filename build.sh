@@ -226,6 +226,7 @@ case "$platform" in # Adjust compilation options based on platform
             sys_cflags='-march=ivybridge'
         fi
         sys_ldflags='-headerpad_max_install_names'
+      
         export PKG_CONFIG_PATH="${lib_prefix}/lib/pkgconfig"
         export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${lib_prefix}/libexec/openssl11/lib/pkgconfig"
         opts="$opts --disable-cocoa --cross-prefix="
@@ -233,6 +234,8 @@ case "$platform" in # Adjust compilation options based on platform
         ;;
     CYGWIN*|MINGW*|MSYS*)
         echo 'Compiling for Windows...'
+        export PKG_CONFIG_PATH="C:\msys64\mingw64\lib\pkgconfig"
+        export PKG_CONFIG_LIBDIR="C:\msys64\mingw64\lib"
         sys_cflags='-Wno-error'
         opts="$opts --disable-fortify-source"
         postbuild='package_windows' # set the above function to be called after build
