@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="../..">
+			<UniqueIdentifier>{E02DD584-3E0A-4B8F-887A-D297AA28682B}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="../../config-host.h">
+			<Filter>../..</Filter>
+		</ClInclude>
+		<ClInclude Include="../../config-host.h">
+			<Filter>../..</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

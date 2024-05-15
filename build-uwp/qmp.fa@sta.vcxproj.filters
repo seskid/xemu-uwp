@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="qom">
+			<UniqueIdentifier>{AD7CAE25-E15B-4345-ABAB-62EB12D510AD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="monitor">
+			<UniqueIdentifier>{88060931-2681-4D92-9B6C-A431316AA2A5}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../qom/qom-qmp-cmds.c">
+			<Filter>qom</Filter>
+		</ClCompile>
+		<ClCompile Include="../monitor/monitor.c">
+			<Filter>monitor</Filter>
+		</ClCompile>
+		<ClCompile Include="../monitor/qmp.c">
+			<Filter>monitor</Filter>
+		</ClCompile>
+		<ClCompile Include="../monitor/qmp-cmds-control.c">
+			<Filter>monitor</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

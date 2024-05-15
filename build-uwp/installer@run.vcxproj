@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{16381124-40A4-460B-898D-D340217EE5EE}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>installer</ProjectName>
+		<RootNamespace>installer</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>installer@run\</IntDir>
+		<TargetName>installer</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./nsis@cus.vcxproj">
+			<Project>{566688DE-21B8-4902-BCE6-E80D3FD65B5F}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

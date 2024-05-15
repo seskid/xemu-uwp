@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="migration">
+			<UniqueIdentifier>{C0A824BD-946E-4730-8198-73E8A365DDB5}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../migration/page_cache.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+		<ClCompile Include="../migration/xbzrle.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+		<ClCompile Include="../migration/vmstate-types.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+		<ClCompile Include="../migration/vmstate.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+		<ClCompile Include="../migration/qemu-file.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+		<ClCompile Include="../migration/yank_functions.c">
+			<Filter>migration</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

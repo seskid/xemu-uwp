@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="implot">
+			<UniqueIdentifier>{C33D81A4-62B2-42BF-8A9E-D76A02BA5766}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../ui/thirdparty/implot/implot.cpp">
+			<Filter>implot</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/implot/implot_items.cpp">
+			<Filter>implot</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

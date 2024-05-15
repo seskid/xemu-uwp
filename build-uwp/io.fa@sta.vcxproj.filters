@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="io">
+			<UniqueIdentifier>{726F9365-636A-4214-A8D0-57B74F44C893}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../io/channel-buffer.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-command.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-file.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-null.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-socket.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-tls.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-util.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-watch.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel-websock.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/channel.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/dns-resolver.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/net-listener.c">
+			<Filter>io</Filter>
+		</ClCompile>
+		<ClCompile Include="../io/task.c">
+			<Filter>io</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

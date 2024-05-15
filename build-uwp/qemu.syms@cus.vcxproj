@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{B3B2F362-1585-4122-9F90-6B5C6FF247FD}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>qemu.syms</ProjectName>
+		<RootNamespace>qemu.syms</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>qemu.syms@cus\</IntDir>
+		<TargetName>qemu.syms</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_6ffa7d65ce7c045a8a1a3cf9f70b4e15fd1f6f1e.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/qemu.syms</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_6ffa7d65ce7c045a8a1a3cf9f70b4e15fd1f6f1e.dat;C:/Users/seski/source/repos/xemu-uwp/build/libqemuutil.a;C:/Users/seski/source/repos/xemu-uwp/scripts/undefsym.py;C:\msys64\mingw64\bin/nm.EXE</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./qemuutil@sta.vcxproj">
+			<Project>{7C270E5D-5E7C-49AF-BA9A-64551757EEC9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

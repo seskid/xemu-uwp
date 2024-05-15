@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{1355B531-A055-4156-BCF6-0C6C99251B57}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>iset.py</ProjectName>
+		<RootNamespace>iset.py</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>0121e99@@iset.py@cus\</IntDir>
+		<TargetName>iset.py</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_gen_dectree_import_36c3ea1064f18e2513be4759fc0f6cae028c0562.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/target/hexagon/iset.py</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_gen_dectree_import_36c3ea1064f18e2513be4759fc0f6cae028c0562.dat</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./0121e99@@gen_dectree_import@exe.vcxproj">
+			<Project>{EA656EBF-749A-441B-8231-7E087EEA3D4D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="dtc/libfdt">
+			<UniqueIdentifier>{A6FE7B29-5793-4D99-9A97-EFD5CC3DF2B9}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../dtc/libfdt/fdt.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_ro.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_wip.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_sw.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_rw.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_strerror.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_empty_tree.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_addresses.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_overlay.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+		<ClCompile Include="../dtc/libfdt/fdt_check.c">
+			<Filter>dtc/libfdt</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

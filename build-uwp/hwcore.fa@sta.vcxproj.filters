@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="hw/core">
+			<UniqueIdentifier>{E0D02CB4-4A3D-46A8-B24A-6B3417D31566}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../hw/core/bus.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/qdev-properties.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/qdev.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/reset.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/resettable.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/vmstate-if.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/irq.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/clock.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/qdev-clock.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/hotplug.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/core/qdev-hotplug.c">
+			<Filter>hw/core</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

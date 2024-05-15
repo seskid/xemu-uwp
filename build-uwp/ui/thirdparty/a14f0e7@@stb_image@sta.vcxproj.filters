@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="stb_image">
+			<UniqueIdentifier>{B844BB42-A7F8-4A0C-AB04-B4A92297572A}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../ui/thirdparty/stb_image/stb_image_impl.c">
+			<Filter>stb_image</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

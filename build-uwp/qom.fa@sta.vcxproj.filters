@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="qom">
+			<UniqueIdentifier>{50652669-0EFB-433D-A69F-0BF940D9EA5D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="hw/nvram">
+			<UniqueIdentifier>{42D51A40-4D84-42E0-BD36-4BCB54E75FD8}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../qom/container.c">
+			<Filter>qom</Filter>
+		</ClCompile>
+		<ClCompile Include="../qom/object.c">
+			<Filter>qom</Filter>
+		</ClCompile>
+		<ClCompile Include="../qom/object_interfaces.c">
+			<Filter>qom</Filter>
+		</ClCompile>
+		<ClCompile Include="../qom/qom-qobject.c">
+			<Filter>qom</Filter>
+		</ClCompile>
+		<ClCompile Include="../hw/nvram/fw_cfg-interface.c">
+			<Filter>hw/nvram</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

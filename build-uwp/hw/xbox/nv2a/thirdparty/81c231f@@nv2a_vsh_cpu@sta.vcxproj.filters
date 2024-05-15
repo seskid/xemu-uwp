@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="nv2a_vsh_cpu/src">
+			<UniqueIdentifier>{7C5EEF4C-83A6-4DE5-BE95-3766786A5E51}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_cpu.c">
+			<Filter>nv2a_vsh_cpu/src</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_disassembler.c">
+			<Filter>nv2a_vsh_cpu/src</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_emulator.c">
+			<Filter>nv2a_vsh_cpu/src</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_emulator_execution_state.c">
+			<Filter>nv2a_vsh_cpu/src</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

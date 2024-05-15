@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{37B81B02-991E-48B4-B98D-FCF0493065EF}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>REGEN</ProjectName>
+		<RootNamespace>REGEN</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>regen-temp\</IntDir>
+		<TargetName>REGEN</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Midl>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<OutputDirectory>$(IntDir)</OutputDirectory>
+			<HeaderFileName>%(Filename).h</HeaderFileName>
+			<TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+			<InterfaceIdentifierFilename>%(Filename)_i.c</InterfaceIdentifierFilename>
+			<ProxyFileName>%(Filename)_p.c</ProxyFileName>
+		</Midl>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/regen.rule">
+			<Message>Checking whether solution needs to be regenerated.</Message>
+			<Command>call &quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat&quot; x64 &gt; NUL
+&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;regencheck&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/regen.stamp</Outputs>
+			<AdditionalInputs>../meson.build;../meson_options.txt;../QEMU_VERSION;C:/Users/seski/source/repos/xemu-uwp/build/config-host.mak;../scripts/main.c;../scripts/xen-detect.c;C:/Users/seski/source/repos/xemu-uwp/configs/targets/i386-softmmu.mak;../configs/devices/i386-softmmu/default.mak;../Kconfig;../scripts/minikconf.py;../Kconfig.host;../accel/Kconfig;../backends/Kconfig;../backends/tpm/Kconfig;../hw/9pfs/Kconfig;../hw/Kconfig;../hw/acpi/Kconfig;../hw/adc/Kconfig;../hw/alpha/Kconfig;../hw/arm/Kconfig;../hw/audio/Kconfig;../hw/avr/Kconfig;../hw/block/Kconfig;../hw/char/Kconfig;../hw/core/Kconfig;../hw/cris/Kconfig;../hw/cxl/Kconfig;../hw/display/Kconfig;../hw/dma/Kconfig;../hw/gpio/Kconfig;../hw/hppa/Kconfig;../hw/hyperv/Kconfig;../hw/i2c/Kconfig;../hw/i386/Kconfig;../hw/ide/Kconfig;../hw/input/Kconfig;../hw/intc/Kconfig;../hw/ipack/Kconfig;../hw/ipmi/Kconfig;../hw/isa/Kconfig;../hw/loongarch/Kconfig;../hw/m68k/Kconfig;../hw/mem/Kconfig;../hw/microblaze/Kconfig;../hw/mips/Kconfig;../hw/misc/Kconfig;../hw/misc/macio/Kconfig;../hw/net/Kconfig;../hw/nios2/Kconfig;../hw/nubus/Kconfig;../hw/nvme/Kconfig;../hw/nvram/Kconfig;../hw/openrisc/Kconfig;../hw/pci-bridge/Kconfig;../hw/pci-host/Kconfig;../hw/pci/Kconfig;../hw/pcmcia/Kconfig;../hw/ppc/Kconfig;../hw/rdma/Kconfig;../hw/remote/Kconfig;../hw/riscv/Kconfig;../hw/rtc/Kconfig;../hw/rx/Kconfig;../hw/s390x/Kconfig;../hw/scsi/Kconfig;../hw/sd/Kconfig;../hw/sensor/Kconfig;../hw/sh4/Kconfig;../hw/smbios/Kconfig;../hw/sparc/Kconfig;../hw/sparc64/Kconfig;../hw/ssi/Kconfig;../hw/timer/Kconfig;../hw/tpm/Kconfig;../hw/tricore/Kconfig;../hw/usb/Kconfig;../hw/vfio/Kconfig;../hw/virtio/Kconfig;../hw/watchdog/Kconfig;../hw/xtensa/Kconfig;../semihosting/Kconfig;../target/Kconfig;../target/alpha/Kconfig;../target/arm/Kconfig;../target/avr/Kconfig;../target/cris/Kconfig;../target/hppa/Kconfig;../target/i386/Kconfig;../target/loongarch/Kconfig;../target/m68k/Kconfig;../target/microblaze/Kconfig;../target/mips/Kconfig;../target/nios2/Kconfig;../target/openrisc/Kconfig;../target/ppc/Kconfig;../target/riscv/Kconfig;../target/rx/Kconfig;../target/s390x/Kconfig;../target/sh4/Kconfig;../target/sparc/Kconfig;../target/tricore/Kconfig;../target/xtensa/Kconfig;../qapi/meson.build;../qobject/meson.build;../stubs/meson.build;../trace/meson.build;../util/meson.build;../qom/meson.build;../authz/meson.build;../crypto/meson.build;../ui/meson.build;../ui/thirdparty/meson.build;../ui/xui/meson.build;../ui/shader/meson.build;../ui/icons/meson.build;../hw/meson.build;../hw/9pfs/meson.build;../hw/acpi/meson.build;../hw/adc/meson.build;../hw/audio/meson.build;../hw/block/meson.build;../hw/block/dataplane/meson.build;../hw/char/meson.build;../hw/core/meson.build;../hw/cpu/meson.build;../hw/cxl/meson.build;../hw/display/meson.build;../hw/dma/meson.build;../hw/gpio/meson.build;../hw/hyperv/meson.build;../hw/i2c/meson.build;../hw/ide/meson.build;../hw/input/meson.build;../hw/intc/meson.build;../hw/ipack/meson.build;../hw/ipmi/meson.build;../hw/isa/meson.build;../hw/mem/meson.build;../hw/misc/meson.build;../hw/misc/macio/meson.build;../hw/net/meson.build;../hw/net/can/meson.build;../hw/nubus/meson.build;../hw/nvme/meson.build;../hw/nvram/meson.build;../hw/pci/meson.build;../hw/pci-bridge/meson.build;../hw/pci-host/meson.build;../hw/pcmcia/meson.build;../hw/rdma/meson.build;../hw/rtc/meson.build;../hw/scsi/meson.build;../hw/sd/meson.build;../hw/sensor/meson.build;../hw/smbios/meson.build;../hw/ssi/meson.build;../hw/timer/meson.build;../hw/tpm/meson.build;../hw/usb/meson.build;../hw/vfio/meson.build;../hw/virtio/meson.build;../hw/watchdog/meson.build;../hw/xbox/meson.build;../hw/xbox/nv2a/meson.build;../hw/xbox/nv2a/gl/meson.build;../hw/xbox/nv2a/thirdparty/meson.build;../hw/xbox/mcpx/meson.build;../hw/xen/meson.build;../hw/xenpv/meson.build;../hw/alpha/meson.build;../hw/arm/meson.build;../hw/avr/meson.build;../hw/cris/meson.build;../hw/hppa/meson.build;../hw/i386/meson.build;../hw/i386/kvm/meson.build;../hw/i386/xen/meson.build;../hw/loongarch/meson.build;../hw/m68k/meson.build;../hw/microblaze/meson.build;../hw/mips/meson.build;../hw/nios2/meson.build;../hw/openrisc/meson.build;../hw/ppc/meson.build;../hw/remote/meson.build;../hw/riscv/meson.build;../hw/rx/meson.build;../hw/s390x/meson.build;../hw/sh4/meson.build;../hw/sparc/meson.build;../hw/sparc64/meson.build;../hw/tricore/meson.build;../hw/xtensa/meson.build;../gdbstub/meson.build;../data/meson.build;../winpcap-loader/meson.build;../libdecnumber/meson.build;../target/meson.build;../target/alpha/meson.build;../target/arm/meson.build;../target/arm/hvf/meson.build;../target/avr/meson.build;../target/cris/meson.build;../target/hexagon/meson.build;../target/hppa/meson.build;../target/i386/meson.build;../target/i386/kvm/meson.build;../target/i386/hax/meson.build;../target/i386/whpx/meson.build;../target/i386/nvmm/meson.build;../target/i386/hvf/meson.build;../target/i386/tcg/meson.build;../target/i386/tcg/sysemu/meson.build;../target/i386/tcg/user/meson.build;../target/loongarch/meson.build;../target/m68k/meson.build;../target/microblaze/meson.build;../target/mips/meson.build;../target/mips/sysemu/meson.build;../target/mips/tcg/meson.build;../target/mips/tcg/sysemu/meson.build;../target/nios2/meson.build;../target/openrisc/meson.build;../target/ppc/meson.build;../target/riscv/meson.build;../target/rx/meson.build;../target/s390x/meson.build;../target/s390x/tcg/meson.build;../target/s390x/kvm/meson.build;../target/sh4/meson.build;../target/sparc/meson.build;../target/tricore/meson.build;../target/xtensa/meson.build;../target/xtensa/cores.list;../audio/meson.build;../io/meson.build;../chardev/meson.build;../fsdev/meson.build;../dump/meson.build;../nbd/meson.build;../scsi/meson.build;../block/meson.build;../block/export/meson.build;../block/monitor/meson.build;../softmmu/meson.build;../backends/meson.build;../backends/tpm/meson.build;../disas/meson.build;../migration/meson.build;../monitor/meson.build;../net/meson.build;../net/can/meson.build;../replay/meson.build;../semihosting/meson.build;../tcg/meson.build;../fpu/meson.build;../accel/meson.build;../accel/tcg/meson.build;../accel/hvf/meson.build;../accel/qtest/meson.build;../accel/kvm/meson.build;../accel/xen/meson.build;../accel/stubs/meson.build;../plugins/meson.build;../ebpf/meson.build;../common-user/meson.build;../bsd-user/meson.build;../linux-user/meson.build;../tests/qtest/libqos/meson.build;../tests/qtest/fuzz/meson.build;../qga/meson.build;../storage-daemon/meson.build;../storage-daemon/qapi/meson.build;../contrib/rdmacm-mux/meson.build;../contrib/elf2dmp/meson.build;../scripts/meson.build;../tools/meson.build;../pc-bios/meson.build;../pc-bios/descriptors/meson.build;../pc-bios/descriptors/50-edk2-i386-secure.json;../pc-bios/descriptors/50-edk2-x86_64-secure.json;../pc-bios/descriptors/60-edk2-aarch64.json;../pc-bios/descriptors/60-edk2-arm.json;../pc-bios/descriptors/60-edk2-i386.json;../pc-bios/descriptors/60-edk2-x86_64.json;../pc-bios/keymaps/meson.build;../docs/meson.build;../tests/meson.build;../tests/bench/meson.build;../tests/qemu-iotests/meson.build;../tests/include/meson.build;../tests/fp/meson.build;../tests/unit/meson.build;../tests/qapi-schema/meson.build;../tests/qtest/meson.build;../tests/migration/meson.build;meson-private/coredata.dat</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ImportGroup Label="ExtensionTargets"/>
+</Project>

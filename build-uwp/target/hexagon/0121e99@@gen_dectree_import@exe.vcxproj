@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{EA656EBF-749A-441B-8231-7E087EEA3D4D}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>gen_dectree_import</ProjectName>
+		<RootNamespace>gen_dectree_import</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>0121e99@@gen_dectree_import@exe\</IntDir>
+		<TargetName>gen_dectree_import</TargetName>
+		<TargetExt>.exe</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>0121e99@@gen_dectree_import@exe;.;../../../target/hexagon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard_C>stdc11</LanguageStandard_C>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF %(AdditionalOptions)</AdditionalOptions>
+			<OutputFile>$(OutDir)gen_dectree_import.exe</OutputFile>
+			<SubSystem>console</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="../../../target/hexagon/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="../../target/hexagon/opcodes_def_generated.h.inc"/>
+		<CLInclude Include="../../target/hexagon/op_regs_generated.h.inc"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../target/hexagon/gen_dectree_import.c">
+			<AdditionalOptions>&quot;/std:c11&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions> _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>0121e99@@gen_dectree_import@exe;.;../../../target/hexagon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)gen_dectree_import.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./0121e99@@opcodes_def_generated.h.inc@cus.vcxproj">
+			<Project>{AEB8CE3D-A2CF-4315-AC99-DE90E004E231}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./0121e99@@op_regs_generated.h.inc@cus.vcxproj">
+			<Project>{47F89302-7B1B-4E2A-89DF-6B1BFC4C1DE6}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

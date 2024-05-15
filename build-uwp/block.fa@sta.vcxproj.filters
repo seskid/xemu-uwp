@@ -1,0 +1,220 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="nbd">
+			<UniqueIdentifier>{1979F4F2-2E95-4BF6-9970-C22A95E44BC9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="scsi">
+			<UniqueIdentifier>{08A48425-B5A5-45E6-82CA-BC14160C2959}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="block">
+			<UniqueIdentifier>{A1C1A09C-8595-4E4D-B21B-2968B36DDBB8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="block\monitor">
+			<UniqueIdentifier>{9A0BCB54-6261-4FE0-8134-617798A1B36F}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../nbd/client.c">
+			<Filter>nbd</Filter>
+		</ClCompile>
+		<ClCompile Include="../nbd/client-connection.c">
+			<Filter>nbd</Filter>
+		</ClCompile>
+		<ClCompile Include="../nbd/common.c">
+			<Filter>nbd</Filter>
+		</ClCompile>
+		<ClCompile Include="../scsi/utils.c">
+			<Filter>scsi</Filter>
+		</ClCompile>
+		<ClCompile Include="../scsi/pr-manager-stub.c">
+			<Filter>scsi</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/accounting.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/aio_task.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/amend.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/backup.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/copy-before-write.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/blkdebug.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/blklogwrites.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/blkverify.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/block-backend.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/block-copy.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/commit.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/copy-on-read.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/preallocate.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/progress_meter.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/create.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/crypto.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/dirty-bitmap.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/filter-compress.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/io.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/mirror.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/nbd.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/null.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qapi.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-bitmap.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-cache.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-cluster.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-refcount.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-snapshot.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2-threads.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow2.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/quorum.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/raw-format.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/reqlist.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/snapshot.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/snapshot-access.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/throttle-groups.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/throttle.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vhdx-endian.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vhdx-log.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vhdx.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vmdk.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vpc.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/write-threshold.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qcow.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vdi.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/cloop.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/bochs.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/vvfat.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/dmg.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qed-check.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qed-cluster.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qed-l2-cache.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qed-table.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/qed.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/parallels.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/parallels-ext.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/file-win32.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/win32-aio.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/replication.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/stream.c">
+			<Filter>block</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/monitor/bitmap-qmp-cmds.c">
+			<Filter>block\monitor</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/curl.c">
+			<Filter>block</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

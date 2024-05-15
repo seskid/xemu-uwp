@@ -1,0 +1,1409 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{E43BDE28-7BF0-4836-AF9C-1DF5EA215A1A}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>test-bitops</ProjectName>
+		<RootNamespace>test-bitops</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>3fcb9fe@@test-bitops@exe\</IntDir>
+		<TargetName>test-bitops</TargetName>
+		<TargetExt>.exe</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>3fcb9fe@@test-bitops@exe;.;../../../tests/unit;../..;../../qapi;../../trace;../../ui;../../ui/shader;../../data;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard_C>stdc11</LanguageStandard_C>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF -fstack-protector-strong /WHOLEARCHIVE:../../libevent-loop-base.a /WHOLEARCHIVE:../../libqom.fa %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalDependencies>winmm.lib;pathcch.lib;gthread-2.0.lib;glib-2.0.lib;intl.lib;ws2_32.lib;C:/msys64/mingw64/lib/libpixman-1.a;../../libqemuutil.a;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)test-bitops.exe</OutputFile>
+			<SubSystem>console</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../event-loop-base@sta.vcxproj">
+			<Project>{2730324D-3594-4903-B77D-374072035161}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qom.fa@sta.vcxproj">
+			<Project>{015CB9FE-E547-44B7-9C3D-F35CF2DE7D68}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="../../../tests/unit/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="../../config-host.h"/>
+		<CLInclude Include="../../config-poison.h"/>
+		<CLInclude Include="../../qemu-version.h"/>
+		<CLInclude Include="../../xemu-version-macro.h"/>
+		<CLInclude Include="../../xemu-config.h"/>
+		<CLInclude Include="../../qemu-options.def"/>
+		<CLInclude Include="../../qemu-img-cmds.h"/>
+		<CLInclude Include="../../hmp-commands.h"/>
+		<CLInclude Include="../../hmp-commands-info.h"/>
+		<CLInclude Include="../../qapi/qapi-builtin-types.h"/>
+		<CLInclude Include="../../qapi/qapi-builtin-visit.h"/>
+		<CLInclude Include="../../qapi/qapi-types-authz.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-authz.h"/>
+		<CLInclude Include="../../qapi/qapi-events-authz.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-authz.h"/>
+		<CLInclude Include="../../qapi/qapi-types-block.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-block.h"/>
+		<CLInclude Include="../../qapi/qapi-events-block.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-block.h"/>
+		<CLInclude Include="../../qapi/qapi-types-block-core.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-block-core.h"/>
+		<CLInclude Include="../../qapi/qapi-events-block-core.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-block-core.h"/>
+		<CLInclude Include="../../qapi/qapi-types-block-export.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-block-export.h"/>
+		<CLInclude Include="../../qapi/qapi-events-block-export.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-block-export.h"/>
+		<CLInclude Include="../../qapi/qapi-types-char.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-char.h"/>
+		<CLInclude Include="../../qapi/qapi-events-char.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-char.h"/>
+		<CLInclude Include="../../qapi/qapi-types-common.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-common.h"/>
+		<CLInclude Include="../../qapi/qapi-events-common.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-common.h"/>
+		<CLInclude Include="../../qapi/qapi-types-compat.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-compat.h"/>
+		<CLInclude Include="../../qapi/qapi-events-compat.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-compat.h"/>
+		<CLInclude Include="../../qapi/qapi-types-control.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-control.h"/>
+		<CLInclude Include="../../qapi/qapi-events-control.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-control.h"/>
+		<CLInclude Include="../../qapi/qapi-types-crypto.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-crypto.h"/>
+		<CLInclude Include="../../qapi/qapi-events-crypto.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-crypto.h"/>
+		<CLInclude Include="../../qapi/qapi-types-dump.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-dump.h"/>
+		<CLInclude Include="../../qapi/qapi-events-dump.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-dump.h"/>
+		<CLInclude Include="../../qapi/qapi-types-error.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-error.h"/>
+		<CLInclude Include="../../qapi/qapi-events-error.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-error.h"/>
+		<CLInclude Include="../../qapi/qapi-types-introspect.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-introspect.h"/>
+		<CLInclude Include="../../qapi/qapi-events-introspect.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-introspect.h"/>
+		<CLInclude Include="../../qapi/qapi-types-job.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-job.h"/>
+		<CLInclude Include="../../qapi/qapi-events-job.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-job.h"/>
+		<CLInclude Include="../../qapi/qapi-types-machine.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-machine.h"/>
+		<CLInclude Include="../../qapi/qapi-events-machine.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-machine.h"/>
+		<CLInclude Include="../../qapi/qapi-types-migration.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-migration.h"/>
+		<CLInclude Include="../../qapi/qapi-events-migration.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-migration.h"/>
+		<CLInclude Include="../../qapi/qapi-types-misc.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-misc.h"/>
+		<CLInclude Include="../../qapi/qapi-events-misc.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-misc.h"/>
+		<CLInclude Include="../../qapi/qapi-types-net.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-net.h"/>
+		<CLInclude Include="../../qapi/qapi-events-net.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-net.h"/>
+		<CLInclude Include="../../qapi/qapi-types-pragma.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-pragma.h"/>
+		<CLInclude Include="../../qapi/qapi-events-pragma.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-pragma.h"/>
+		<CLInclude Include="../../qapi/qapi-types-qom.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-qom.h"/>
+		<CLInclude Include="../../qapi/qapi-events-qom.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-qom.h"/>
+		<CLInclude Include="../../qapi/qapi-types-replay.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-replay.h"/>
+		<CLInclude Include="../../qapi/qapi-events-replay.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-replay.h"/>
+		<CLInclude Include="../../qapi/qapi-types-run-state.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-run-state.h"/>
+		<CLInclude Include="../../qapi/qapi-events-run-state.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-run-state.h"/>
+		<CLInclude Include="../../qapi/qapi-types-sockets.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-sockets.h"/>
+		<CLInclude Include="../../qapi/qapi-events-sockets.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-sockets.h"/>
+		<CLInclude Include="../../qapi/qapi-types-stats.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-stats.h"/>
+		<CLInclude Include="../../qapi/qapi-events-stats.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-stats.h"/>
+		<CLInclude Include="../../qapi/qapi-types-trace.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-trace.h"/>
+		<CLInclude Include="../../qapi/qapi-events-trace.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-trace.h"/>
+		<CLInclude Include="../../qapi/qapi-types-transaction.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-transaction.h"/>
+		<CLInclude Include="../../qapi/qapi-events-transaction.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-transaction.h"/>
+		<CLInclude Include="../../qapi/qapi-types-virtio.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-virtio.h"/>
+		<CLInclude Include="../../qapi/qapi-events-virtio.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-virtio.h"/>
+		<CLInclude Include="../../qapi/qapi-types-yank.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-yank.h"/>
+		<CLInclude Include="../../qapi/qapi-events-yank.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-yank.h"/>
+		<CLInclude Include="../../qapi/qapi-types-acpi.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-acpi.h"/>
+		<CLInclude Include="../../qapi/qapi-events-acpi.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-acpi.h"/>
+		<CLInclude Include="../../qapi/qapi-types-audio.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-audio.h"/>
+		<CLInclude Include="../../qapi/qapi-events-audio.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-audio.h"/>
+		<CLInclude Include="../../qapi/qapi-types-qdev.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-qdev.h"/>
+		<CLInclude Include="../../qapi/qapi-events-qdev.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-qdev.h"/>
+		<CLInclude Include="../../qapi/qapi-types-pci.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-pci.h"/>
+		<CLInclude Include="../../qapi/qapi-events-pci.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-pci.h"/>
+		<CLInclude Include="../../qapi/qapi-types-rdma.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-rdma.h"/>
+		<CLInclude Include="../../qapi/qapi-events-rdma.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-rdma.h"/>
+		<CLInclude Include="../../qapi/qapi-types-rocker.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-rocker.h"/>
+		<CLInclude Include="../../qapi/qapi-events-rocker.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-rocker.h"/>
+		<CLInclude Include="../../qapi/qapi-types-tpm.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-tpm.h"/>
+		<CLInclude Include="../../qapi/qapi-events-tpm.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-tpm.h"/>
+		<CLInclude Include="../../qapi/qapi-types-ui.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-ui.h"/>
+		<CLInclude Include="../../qapi/qapi-events-ui.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-ui.h"/>
+		<CLInclude Include="../../qapi/qapi-types-machine-target.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-machine-target.h"/>
+		<CLInclude Include="../../qapi/qapi-events-machine-target.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-machine-target.h"/>
+		<CLInclude Include="../../qapi/qapi-types-misc-target.h"/>
+		<CLInclude Include="../../qapi/qapi-visit-misc-target.h"/>
+		<CLInclude Include="../../qapi/qapi-events-misc-target.h"/>
+		<CLInclude Include="../../qapi/qapi-commands-misc-target.h"/>
+		<CLInclude Include="../../qapi/qapi-introspect.h"/>
+		<CLInclude Include="../../qapi/qapi-types.h"/>
+		<CLInclude Include="../../qapi/qapi-visit.h"/>
+		<CLInclude Include="../../qapi/qapi-commands.h"/>
+		<CLInclude Include="../../qapi/qapi-init-commands.h"/>
+		<CLInclude Include="../../qapi/qapi-events.h"/>
+		<CLInclude Include="../../qapi/qapi-emit-events.h"/>
+		<CLInclude Include="../../trace/trace-root.h"/>
+		<CLInclude Include="../../trace/trace-crypto.h"/>
+		<CLInclude Include="../../trace/trace-qapi.h"/>
+		<CLInclude Include="../../trace/trace-qom.h"/>
+		<CLInclude Include="../../trace/trace-monitor.h"/>
+		<CLInclude Include="../../trace/trace-util.h"/>
+		<CLInclude Include="../../trace/trace-gdbstub.h"/>
+		<CLInclude Include="../../trace/trace-authz.h"/>
+		<CLInclude Include="../../trace/trace-block.h"/>
+		<CLInclude Include="../../trace/trace-io.h"/>
+		<CLInclude Include="../../trace/trace-nbd.h"/>
+		<CLInclude Include="../../trace/trace-scsi.h"/>
+		<CLInclude Include="../../trace/trace-accel_kvm.h"/>
+		<CLInclude Include="../../trace/trace-audio.h"/>
+		<CLInclude Include="../../trace/trace-backends.h"/>
+		<CLInclude Include="../../trace/trace-backends_tpm.h"/>
+		<CLInclude Include="../../trace/trace-chardev.h"/>
+		<CLInclude Include="../../trace/trace-ebpf.h"/>
+		<CLInclude Include="../../trace/trace-hw_9pfs.h"/>
+		<CLInclude Include="../../trace/trace-hw_acpi.h"/>
+		<CLInclude Include="../../trace/trace-hw_adc.h"/>
+		<CLInclude Include="../../trace/trace-hw_alpha.h"/>
+		<CLInclude Include="../../trace/trace-hw_arm.h"/>
+		<CLInclude Include="../../trace/trace-hw_audio.h"/>
+		<CLInclude Include="../../trace/trace-hw_block.h"/>
+		<CLInclude Include="../../trace/trace-hw_block_dataplane.h"/>
+		<CLInclude Include="../../trace/trace-hw_char.h"/>
+		<CLInclude Include="../../trace/trace-hw_display.h"/>
+		<CLInclude Include="../../trace/trace-hw_dma.h"/>
+		<CLInclude Include="../../trace/trace-hw_hyperv.h"/>
+		<CLInclude Include="../../trace/trace-hw_i2c.h"/>
+		<CLInclude Include="../../trace/trace-hw_i386.h"/>
+		<CLInclude Include="../../trace/trace-hw_i386_xen.h"/>
+		<CLInclude Include="../../trace/trace-hw_ide.h"/>
+		<CLInclude Include="../../trace/trace-hw_input.h"/>
+		<CLInclude Include="../../trace/trace-hw_intc.h"/>
+		<CLInclude Include="../../trace/trace-hw_isa.h"/>
+		<CLInclude Include="../../trace/trace-hw_mem.h"/>
+		<CLInclude Include="../../trace/trace-hw_mips.h"/>
+		<CLInclude Include="../../trace/trace-hw_misc.h"/>
+		<CLInclude Include="../../trace/trace-hw_misc_macio.h"/>
+		<CLInclude Include="../../trace/trace-hw_net.h"/>
+		<CLInclude Include="../../trace/trace-hw_net_can.h"/>
+		<CLInclude Include="../../trace/trace-hw_nubus.h"/>
+		<CLInclude Include="../../trace/trace-hw_nvme.h"/>
+		<CLInclude Include="../../trace/trace-hw_nvram.h"/>
+		<CLInclude Include="../../trace/trace-hw_pci.h"/>
+		<CLInclude Include="../../trace/trace-hw_pci_host.h"/>
+		<CLInclude Include="../../trace/trace-hw_ppc.h"/>
+		<CLInclude Include="../../trace/trace-hw_rdma.h"/>
+		<CLInclude Include="../../trace/trace-hw_rdma_vmw.h"/>
+		<CLInclude Include="../../trace/trace-hw_rtc.h"/>
+		<CLInclude Include="../../trace/trace-hw_s390x.h"/>
+		<CLInclude Include="../../trace/trace-hw_scsi.h"/>
+		<CLInclude Include="../../trace/trace-hw_sd.h"/>
+		<CLInclude Include="../../trace/trace-hw_sh4.h"/>
+		<CLInclude Include="../../trace/trace-hw_sparc.h"/>
+		<CLInclude Include="../../trace/trace-hw_sparc64.h"/>
+		<CLInclude Include="../../trace/trace-hw_ssi.h"/>
+		<CLInclude Include="../../trace/trace-hw_timer.h"/>
+		<CLInclude Include="../../trace/trace-hw_tpm.h"/>
+		<CLInclude Include="../../trace/trace-hw_usb.h"/>
+		<CLInclude Include="../../trace/trace-hw_vfio.h"/>
+		<CLInclude Include="../../trace/trace-hw_virtio.h"/>
+		<CLInclude Include="../../trace/trace-hw_watchdog.h"/>
+		<CLInclude Include="../../trace/trace-hw_xen.h"/>
+		<CLInclude Include="../../trace/trace-hw_gpio.h"/>
+		<CLInclude Include="../../trace/trace-migration.h"/>
+		<CLInclude Include="../../trace/trace-net.h"/>
+		<CLInclude Include="../../trace/trace-softmmu.h"/>
+		<CLInclude Include="../../trace/trace-ui.h"/>
+		<CLInclude Include="../../trace/trace-hw_remote.h"/>
+		<CLInclude Include="../../trace/trace-hw_xbox_nv2a.h"/>
+		<CLInclude Include="../../trace/trace-hw_xbox_mcpx.h"/>
+		<CLInclude Include="../../trace/trace-hw_xbox.h"/>
+		<CLInclude Include="../../trace/trace-accel_tcg.h"/>
+		<CLInclude Include="../../trace/trace-hw_core.h"/>
+		<CLInclude Include="../../trace/trace-target_arm.h"/>
+		<CLInclude Include="../../trace/trace-target_arm_hvf.h"/>
+		<CLInclude Include="../../trace/trace-target_hppa.h"/>
+		<CLInclude Include="../../trace/trace-target_i386.h"/>
+		<CLInclude Include="../../trace/trace-target_i386_kvm.h"/>
+		<CLInclude Include="../../trace/trace-target_mips_tcg.h"/>
+		<CLInclude Include="../../trace/trace-target_nios2.h"/>
+		<CLInclude Include="../../trace/trace-target_ppc.h"/>
+		<CLInclude Include="../../trace/trace-target_riscv.h"/>
+		<CLInclude Include="../../trace/trace-target_s390x.h"/>
+		<CLInclude Include="../../trace/trace-target_s390x_kvm.h"/>
+		<CLInclude Include="../../trace/trace-target_sparc.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_authz_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_block_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_block_core_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_block_export_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_char_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_common_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_compat_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_control_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_crypto_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_dump_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_error_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_introspect_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_job_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_machine_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_migration_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_misc_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_net_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_pragma_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_qom_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_replay_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_run_state_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_sockets_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_stats_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_trace_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_transaction_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_virtio_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_yank_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_acpi_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_audio_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_qdev_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_pci_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_rdma_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_rocker_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_tpm_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_ui_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_machine_target_trace_events.h"/>
+		<CLInclude Include="../../trace/trace-qapi_commands_misc_target_trace_events.h"/>
+		<CLInclude Include="../../ui/input-keymap-atset1-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-linux-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-atset1.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-atset2.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-atset3.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-linux.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-qnum.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qcode-to-sun.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-qnum-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-usb-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-win32-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-x11-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-xorgevdev-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-xorgkbd-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-xorgxquartz-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-xorgxwin-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/input-keymap-osx-to-qcode.c.inc"/>
+		<CLInclude Include="../../ui/shader/texture-blit-frag.h"/>
+		<CLInclude Include="../../ui/shader/texture-blit-vert.h"/>
+		<CLInclude Include="../../ui/shader/texture-blit-flip-vert.h"/>
+		<CLInclude Include="../../ui/shader/xemu-logo-frag.h"/>
+		<CLInclude Include="../../data/controller_mask.png.h"/>
+		<CLInclude Include="../../data/logo_sdf.png.h"/>
+		<CLInclude Include="../../data/xemu_64x64.png.h"/>
+		<CLInclude Include="../../data/abxy.ttf.h"/>
+		<CLInclude Include="../../data/Roboto-Medium.ttf.h"/>
+		<CLInclude Include="../../data/RobotoCondensed-Regular.ttf.h"/>
+		<CLInclude Include="../../data/font_awesome_6_1_1_solid.otf.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../tests/unit/test-bitops.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>3fcb9fe@@test-bitops@exe;.;../../../tests/unit;../..;../../qapi;../../trace;../../ui;../../ui/shader;../../data;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)test-bitops.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Object Include="../../version.rc_version.res"/>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qemuutil@sta.vcxproj">
+			<Project>{7C270E5D-5E7C-49AF-BA9A-64551757EEC9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../config-poison.h@cus.vcxproj">
+			<Project>{3167D6B2-D820-427F-A3B5-7416A35025F3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qemu-version.h@cus.vcxproj">
+			<Project>{73A6628B-A0A2-49C7-B219-F44CD822983D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../xemu-version-macro.h@cus.vcxproj">
+			<Project>{D4D5E722-EAC4-48D0-A696-60047DEF49D5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../xemu-config.h@cus.vcxproj">
+			<Project>{98FDFCBB-5B51-4112-A089-0AAA3887B461}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qemu-options.def@cus.vcxproj">
+			<Project>{BCA1E815-C3EB-4A38-AA38-71FC047F21BA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qemu-img-cmds.h@cus.vcxproj">
+			<Project>{C037AF0B-971D-42FE-9CFC-4BE2E465E8AD}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../hmp-commands.h@cus.vcxproj">
+			<Project>{5A23D056-25C9-4351-9929-AA622CD69AEE}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../hmp-commands-info.h@cus.vcxproj">
+			<Project>{9D28A834-2F6F-455B-BA66-9AE89A969D71}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../qapi/5fa0379@@shared QAPI source files@cus.vcxproj">
+			<Project>{81219883-0E73-4C5D-87D4-12F4985DACC5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-root.h@cus.vcxproj">
+			<Project>{A5062D42-3185-4CE0-8B80-BC09D670ED85}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-crypto.h@cus.vcxproj">
+			<Project>{DEE3B1C6-82EA-4250-9694-E6EC9C2356CA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi.h@cus.vcxproj">
+			<Project>{0D82DF4D-9746-49DA-B309-BCDCA865B59E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qom.h@cus.vcxproj">
+			<Project>{646DB8BA-CA93-4921-AB62-359653DAB513}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-monitor.h@cus.vcxproj">
+			<Project>{25A46CE0-246F-433E-A186-A690C21E1EDE}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-util.h@cus.vcxproj">
+			<Project>{8C064336-662D-4449-AEF2-98175878C40A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-gdbstub.h@cus.vcxproj">
+			<Project>{B572AC77-2AF8-4422-975F-87506269B68E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-authz.h@cus.vcxproj">
+			<Project>{86C1C7E1-CEDB-4621-BFDD-68F46B9C33F7}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-block.h@cus.vcxproj">
+			<Project>{C9DD0D7D-F0A4-47E2-8C33-4F80125F242C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-io.h@cus.vcxproj">
+			<Project>{B2306780-35BC-43ED-9B9D-66B09F1D4089}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-nbd.h@cus.vcxproj">
+			<Project>{7A07AC5D-E640-40CC-98FE-8DA743E1A388}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-scsi.h@cus.vcxproj">
+			<Project>{3F70B77D-CDC4-4203-925D-4B0433C82942}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-accel_kvm.h@cus.vcxproj">
+			<Project>{1A36CBBF-A34F-44F3-8A1F-BA72989CE4A2}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-audio.h@cus.vcxproj">
+			<Project>{78CD84B4-3DAE-4427-9886-46FF60148D32}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-backends.h@cus.vcxproj">
+			<Project>{AA893B9A-3603-4C3D-B3C2-F40B258F851B}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-backends_tpm.h@cus.vcxproj">
+			<Project>{B8BBC233-8DFE-416D-9626-22D6393151C3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-chardev.h@cus.vcxproj">
+			<Project>{DB2F21DF-B9C5-4D84-9112-13605B70897E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-ebpf.h@cus.vcxproj">
+			<Project>{F992F7E2-212E-4AC5-A3F8-651252145DC1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_9pfs.h@cus.vcxproj">
+			<Project>{869E8319-25DA-4A26-8711-F9CD5B45E1FA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_acpi.h@cus.vcxproj">
+			<Project>{4BF10DF0-DC3C-43F2-9DBA-3C2DDAA44147}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_adc.h@cus.vcxproj">
+			<Project>{A13D1C54-9E49-4671-A6FA-BBB091E5071F}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_alpha.h@cus.vcxproj">
+			<Project>{EA26EA93-0AE7-465C-BB5E-53F2E27DF4EB}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_arm.h@cus.vcxproj">
+			<Project>{4747A2BD-6AC6-4BF4-9292-663B773C3FAA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_audio.h@cus.vcxproj">
+			<Project>{2BFD7769-705D-4ED8-8087-A8C46B6A1260}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_block.h@cus.vcxproj">
+			<Project>{0E001276-6283-4ABB-ADF5-F4577405488D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_block_dataplane.h@cus.vcxproj">
+			<Project>{D180E5B4-3F75-481A-A1A7-63D520C67CD4}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_char.h@cus.vcxproj">
+			<Project>{435E790F-D0D6-4170-BC0B-1D3550DB5799}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_display.h@cus.vcxproj">
+			<Project>{A1D62FC4-63DF-459F-838B-0070D2369273}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_dma.h@cus.vcxproj">
+			<Project>{AA8AA988-C474-4BE3-8668-6E8F7BF38472}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_hyperv.h@cus.vcxproj">
+			<Project>{28022FFF-66E4-4021-BA1F-C9523F5B297C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_i2c.h@cus.vcxproj">
+			<Project>{6CD74F2B-70BD-4A21-8FD9-649314553D5D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_i386.h@cus.vcxproj">
+			<Project>{C51D2F4E-B379-4937-8BBC-3F72B56CF9AC}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_i386_xen.h@cus.vcxproj">
+			<Project>{480AFA76-BBD7-4832-B185-324C33E6C1BD}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_ide.h@cus.vcxproj">
+			<Project>{4C08AEC4-4A02-40F5-9F10-AC82DF0D70E5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_input.h@cus.vcxproj">
+			<Project>{4A41C4B8-1642-4987-BAE6-F08B0282A51D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_intc.h@cus.vcxproj">
+			<Project>{9BC47E70-88A7-4A7D-A170-36A64B2D5DC7}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_isa.h@cus.vcxproj">
+			<Project>{10288281-4C3B-42C6-90BC-A7648DA02D55}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_mem.h@cus.vcxproj">
+			<Project>{145B8E32-E151-4F9E-81E2-63798142555E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_mips.h@cus.vcxproj">
+			<Project>{C32A15C5-FA63-42A4-BCA3-7400051B3971}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_misc.h@cus.vcxproj">
+			<Project>{B4B6952A-09E8-42F2-B60B-D9CC1D0DAD36}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_misc_macio.h@cus.vcxproj">
+			<Project>{79556377-5874-4B72-AD9D-B3BA4966C1A9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_net.h@cus.vcxproj">
+			<Project>{494A9664-0CCA-4DEB-B659-B83D3F499F84}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_net_can.h@cus.vcxproj">
+			<Project>{A20D3C01-3687-4CC6-AA69-DC8E0365E9AE}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_nubus.h@cus.vcxproj">
+			<Project>{ECFFE2EC-8D4E-441E-B892-2D88B68C609B}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_nvme.h@cus.vcxproj">
+			<Project>{1FF3E200-1FC4-4905-AF53-A6C51041E168}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_nvram.h@cus.vcxproj">
+			<Project>{42EE0855-E4AD-4168-9408-9695B7B32B15}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_pci.h@cus.vcxproj">
+			<Project>{AE3355A0-A053-447B-BBFA-D50ABBB438D5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_pci_host.h@cus.vcxproj">
+			<Project>{1C80FE44-956A-48FF-80E1-0951809B1D90}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_ppc.h@cus.vcxproj">
+			<Project>{B119C9DD-72ED-48BF-9768-85C8E373D2AF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_rdma.h@cus.vcxproj">
+			<Project>{DA5562CB-8245-4703-90F4-106A5CB97637}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_rdma_vmw.h@cus.vcxproj">
+			<Project>{C1BDF9A6-6CB8-4FD0-B95C-D3D69A98E399}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_rtc.h@cus.vcxproj">
+			<Project>{11CD34AF-5172-4B50-ACCA-B11DFB4C28EB}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_s390x.h@cus.vcxproj">
+			<Project>{CB29ECD9-62C5-4211-BF58-2EF192E95CB1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_scsi.h@cus.vcxproj">
+			<Project>{301B06EE-8AB1-4B09-807C-66CAF2FFCF76}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_sd.h@cus.vcxproj">
+			<Project>{6FEDCA49-DAAA-445A-809A-4531F3CB2EE9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_sh4.h@cus.vcxproj">
+			<Project>{F223564C-8F71-4F5B-833E-BD352617F7F9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_sparc.h@cus.vcxproj">
+			<Project>{C9BB1AF1-6191-411A-993D-C57BBB351B31}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_sparc64.h@cus.vcxproj">
+			<Project>{36CA6379-9A61-4F89-8BD3-781CA6FE6F49}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_ssi.h@cus.vcxproj">
+			<Project>{91ABE5F1-A09C-427F-82FD-18CF929A35A0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_timer.h@cus.vcxproj">
+			<Project>{0A114C58-241B-44C3-B331-7F14F2F46576}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_tpm.h@cus.vcxproj">
+			<Project>{180D53AE-6622-43A4-BA3B-CC9F47214BDC}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_usb.h@cus.vcxproj">
+			<Project>{20E88FA7-4587-4106-B0EF-C1313759227D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_vfio.h@cus.vcxproj">
+			<Project>{DC843878-C016-4D76-8A34-A3AB1B15A6DF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_virtio.h@cus.vcxproj">
+			<Project>{9EEBE765-F15C-48A2-865B-654C3DCE76C3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_watchdog.h@cus.vcxproj">
+			<Project>{467395A3-26B3-447F-A1EB-44FC419914C0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_xen.h@cus.vcxproj">
+			<Project>{DBBF2F85-FE0D-4B42-98F8-F20F775A33F1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_gpio.h@cus.vcxproj">
+			<Project>{1E078B65-7CC8-4548-940A-9988A746216D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-migration.h@cus.vcxproj">
+			<Project>{36ADD896-4206-4A4B-9A71-6059814CA94E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-net.h@cus.vcxproj">
+			<Project>{4F535D04-9AAA-484E-B0F5-D84FD07BA69D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-softmmu.h@cus.vcxproj">
+			<Project>{30612EEF-F940-4FED-ABA4-357FEE1D72C6}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-ui.h@cus.vcxproj">
+			<Project>{3532E219-CA62-49F5-9AC8-AD6C77D5FF6A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_remote.h@cus.vcxproj">
+			<Project>{B04A16FE-AC4C-406C-92A1-4D93B4DE7D6A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_xbox_nv2a.h@cus.vcxproj">
+			<Project>{4D5D756F-F7D7-4319-AFC0-18E9C8FF9E08}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_xbox_mcpx.h@cus.vcxproj">
+			<Project>{F31F2071-E4EF-4009-8134-875D6D552394}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_xbox.h@cus.vcxproj">
+			<Project>{2AC9FE68-936B-44B7-84B0-91E5E17AE51A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-accel_tcg.h@cus.vcxproj">
+			<Project>{1CD95A2E-98AB-4AF0-B4B2-38AB900EC064}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-hw_core.h@cus.vcxproj">
+			<Project>{4491C76B-1ADC-4B22-A463-8FA11E4704A5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_arm.h@cus.vcxproj">
+			<Project>{7B5697F4-74CD-4448-80D8-008E4C914C7E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_arm_hvf.h@cus.vcxproj">
+			<Project>{86EFA5A8-74E0-4B69-805A-5375D2FC89EA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_hppa.h@cus.vcxproj">
+			<Project>{768D70B8-83E4-4BEB-A8F7-7D9955D94226}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_i386.h@cus.vcxproj">
+			<Project>{8E0637CD-2B22-4EA5-A566-C1B71687A4AB}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_i386_kvm.h@cus.vcxproj">
+			<Project>{3DD98108-32AE-4853-A904-AD6F5674BF0E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_mips_tcg.h@cus.vcxproj">
+			<Project>{8C4E9FEE-5429-4640-945C-DE12D6D04530}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_nios2.h@cus.vcxproj">
+			<Project>{1C1A5A80-F1D4-4343-A1C0-D37C6CC15AA7}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_ppc.h@cus.vcxproj">
+			<Project>{03B1C62D-BFDF-4BAE-97E0-4F57849605ED}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_riscv.h@cus.vcxproj">
+			<Project>{75538423-C665-4F5A-99A2-9AC37D09D1B1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_s390x.h@cus.vcxproj">
+			<Project>{0D70CFC9-FA0E-48D0-A3DE-B9458B3780F9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_s390x_kvm.h@cus.vcxproj">
+			<Project>{F2340616-292E-40AE-94A2-4078591BA28C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-target_sparc.h@cus.vcxproj">
+			<Project>{97CD48DE-0B43-4194-B4B4-834F359DF6A9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_authz_trace_events.h@cus.vcxproj">
+			<Project>{E15B8D67-50DE-4C3B-831B-CC569D714D9B}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_block_trace_events.h@cus.vcxproj">
+			<Project>{05932576-1EE7-4352-B2F0-7D11E5AD7704}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_block_core_trace_events.h@cus.vcxproj">
+			<Project>{08A5DECC-CA5A-4DF1-8D9F-13991618CEE3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_block_export_trace_events.h@cus.vcxproj">
+			<Project>{ED3616BC-5BAD-4979-8EB3-DC3DF2B24015}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_char_trace_events.h@cus.vcxproj">
+			<Project>{F52ADBE7-E746-4858-A7F5-1CF5DF10A220}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_common_trace_events.h@cus.vcxproj">
+			<Project>{3CBE8DE1-228E-41DE-A8E5-3C8B2A52CE49}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_compat_trace_events.h@cus.vcxproj">
+			<Project>{2B882EA1-B092-49C4-9160-AF0FEE3A1A41}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_control_trace_events.h@cus.vcxproj">
+			<Project>{886DA0FF-0C1C-4781-89A4-C105EAD464F5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_crypto_trace_events.h@cus.vcxproj">
+			<Project>{02CE9F7A-83A9-4DAE-A2A1-C43C142C1D77}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_dump_trace_events.h@cus.vcxproj">
+			<Project>{2854FB49-3709-4B15-88F8-56297BE020BF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_error_trace_events.h@cus.vcxproj">
+			<Project>{C64A42CF-414B-4485-9269-419E7C89E5AF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_introspect_trace_events.h@cus.vcxproj">
+			<Project>{935A7219-674D-4538-8ADC-30A04956CF52}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_job_trace_events.h@cus.vcxproj">
+			<Project>{51A6A2A1-C646-4417-8715-502531C3C2FF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_machine_trace_events.h@cus.vcxproj">
+			<Project>{6AABE6C7-537A-4871-8BD8-BEA4F3827E38}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_migration_trace_events.h@cus.vcxproj">
+			<Project>{DB603478-1E74-41B3-8009-8F9DCD521B59}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_misc_trace_events.h@cus.vcxproj">
+			<Project>{17604E70-60F5-4691-926B-4727E848F3D3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_net_trace_events.h@cus.vcxproj">
+			<Project>{657EF13A-2EFA-4E98-80C5-42F1076A9DCA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_pragma_trace_events.h@cus.vcxproj">
+			<Project>{BF5F6374-06FC-4491-B8E9-3BE43C02E05D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_qom_trace_events.h@cus.vcxproj">
+			<Project>{24644674-DC98-46AA-BC85-A524C863164D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_replay_trace_events.h@cus.vcxproj">
+			<Project>{F78791EB-1A2A-4E36-AE6E-0AF5135B2D55}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_run_state_trace_events.h@cus.vcxproj">
+			<Project>{6F36C59F-379E-48B8-9F69-CE19BE1FBAA3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_sockets_trace_events.h@cus.vcxproj">
+			<Project>{6E8551FD-7F30-40FA-8F7E-B8E2BF38CC8D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_stats_trace_events.h@cus.vcxproj">
+			<Project>{BA8F93D9-6EE1-4D04-8E2A-6A93E8B4671B}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_trace_trace_events.h@cus.vcxproj">
+			<Project>{18A7854F-7C05-486B-AB5A-AC423EAD5138}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_transaction_trace_events.h@cus.vcxproj">
+			<Project>{CA75EFF3-41D9-4E6C-B70B-0C28A7DD3EB5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_virtio_trace_events.h@cus.vcxproj">
+			<Project>{9DE59F80-1B41-425E-BE83-BD6D851983D0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_yank_trace_events.h@cus.vcxproj">
+			<Project>{37E18A93-A56A-43F9-A0D5-20524FAA3717}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_acpi_trace_events.h@cus.vcxproj">
+			<Project>{F7685D41-C181-4A57-9461-16E0C0286712}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_audio_trace_events.h@cus.vcxproj">
+			<Project>{35CE4904-9B87-4690-A64E-0B03563C676E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_qdev_trace_events.h@cus.vcxproj">
+			<Project>{A92915C9-50A2-4E5C-942E-CEE029489156}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_pci_trace_events.h@cus.vcxproj">
+			<Project>{FFB06EBF-1AB9-47D5-A209-D30EF1E82DC1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_rdma_trace_events.h@cus.vcxproj">
+			<Project>{F889383B-4CE4-44E9-BE24-3E0524C5CA4A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_rocker_trace_events.h@cus.vcxproj">
+			<Project>{6FC6002A-9A13-406A-B988-D993F618846A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_tpm_trace_events.h@cus.vcxproj">
+			<Project>{C5DA1EF1-59BF-4B36-A409-9871EB718B87}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_ui_trace_events.h@cus.vcxproj">
+			<Project>{376D7DD8-964A-4E81-AC9A-B68423290940}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_machine_target_trace_events.h@cus.vcxproj">
+			<Project>{B9A3CA7B-ACE2-4E08-AEB8-CAB84DC301F3}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../trace/eafe895@@trace-qapi_commands_misc_target_trace_events.h@cus.vcxproj">
+			<Project>{F116DCB5-A18D-473F-862D-4964E5EE21A2}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-atset1-to-qcode.c.inc@cus.vcxproj">
+			<Project>{CBF4005A-6B00-4089-82F6-2848A78DE680}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-linux-to-qcode.c.inc@cus.vcxproj">
+			<Project>{11230062-2222-4527-9BA1-F09F3D820786}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-atset1.c.inc@cus.vcxproj">
+			<Project>{249547E3-2C7C-4112-84CE-E72300038F33}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-atset2.c.inc@cus.vcxproj">
+			<Project>{52146CA1-AA01-4D98-9B1A-E48C0D51BB39}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-atset3.c.inc@cus.vcxproj">
+			<Project>{902845FB-D935-4A45-B206-821323C08460}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-linux.c.inc@cus.vcxproj">
+			<Project>{6E544F05-E009-4EE1-863D-B29EECF6801A}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-qnum.c.inc@cus.vcxproj">
+			<Project>{EA90E3A9-F63F-4872-B294-F880506CF69E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qcode-to-sun.c.inc@cus.vcxproj">
+			<Project>{248CD70F-7037-4EC7-AF6A-5CC4C41B759C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-qnum-to-qcode.c.inc@cus.vcxproj">
+			<Project>{1813F47E-5744-459E-A9C4-8522E53CE377}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-usb-to-qcode.c.inc@cus.vcxproj">
+			<Project>{F4C11B5B-BAB8-4EFB-97F3-D52DFB58B3B1}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-win32-to-qcode.c.inc@cus.vcxproj">
+			<Project>{14708A98-CA10-457C-A101-6E27F300C8EA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-x11-to-qcode.c.inc@cus.vcxproj">
+			<Project>{E7D8B3B1-7C37-4D6A-84AB-BB3513C24EFD}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-xorgevdev-to-qcode.c.inc@cus.vcxproj">
+			<Project>{2C752ED2-4E32-4B10-A479-0EAA9F1C749D}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-xorgkbd-to-qcode.c.inc@cus.vcxproj">
+			<Project>{FB8EC5A6-5758-4E83-AF2D-4BE9CC24A6FF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-xorgxquartz-to-qcode.c.inc@cus.vcxproj">
+			<Project>{39EFEF94-D546-480B-9281-A73726AB25BA}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-xorgxwin-to-qcode.c.inc@cus.vcxproj">
+			<Project>{A4D14070-AE98-4929-A2A1-898C170A149C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/d3ef7de@@input-keymap-osx-to-qcode.c.inc@cus.vcxproj">
+			<Project>{8B2A3D68-D285-4180-B1CA-508ACCAA2235}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/shader/77e94d2@@texture-blit-frag.h@cus.vcxproj">
+			<Project>{68307D97-A0F9-47F6-B5C4-40F0662BC6D0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/shader/77e94d2@@texture-blit-vert.h@cus.vcxproj">
+			<Project>{3F931360-A207-46C5-82C8-6151B7B2CB83}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/shader/77e94d2@@texture-blit-flip-vert.h@cus.vcxproj">
+			<Project>{B74EB89B-8D87-4999-86A2-C6482A79A3C8}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../ui/shader/77e94d2@@xemu-logo-frag.h@cus.vcxproj">
+			<Project>{54EB0DF2-01EF-4702-8761-60537B3AB3F4}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@controller_mask.png.[ch]@cus.vcxproj">
+			<Project>{5A65A671-0CB3-46AD-8236-17412C55A0B2}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@logo_sdf.png.[ch]@cus.vcxproj">
+			<Project>{E681594D-1ED6-43BD-87F9-790D8216950E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@xemu_64x64.png.[ch]@cus.vcxproj">
+			<Project>{033D7D6D-2A11-48AE-ACFC-44D3A01C7F61}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@abxy.ttf.[ch]@cus.vcxproj">
+			<Project>{82FA1C07-174D-421E-A865-37562E5F53EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@Roboto-Medium.ttf.[ch]@cus.vcxproj">
+			<Project>{245E318E-7E07-4635-BB59-C355B857970C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@RobotoCondensed-Regular.ttf.[ch]@cus.vcxproj">
+			<Project>{D2A9D05F-BEBD-4A04-8C4F-2E2DDC2926C9}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../data/3a6eb07@@font_awesome_6_1_1_solid.otf.[ch]@cus.vcxproj">
+			<Project>{C8918DD5-D791-488A-97FD-7A9F7F3DC20C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../version.rc@cus.vcxproj">
+			<Project>{F5ADA945-73BD-4BA4-9277-C340C7F0971C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

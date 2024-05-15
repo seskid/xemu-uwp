@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="authz">
+			<UniqueIdentifier>{741A2210-9580-453D-A140-0FECB33BF60E}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../authz/base.c">
+			<Filter>authz</Filter>
+		</ClCompile>
+		<ClCompile Include="../authz/list.c">
+			<Filter>authz</Filter>
+		</ClCompile>
+		<ClCompile Include="../authz/listfile.c">
+			<Filter>authz</Filter>
+		</ClCompile>
+		<ClCompile Include="../authz/simple.c">
+			<Filter>authz</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

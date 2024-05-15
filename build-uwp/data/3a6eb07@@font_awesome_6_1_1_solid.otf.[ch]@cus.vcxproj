@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{C8918DD5-D791-488A-97FD-7A9F7F3DC20C}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>font_awesome_6_1_1_solid.otf.[ch]</ProjectName>
+		<RootNamespace>font_awesome_6_1_1_solid.otf.[ch]</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>3a6eb07@@font_awesome_6_1_1_solid.otf.[ch]@cus\</IntDir>
+		<TargetName>font_awesome_6_1_1_solid.otf.[ch]</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_3a1d77979f0a84ac22385916e894c1950d3eb8c3.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/data/font_awesome_6_1_1_solid.otf.c;C:/Users/seski/source/repos/xemu-uwp/build/data/font_awesome_6_1_1_solid.otf.h</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_3a1d77979f0a84ac22385916e894c1950d3eb8c3.dat;C:/Users/seski/source/repos/xemu-uwp/build/../data/font_awesome_6_1_1_solid.otf;C:/Users/seski/source/repos/xemu-uwp/scripts/pack-file.py</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

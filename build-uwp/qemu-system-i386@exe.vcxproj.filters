@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="softmmu">
+			<UniqueIdentifier>{835591C6-6872-41B3-B526-A22EC78E8FEB}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../softmmu/main.c">
+			<Filter>softmmu</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

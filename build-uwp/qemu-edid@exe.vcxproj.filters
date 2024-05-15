@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="hw/display">
+			<UniqueIdentifier>{44A51DAF-191F-4688-9E79-D8ECC70C9E69}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../hw/display/edid-generate.c">
+			<Filter>hw/display</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

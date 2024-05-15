@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="chardev">
+			<UniqueIdentifier>{A49ED6D2-D0C7-49D6-A69E-915687A12372}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../chardev/char-fe.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-file.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-io.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-mux.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-null.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-pipe.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-ringbuf.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-serial.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-socket.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-stdio.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-udp.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-console.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-win-stdio.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+		<ClCompile Include="../chardev/char-win.c">
+			<Filter>chardev</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

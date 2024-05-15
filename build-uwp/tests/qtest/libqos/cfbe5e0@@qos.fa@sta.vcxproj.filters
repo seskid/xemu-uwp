@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="..">
+			<UniqueIdentifier>{098EC507-558D-45C6-B552-ADB68915C4D7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="..\../..">
+			<UniqueIdentifier>{F7449A60-BD46-447B-8136-2D31A4163718}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../../tests/qtest/libqos/../libqtest.c">
+			<Filter>..</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../../tests/qtest/libqos/../libqmp.c">
+			<Filter>..</Filter>
+		</ClCompile>
+		<ClInclude Include="../../../config-host.h">
+			<Filter>..\../..</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

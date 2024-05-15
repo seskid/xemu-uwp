@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="nbd">
+			<UniqueIdentifier>{1A6A3743-0E5D-4D55-8FF2-7E80B2835B54}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="block/export">
+			<UniqueIdentifier>{405C1FFE-B607-4942-86D5-A8C8D3188D51}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../nbd/server.c">
+			<Filter>nbd</Filter>
+		</ClCompile>
+		<ClCompile Include="../block/export/export.c">
+			<Filter>block/export</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

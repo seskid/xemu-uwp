@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{444AC96E-0BF2-4506-A525-C6F1026ABA87}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>QAPI test (include)</ProjectName>
+		<RootNamespace>QAPI test (include)</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>5ee39bc@@QAPI test (include)@cus\</IntDir>
+		<TargetName>QAPI test (include)</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_true.EXE_f46b886dd7f73abf9e71f6314675a33cea63f37f.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-commands-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-commands-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-events-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-events-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-types-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-types-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-visit-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/include/test-qapi-visit-sub-module.h</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_true.EXE_f46b886dd7f73abf9e71f6314675a33cea63f37f.dat;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-builtin-types.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-builtin-types.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-builtin-visit.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-builtin-visit.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-commands-sub-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-commands-sub-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-commands.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-commands.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-emit-events.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-emit-events.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-events-sub-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-events-sub-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-events.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-events.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-init-commands.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-init-commands.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-introspect.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-introspect.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-types-sub-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-types-sub-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-types.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-types.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-visit-sub-sub-module.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-visit-sub-sub-module.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-visit.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/test-qapi-visit.h;C:\msys64\usr\bin/true.EXE</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../59830eb@@Test QAPI files@cus.vcxproj">
+			<Project>{3E0844C8-74FA-4309-8A06-486532E83EB2}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

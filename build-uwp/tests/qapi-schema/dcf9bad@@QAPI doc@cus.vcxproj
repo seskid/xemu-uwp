@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{8438694C-DF4F-426F-A790-F6B37D92A2FA}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>QAPI doc</ProjectName>
+		<RootNamespace>QAPI doc</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>dcf9bad@@QAPI doc@cus\</IntDir>
+		<TargetName>QAPI doc</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_4b698aba20b863745bdd94792bf6ebfab62f6d3b.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-commands.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-commands.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-emit-events.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-emit-events.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-events.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-events.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-init-commands.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-init-commands.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-introspect.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-introspect.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-types.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-types.h;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-visit.c;C:/Users/seski/source/repos/xemu-uwp/build/tests/qapi-schema/doc-good-qapi-visit.h</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_4b698aba20b863745bdd94792bf6ebfab62f6d3b.dat;C:/Users/seski/source/repos/xemu-uwp/build/../tests/qapi-schema/doc-good.json;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/__init__.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/commands.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/common.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/error.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/events.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/expr.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/gen.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/introspect.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/parser.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/schema.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/source.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/types.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/visit.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi/common.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi-gen.py;C:/Users/seski/source/repos/xemu-uwp/scripts/qapi-gen.py</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

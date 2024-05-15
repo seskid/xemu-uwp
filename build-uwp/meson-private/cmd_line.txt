@@ -1,0 +1,14 @@
+[options]
+cpp_std = vc++17
+cpp_args = ['/D _XBOX_UWP']
+c_args = ['/D _XBOX_UWP']
+b_pch = false
+c_winlibs = []
+cpp_winlibs = []
+prefix = C:/msys64/qemu
+backend = vs
+buildtype = release
+uwp = True
+
+[properties]
+

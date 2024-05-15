@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{69AFB2E9-CD4B-4FEF-95DE-41416E4924DD}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>gen_semantics</ProjectName>
+		<RootNamespace>gen_semantics</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>0121e99@@gen_semantics@exe\</IntDir>
+		<TargetName>gen_semantics</TargetName>
+		<TargetExt>.exe</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>0121e99@@gen_semantics@exe;.;../../../target/hexagon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard_C>stdc11</LanguageStandard_C>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF %(AdditionalOptions)</AdditionalOptions>
+			<OutputFile>$(OutDir)gen_semantics.exe</OutputFile>
+			<SubSystem>console</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="../../../target/hexagon/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../target/hexagon/gen_semantics.c">
+			<AdditionalOptions>&quot;/std:c11&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions> _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>0121e99@@gen_semantics@exe;.;../../../target/hexagon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)gen_semantics.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

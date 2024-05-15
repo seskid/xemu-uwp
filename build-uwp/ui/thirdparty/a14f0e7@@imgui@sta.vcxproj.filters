@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="imgui">
+			<UniqueIdentifier>{4F171A38-C104-422C-8A9E-97EC19056140}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="imgui\backends">
+			<UniqueIdentifier>{11EE4796-003D-40DA-BD6D-0C0B4F625362}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="imgui\misc/cpp">
+			<UniqueIdentifier>{4DE756EB-D94A-44A0-8961-887A59E2C56F}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../ui/thirdparty/imgui/imgui.cpp">
+			<Filter>imgui</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/imgui_draw.cpp">
+			<Filter>imgui</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/imgui_tables.cpp">
+			<Filter>imgui</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/imgui_widgets.cpp">
+			<Filter>imgui</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/backends/imgui_impl_sdl2.cpp">
+			<Filter>imgui\backends</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/backends/imgui_impl_opengl3.cpp">
+			<Filter>imgui\backends</Filter>
+		</ClCompile>
+		<ClCompile Include="../../../ui/thirdparty/imgui/misc/cpp/imgui_stdlib.cpp">
+			<Filter>imgui\misc/cpp</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{A1645C43-FAB9-452D-B3FC-4A53CBD69D76}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>trace-events-all</ProjectName>
+		<RootNamespace>trace-events-all</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>eafe895@@trace-events-all@cus\</IntDir>
+		<TargetName>trace-events-all</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_cat.EXE_429531db704b08d2cbe2173803a17f5ed4cd7a07.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/trace/trace-events-all</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_cat.EXE_429531db704b08d2cbe2173803a17f5ed4cd7a07.dat;C:/Users/seski/source/repos/xemu-uwp/./trace-events;C:/Users/seski/source/repos/xemu-uwp/crypto/trace-events;C:/Users/seski/source/repos/xemu-uwp/qapi/trace-events;C:/Users/seski/source/repos/xemu-uwp/qom/trace-events;C:/Users/seski/source/repos/xemu-uwp/monitor/trace-events;C:/Users/seski/source/repos/xemu-uwp/util/trace-events;C:/Users/seski/source/repos/xemu-uwp/gdbstub/trace-events;C:/Users/seski/source/repos/xemu-uwp/authz/trace-events;C:/Users/seski/source/repos/xemu-uwp/block/trace-events;C:/Users/seski/source/repos/xemu-uwp/io/trace-events;C:/Users/seski/source/repos/xemu-uwp/nbd/trace-events;C:/Users/seski/source/repos/xemu-uwp/scsi/trace-events;C:/Users/seski/source/repos/xemu-uwp/accel/kvm/trace-events;C:/Users/seski/source/repos/xemu-uwp/audio/trace-events;C:/Users/seski/source/repos/xemu-uwp/backends/trace-events;C:/Users/seski/source/repos/xemu-uwp/backends/tpm/trace-events;C:/Users/seski/source/repos/xemu-uwp/chardev/trace-events;C:/Users/seski/source/repos/xemu-uwp/ebpf/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/9pfs/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/acpi/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/adc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/alpha/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/arm/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/audio/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/block/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/block/dataplane/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/char/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/display/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/dma/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/hyperv/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/i2c/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/i386/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/i386/xen/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/ide/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/input/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/intc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/isa/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/mem/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/mips/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/misc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/misc/macio/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/net/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/net/can/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/nubus/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/nvme/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/nvram/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/pci/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/pci-host/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/ppc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/rdma/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/rdma/vmw/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/rtc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/s390x/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/scsi/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/sd/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/sh4/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/sparc/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/sparc64/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/ssi/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/timer/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/tpm/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/usb/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/vfio/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/virtio/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/watchdog/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/xen/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/gpio/trace-events;C:/Users/seski/source/repos/xemu-uwp/migration/trace-events;C:/Users/seski/source/repos/xemu-uwp/net/trace-events;C:/Users/seski/source/repos/xemu-uwp/softmmu/trace-events;C:/Users/seski/source/repos/xemu-uwp/ui/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/remote/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/xbox/nv2a/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/xbox/mcpx/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/xbox/trace-events;C:/Users/seski/source/repos/xemu-uwp/accel/tcg/trace-events;C:/Users/seski/source/repos/xemu-uwp/hw/core/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/arm/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/arm/hvf/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/hppa/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/i386/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/i386/kvm/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/mips/tcg/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/nios2/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/ppc/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/riscv/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/s390x/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/s390x/kvm/trace-events;C:/Users/seski/source/repos/xemu-uwp/target/sparc/trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-authz.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-block.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-block-core.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-block-export.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-char.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-common.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-compat.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-control.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-crypto.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-dump.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-error.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-introspect.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-job.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-machine.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-migration.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-misc.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-net.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-pragma.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-qom.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-replay.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-run-state.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-sockets.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-stats.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-trace.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-transaction.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-virtio.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-yank.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-acpi.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-audio.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-qdev.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-pci.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-rdma.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-rocker.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-tpm.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-ui.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-machine-target.trace-events;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-misc-target.trace-events;C:\msys64\usr\bin/cat.EXE</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../qapi/5fa0379@@shared QAPI source files@cus.vcxproj">
+			<Project>{81219883-0E73-4C5D-87D4-12F4985DACC5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{3D3FA4D6-BC3B-401B-9A0E-EC277BAD05E6}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>libfpng</ProjectName>
+		<RootNamespace>libfpng</RootNamespace>
+		<Platform>x64</Platform>
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>a14f0e7@@fpng@sta\</IntDir>
+		<TargetName>libfpng</TargetName>
+		<TargetExt>.a</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<ExceptionHandling>Sync</ExceptionHandling>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>a14f0e7@@fpng@sta;.;../../../ui/thirdparty;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard>stdcpp17</LanguageStandard>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF /nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+			<OutputFile>$(OutDir)libfpng.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+			<GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="../../../ui/thirdparty/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../ui/thirdparty/fpng/fpng.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++17&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions) &quot;-msse4.1&quot; &quot;-mpclmul&quot;</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions);FPNG_NO_SSE=0</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>a14f0e7@@fpng@sta;.;../../../ui/thirdparty;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)fpng_fpng.cpp.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

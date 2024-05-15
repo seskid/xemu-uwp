@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="../qtest/libqos">
+			<UniqueIdentifier>{65042A5E-60FA-4196-ACBC-84D31356BEE7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="../..">
+			<UniqueIdentifier>{C42BBB62-447A-42EC-9AC0-9E2B91CA8569}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../tests/unit/../qtest/libqos/qgraph.c">
+			<Filter>../qtest/libqos</Filter>
+		</ClCompile>
+		<ClInclude Include="../../config-host.h">
+			<Filter>../..</Filter>
+		</ClInclude>
+		<ClInclude Include="../../config-host.h">
+			<Filter>../..</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

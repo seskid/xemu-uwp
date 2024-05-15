@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{81E9D908-2757-4024-8DD6-C42EF12E99BF}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>trace-qapi_commands_char_trace_events.c</ProjectName>
+		<RootNamespace>trace-qapi_commands_char_trace_events.c</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>eafe895@@trace-qapi_commands_char_trace_events.c@cus\</IntDir>
+		<TargetName>trace-qapi_commands_char_trace_events.c</TargetName>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_04e7a3e5edd7ea1e0563518b38a50ca849f48989.dat&quot;
+</Command>
+			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/trace/trace-qapi_commands_char_trace_events.c</Outputs>
+			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_python3.exe_04e7a3e5edd7ea1e0563518b38a50ca849f48989.dat;C:/Users/seski/source/repos/xemu-uwp/build/qapi/qapi-commands-char.trace-events;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/log.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/__init__.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/dtrace.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/ftrace.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/simple.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/syslog.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/backend/ust.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/ust_events_c.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/ust_events_h.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/__init__.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/d.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/simpletrace_stap.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/c.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/h.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/log_stap.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/format/stap.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/__init__.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/transform.py;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool/vcpu.py;C:/msys64/mingw64/bin/python3.exe;C:/Users/seski/source/repos/xemu-uwp/scripts/tracetool.py</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../qapi/5fa0379@@shared QAPI source files@cus.vcxproj">
+			<Project>{81219883-0E73-4C5D-87D4-12F4985DACC5}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

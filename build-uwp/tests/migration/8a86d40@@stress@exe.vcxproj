@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{85EE78D3-262D-4113-9DE0-7DC851F42036}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>stress</ProjectName>
+		<RootNamespace>stress</RootNamespace>
+		<Platform>x64</Platform>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>8a86d40@@stress@exe\</IntDir>
+		<TargetName>stress</TargetName>
+		<TargetExt>.exe</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>8a86d40@@stress@exe;.;../../../tests/migration;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard_C>stdc11</LanguageStandard_C>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF -fstack-protector-strong -static %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalDependencies>gthread-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)stress.exe</OutputFile>
+			<SubSystem>console</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="../../../tests/migration/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../tests/migration/stress.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>8a86d40@@stress@exe;.;../../../tests/migration;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)stress.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

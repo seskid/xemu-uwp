@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="noc_file_dialog">
+			<UniqueIdentifier>{99485380-359C-4448-968A-92A6DF0DA8D8}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../../../ui/thirdparty/noc_file_dialog/noc_file_dialog_win32.cc">
+			<Filter>noc_file_dialog</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

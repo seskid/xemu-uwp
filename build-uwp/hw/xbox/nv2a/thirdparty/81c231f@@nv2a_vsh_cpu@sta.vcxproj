@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="release|x64">
+			<Configuration>release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{AB934C17-48DB-418C-9E02-211BDF4A927B}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<ProjectName>libnv2a_vsh_cpu</ProjectName>
+		<RootNamespace>libnv2a_vsh_cpu</RootNamespace>
+		<Platform>x64</Platform>
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+		<WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v143</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>81c231f@@nv2a_vsh_cpu@sta\</IntDir>
+		<TargetName>libnv2a_vsh_cpu</TargetName>
+		<TargetExt>.a</TargetExt>
+		<EmbedManifest>false</EmbedManifest>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>None</DebugInformationFormat>
+			<AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>81c231f@@nv2a_vsh_cpu@sta;.;../../../../../hw/xbox/nv2a/thirdparty;../../../../../hw/xbox/nv2a/thirdparty/.;nv2a_vsh_cpu/src;../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard_C>stdc11</LanguageStandard_C>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalOptions>/OPT:REF /nodefaultlib:vccorlib /nodefaultlib:msvcrt vccorlib.lib msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+			<OutputFile>$(OutDir)libnv2a_vsh_cpu.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<SetChecksum>true</SetChecksum>
+			<GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="../../../../../hw/xbox/nv2a/thirdparty/meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_cpu.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>81c231f@@nv2a_vsh_cpu@sta;.;../../../../../hw/xbox/nv2a/thirdparty;../../../../../hw/xbox/nv2a/thirdparty/.;nv2a_vsh_cpu/src;../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)nv2a_vsh_cpu_src_nv2a_vsh_cpu.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_disassembler.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>81c231f@@nv2a_vsh_cpu@sta;.;../../../../../hw/xbox/nv2a/thirdparty;../../../../../hw/xbox/nv2a/thirdparty/.;nv2a_vsh_cpu/src;../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)nv2a_vsh_cpu_src_nv2a_vsh_disassembler.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_emulator.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>81c231f@@nv2a_vsh_cpu@sta;.;../../../../../hw/xbox/nv2a/thirdparty;../../../../../hw/xbox/nv2a/thirdparty/.;nv2a_vsh_cpu/src;../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)nv2a_vsh_cpu_src_nv2a_vsh_emulator.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src/nv2a_vsh_emulator_execution_state.c">
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>81c231f@@nv2a_vsh_cpu@sta;.;../../../../../hw/xbox/nv2a/thirdparty;../../../../../hw/xbox/nv2a/thirdparty/.;nv2a_vsh_cpu/src;../../../../../hw/xbox/nv2a/thirdparty/nv2a_vsh_cpu/src;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)nv2a_vsh_cpu_src_nv2a_vsh_emulator_execution_state.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<ItemGroup>
+		<Filter Include="crypto">
+			<UniqueIdentifier>{B34C215A-1773-42D7-AEEA-328CE8C77D6B}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="../crypto/afsplit.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/akcipher.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/block-luks.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/block-qcow.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/block.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/cipher.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/der.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/hash.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/hmac.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/ivgen-essiv.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/ivgen-plain.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/ivgen-plain64.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/ivgen.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/pbkdf.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/secret_common.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/secret.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/tlscreds.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/tlscredsanon.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/tlscredspsk.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/tlscredsx509.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/tlssession.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/rsakey.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/hash-glib.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/hmac-glib.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+		<ClCompile Include="../crypto/pbkdf-stub.c">
+			<Filter>crypto</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>
