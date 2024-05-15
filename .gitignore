@@ -28,3 +28,4 @@ build.log
 /macos-pkgs/
 /xemu.iconset/
 /ccache
+/XboxSX-xemu/x64/Release
