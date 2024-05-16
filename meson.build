@@ -489,8 +489,7 @@ if get_option('tcg').allowed()
   elif host_arch == 'ppc64'
     tcg_arch = 'ppc'
   endif
-  add_project_arguments('-iquote', meson.current_source_dir() / 'tcg' / tcg_arch,
-                        language: ['c', 'cpp', 'objc'])
+ 
 
   accelerators += 'CONFIG_TCG'
   config_host += { 'CONFIG_TCG': 'y' }
