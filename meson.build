@@ -291,11 +291,6 @@ if targetos == 'linux'
                         language: ['c', 'cpp'])
 endif
 
-add_project_arguments('-iquote', '.',
-                      '-iquote', meson.current_source_dir(),
-                      '-iquote', meson.current_source_dir() / 'include',
-                      language: ['c', 'cpp', 'objc'])
-
 if host_machine.system() == 'darwin'
   add_languages('objc', required: false, native: false)
 endif
