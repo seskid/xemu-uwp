@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{9D28A834-2F6F-455B-BA66-9AE89A969D71}</ProjectGuid>
+		<ProjectGuid>{D45C86CF-4159-4B52-8355-B42FF9F3A2F6}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>hmp-commands-info.h</ProjectName>
 		<RootNamespace>hmp-commands-info.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

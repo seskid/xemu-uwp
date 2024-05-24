@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{646DB8BA-CA93-4921-AB62-359653DAB513}</ProjectGuid>
+		<ProjectGuid>{8779B8E4-1B28-41E6-B5A1-B7407B84EF44}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-qom.h</ProjectName>
 		<RootNamespace>trace-qom.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

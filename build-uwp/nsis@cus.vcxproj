@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{566688DE-21B8-4902-BCE6-E80D3FD65B5F}</ProjectGuid>
+		<ProjectGuid>{040B9935-1A1B-48E2-AF7D-6D35E3B1F905}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>nsis</ProjectName>
 		<RootNamespace>nsis</RootNamespace>
@@ -42,7 +42,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

@@ -1,0 +1,795 @@
+﻿16:10:17.665     0>The "Platform" property is a global property, and cannot be modified.
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+                   Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\seski\source\repos\xemu-uwp\build\trace\obj\" (previous value: "obj\") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Microsoft.Common.props (60,5)
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+                   Property 'VisualStudioVersion' with value '17.0' expanded from the environment.
+                   The "Configuration" property is a global property, and cannot be modified.
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   The "Configuration" property is a global property, and cannot be modified.
+                   The "LangID" property is a global property, and cannot be modified.
+                   The "SolutionDir" property is a global property, and cannot be modified.
+                   Property 'LOCALAPPDATA' with value 'C:\Users\seski\AppData\Local' expanded from the environment.
+                   Property reassignment: $(ConfigurationType)="Utility" (previous value: "Application") at C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj (20,3)
+                   Property reassignment: $(CharacterSet)="MultiByte" (previous value: "NotSet") at C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj (22,3)
+                   Property 'PROCESSOR_ARCHITECTURE' with value 'AMD64' expanded from the environment.
+                   Property reassignment: $(WindowsSdkDir_10)="C:\Program Files (x86)\Windows Kits\10\" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (18,5)
+                   Property reassignment: $(NETFXSDK_Version)="4.8" (previous value: "4.8.1") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (46,5)
+                   Property reassignment: $(NETFXKitsDir)="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (51,5)
+                   Property reassignment: $(NETFXSDKDir)="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (54,5)
+                   Property reassignment: $(WindowsSDK_ExecutablePath_x86)="C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools" (previous value: "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (209,5)
+                   Property reassignment: $(WindowsSDK_ExecutablePath_x64)="C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64" (previous value: "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (210,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (88,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (89,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (90,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (91,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (92,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (93,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (94,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (95,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (96,5)
+                   Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;;;;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostArm64\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX86\x86\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\arm\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\1033;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x86\1033;;;;;;;;;;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (97,5)
+                   Property reassignment: $(MSBuild_ExecutablePath)="C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (124,5)
+                   Property 'COMPUTERNAME' with value 'SES-ROG' expanded from the environment.
+                   Property reassignment: $(RemoteDebuggerDeployCppRuntime)="true" (previous value: "false") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (154,5)
+                   Property reassignment: $(MultiProcMaxCount)="0" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (214,5)
+                   Property reassignment: $(VC_IncludePath)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\UnitTest\include" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.UnitTest.props (17,5)
+                   Property reassignment: $(VC_LibraryPath_x86)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x86;;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x86;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.UnitTest.props (19,5)
+                   Property reassignment: $(VC_LibraryPath_x64)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.UnitTest.props (20,5)
+                   Property reassignment: $(VC_LibraryPath_ARM)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\ARM;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\ARM;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\ARM;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\arm;;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\ARM;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\ARM;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\ARM;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\arm;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.UnitTest.props (21,5)
+                   Property reassignment: $(VC_LibraryPath_ARM64)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\ARM64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\ARM64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\arm64;;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\ARM64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\ARM64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\arm64;;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.UnitTest.props (22,5)
+                   Property reassignment: $(_PropertySheetDisplayName)="Multi-byte Character Support" (previous value: "Core Windows Libraries") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.MultiByteCharSupport.props (15,5)
+                   Property 'Path' with value 'C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\seski\AppData\Local\Microsoft\WindowsApps;C:\Users\seski\AppData\Roaming\npm;C:\Users\seski\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\seski\.dotnet\tools;C:\Program Files\CMake\bin;C:\Python311;C:\Users\seski\source;C:\MinGW\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\seski\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311;C:\Users\seski\AppData\Local\Programs\oh-my-posh\bin;C:\ProgramData\chocolatey\lib\winflexbison\tools;C:\msys64\mingw64\share\pkgconfig;C:\msys64\ucrt64\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\Llvm\x64\bin;' expanded from the environment.
+                   Property 'SystemRoot' with value 'C:\Windows' expanded from the environment.
+                   Property reassignment: $(OutDir)=".\" (previous value: "C:\Users\seski\source\repos\xemu-uwp\build\x64\release\") at C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj (28,3)
+                   Property reassignment: $(IntDir)="eafe895@@trace-target_ppc.h@cus\" (previous value: "x64\release\") at C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj (29,3)
+                   Property reassignment: $(EmbedManifest)="false" (previous value: "true") at C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj (31,3)
+                   The "SolutionExt" property is a global property, and cannot be modified.
+                   Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\Users\seski\source\repos\xemu-uwp\build\trace\trace-target_ppc.h.manifest;.\trace-target_ppc.h.tlb;.\trace-target_ppc.h.pdb;C:\Users\seski\source\repos\xemu-uwp\build\trace\trace-target_ppc.h;.\trace-target_ppc.h.bsc;.\trace-target_ppc.h.ilk;C:\Users\seski\source\repos\xemu-uwp\build\trace\trace-target_ppc.h.intermediate.manifest;eafe895@@trace-target_ppc.h@cus\eafe895@@trace-target_ppc.h@cus.vcxproj.FileListAbsolute.txt" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (40,5)
+                   Property reassignment: $(DebugType)="none" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (32,5)
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.targets\ImportBefore\* using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+                   The "Configuration" property is a global property, and cannot be modified.
+                   Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (185,5)
+                   Property reassignment: $(TargetExt)=".exe" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (215,5)
+                   The "DevEnvDir" property is a global property, and cannot be modified.
+                   The "SolutionName" property is a global property, and cannot be modified.
+                   The "SolutionFileName" property is a global property, and cannot be modified.
+                   The "SolutionPath" property is a global property, and cannot be modified.
+                   The "SolutionDir" property is a global property, and cannot be modified.
+                   The "SolutionExt" property is a global property, and cannot be modified.
+                   Property reassignment: $(AutoUnifyAssemblyReferences)="false" (previous value: "true") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (369,5)
+                   Property reassignment: $(ProcessorArchitecture)="amd64" (previous value: "x64") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (516,5)
+                   Property 'MSBuildExtensionsPath64' with value 'C:\Program Files\MSBuild' expanded from the environment.
+                   Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (568,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;" (previous value: "{CandidateAssemblyFiles}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (637,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (638,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (639,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (640,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (641,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (642,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (643,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (644,5)
+                   Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};.\" (previous value: "{CandidateAssemblyFiles};C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (645,5)
+                   Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (3806,5)
+                   Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+                         AssignProjectConfiguration;
+                         _SplitProjectReferencesByFileExistence
+                       " (previous value: "_SplitProjectReferencesByFileExistence") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (4944,5)
+                   Property reassignment: $(_CodeAnalysisTreatWarningsAsErrors)="false" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (125,5)
+                   Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (239,5)
+                   Property reassignment: $(CAExcludePath)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (240,5)
+                   Property reassignment: $(CAExcludePath)="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;" (previous value: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (241,5)
+                   Property reassignment: $(PrepareForBuildDependsOn)=";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (244,5)
+                   Property reassignment: $(PrepareResourcesDependsOn)="
+                         XamlMarkupCompilePass1;
+                         XamlMarkupCompilePass2;
+                         
+                         ;
+                         PrepareResourceNames;
+                         ResGen;
+                         CompileLicxFiles
+                        
+                       " (previous value: "
+                         ;
+                         PrepareResourceNames;
+                         ResGen;
+                         CompileLicxFiles
+                       ") at C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (35,5)
+                   Property reassignment: $(ResolveReferencesDependsOn)="
+                         
+                         BeforeResolveReferences;
+                         AssignProjectConfiguration;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         ResolveNativeReferences;
+                         ResolveAssemblyReferences;
+                         GenerateBindingRedirects;
+                         GenerateBindingRedirectsUpdateAppConfig;
+                         ResolveComReferences;
+                         AfterResolveReferences
+                       ;
+                         ResolveTestReferences
+                       " (previous value: "
+                         BeforeResolveReferences;
+                         AssignProjectConfiguration;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         ResolveNativeReferences;
+                         ResolveAssemblyReferences;
+                         GenerateBindingRedirects;
+                         GenerateBindingRedirectsUpdateAppConfig;
+                         ResolveComReferences;
+                         AfterResolveReferences
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\TeamTest\Microsoft.TeamTest.targets (4,5)
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.targets\ImportAfter\* using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\build\Microsoft.Docker.targets using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+                   Property reassignment: $(ProjectLockFile)="obj\project.assets.json" (previous value: "C:\Users\seski\source\repos\xemu-uwp\build\trace\obj\project.assets.json") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (74,5)
+                   Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         PrepareForBuild;
+                         ResolveSDKReferences;
+                         ExpandSDKReferences;
+                       ;ResolveNuGetPackageAssets" (previous value: "
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         PrepareForBuild;
+                         ResolveSDKReferences;
+                         ExpandSDKReferences;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (185,5)
+                   Property reassignment: $(PrepareResourcesDependsOn)="ResolveNuGetPackageAssets;
+                         XamlMarkupCompilePass1;
+                         XamlMarkupCompilePass2;
+                         
+                         ;
+                         PrepareResourceNames;
+                         ResGen;
+                         CompileLicxFiles
+                        
+                       " (previous value: "
+                         XamlMarkupCompilePass1;
+                         XamlMarkupCompilePass2;
+                         
+                         ;
+                         PrepareResourceNames;
+                         ResGen;
+                         CompileLicxFiles
+                        
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (186,5)
+                   Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+                   Property reassignment: $(DebugType)="" (previous value: "none") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (39,5)
+                   Property reassignment: $(BuildDependsOn)="
+                         _PrepareForBuild;
+                         
+                         ResolveReferences;
+                         PrepareForBuild;
+                         InitializeBuildStatus;
+                         BuildGenerateSources;
+                         BuildCompile;
+                         BuildLink;
+                       ;
+                         AfterBuild;
+                         IncrementalClean;
+                         TlogCleanup;
+                         FinalizeBuildStatus;
+                       " (previous value: "
+                         BeforeBuild;
+                         CoreBuild;
+                         AfterBuild
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (122,5)
+                   Property reassignment: $(RebuildDependsOn)="
+                         _PrepareForRebuild;
+                         
+                         BeforeRebuild;
+                         Clean;
+                         Build;
+                         AfterRebuild;
+                       ;
+                       " (previous value: "
+                         BeforeRebuild;
+                         Clean;
+                         Build;
+                         AfterRebuild;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (131,5)
+                   Property reassignment: $(CleanDependsOn)="
+                         _PrepareForClean;
+                         
+                         BeforeClean;
+                         UnmanagedUnregistration;
+                         CoreClean;
+                         CleanReferencedProjects;
+                         CleanPublishFolder;
+                         AfterClean
+                       ;
+                       " (previous value: "
+                         BeforeClean;
+                         UnmanagedUnregistration;
+                         CoreClean;
+                         CleanReferencedProjects;
+                         CleanPublishFolder;
+                         AfterClean
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (136,5)
+                   Property reassignment: $(_TLogProjectName)="trace-ta.48EC1428" (previous value: "trace-target_ppc.h") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (218,5)
+                   Property reassignment: $(BeforeBuildGenerateSourcesTargets)="
+                         
+                         ;
+                         BeforeBuildGenerateSources;
+                       ;
+                       " (previous value: "
+                         ;
+                         BeforeBuildGenerateSources;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (60,5)
+                   Property reassignment: $(AfterBuildGenerateSourcesTargets)="
+                         
+                         ;
+                         AfterBuildGenerateSources;
+                       ;
+                         AfterBuildGenerateSourcesEvent;
+                       " (previous value: "
+                         ;
+                         AfterBuildGenerateSources;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (71,5)
+                   Property reassignment: $(BuildGenerateSourcesAction)="_BuildGenerateSourcesAction" (previous value: "Build") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (140,5)
+                   Property reassignment: $(BuildCompileAction)="_BuildCompileAction" (previous value: "Build") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (141,5)
+                   Property reassignment: $(BuildLinkAction)="_BuildLinkAction" (previous value: "Build") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (142,5)
+                   Property reassignment: $(DetermineProjectTypeTargets)="_PrepareForReferenceResolution;
+                         ;
+                         AddExternalIncludDirectoriesToPaths
+                       " (previous value: "
+                         ;
+                         AddExternalIncludDirectoriesToPaths
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (249,5)
+                   Property reassignment: $(ResolveReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+                         
+                         BeforeResolveReferences;
+                         AssignProjectConfiguration;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         ResolveNativeReferences;
+                         ResolveAssemblyReferences;
+                         GenerateBindingRedirects;
+                         GenerateBindingRedirectsUpdateAppConfig;
+                         ResolveComReferences;
+                         AfterResolveReferences
+                       ;
+                         ResolveTestReferences
+                       " (previous value: "
+                         
+                         BeforeResolveReferences;
+                         AssignProjectConfiguration;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         ResolveNativeReferences;
+                         ResolveAssemblyReferences;
+                         GenerateBindingRedirects;
+                         GenerateBindingRedirectsUpdateAppConfig;
+                         ResolveComReferences;
+                         AfterResolveReferences
+                       ;
+                         ResolveTestReferences
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (311,5)
+                   Property reassignment: $(ResolveAssemblyReferencesDependsOn)="_PrepareForReferenceResolution;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         PrepareForBuild;
+                         ResolveSDKReferences;
+                         ExpandSDKReferences;
+                       ;ResolveNuGetPackageAssets" (previous value: "
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         PrepareForBuild;
+                         ResolveSDKReferences;
+                         ExpandSDKReferences;
+                       ;ResolveNuGetPackageAssets") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (312,5)
+                   Property reassignment: $(ResolveSDKReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+                         GetInstalledSDKLocations
+                       " (previous value: "
+                         GetInstalledSDKLocations
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (313,5)
+                   Property reassignment: $(ComputeCompileInputsTargets)="
+                         
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ;
+                         ComputeMIDLGeneratedCompileInputs;
+                       " (previous value: "
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (636,5)
+                   Property reassignment: $(ComputeLinkInputsTargets)="
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       " (previous value: "
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (949,5)
+                   Property reassignment: $(GetTargetPathDependsOn)="_PrepareForReferenceResolution;GetResolvedWinMD;" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1120,5)
+                   Property reassignment: $(ComputeCompileInputsTargets)="
+                         
+                         
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ;
+                         ComputeMIDLGeneratedCompileInputs;
+                       ;
+                         ComputeCLInputPDBName;
+                         ComputeReferenceCLInput;
+                         WarnCompileDuplicatedFilename
+                       " (previous value: "
+                         
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ;
+                         ComputeMIDLGeneratedCompileInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1146,5)
+                   Property reassignment: $(ComputeLinkInputsTargets)="
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       " (previous value: "
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1198,5)
+                   Property reassignment: $(ComputeLibInputsTargets)="
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       " (previous value: "
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1205,5)
+                   Property reassignment: $(ComputeImpLibInputsTargets)="
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       " (previous value: "
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1212,5)
+                   Property reassignment: $(ComputeLinkInputsTargets)="
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLinkInputs;
+                       " (previous value: "
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1273,5)
+                   Property reassignment: $(ComputeLibInputsTargets)="
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       " (previous value: "
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1288,5)
+                   Property reassignment: $(ComputeImpLibInputsTargets)="
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedImpLibInputs;
+                       " (previous value: "
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1303,5)
+                   Property reassignment: $(ComputeLinkInputsTargets)="
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLinkInputs;
+                       ;
+                         ComputeLinkInputsFromProject;
+                       " (previous value: "
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLinkInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1334,5)
+                   Property reassignment: $(ComputeLibInputsTargets)="
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ;
+                         ComputeLibInputsFromProject;
+                       " (previous value: "
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1352,5)
+                   Property reassignment: $(ComputeImpLibInputsTargets)="
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedImpLibInputs;
+                       ;
+                         ComputeImpLibInputsFromProject;
+                       " (previous value: "
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeRCGeneratedImpLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedImpLibInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1370,5)
+                   Property reassignment: $(ComputeLinkInputsTargets)="
+                         
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLinkInputs;
+                       ;
+                         ComputeLinkInputsFromProject;
+                       ;
+                         ComputeReferenceLinkInputs;
+                       " (previous value: "
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLinkInputs;
+                       ;
+                         ComputeManifestGeneratedLinkerInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLinkInputs;
+                       ;
+                         ComputeLinkInputsFromProject;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1514,5)
+                   Property reassignment: $(ComputeLibInputsTargets)="
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ;
+                         ComputeLibInputsFromProject;
+                       ;
+                         ComputeReferenceLibInputs;
+                       " (previous value: "
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ;
+                         ComputeLibInputsFromProject;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1552,5)
+                   Property reassignment: $(ComputeLibInputsTargets)="
+                         ComputeLibAdditionalOptions;
+                         
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ;
+                         ComputeLibInputsFromProject;
+                       ;
+                         ComputeReferenceLibInputs;
+                       
+                       " (previous value: "
+                         
+                         
+                         
+                         
+                         ;
+                         ComputeRCGeneratedLibInputs;
+                       ;
+                         ComputeCustomBuildOutput;
+                       ;
+                         ComputeCLGeneratedLibInputs;
+                       ;
+                         ComputeLibInputsFromProject;
+                       ;
+                         ComputeReferenceLibInputs;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1609,5)
+                   Property reassignment: $(GetProjectInfoForReferenceDependsOn)="
+                         
+                         ;
+                         AddPublicIncludeDirectoriesToProjectsInfoForReference;
+                       ;
+                         AddPublicBMIsToProjectsInfoForReference;
+                         AddDeployRecipeFileToProjectsInfoForReference;
+                         AddLibrariesToProjectsInfoForReference;
+                       " (previous value: "
+                         ;
+                         AddPublicIncludeDirectoriesToProjectsInfoForReference;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1797,5)
+                   Property reassignment: $(DocumentationProjectOutputGroupDependsOn)="ResolvedXDCMake;ComputeCLCompileGeneratedXDCFiles" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (2197,5)
+                   Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc" (previous value: "PrepareForBuild;AssignTargetPaths") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (2263,5)
+                   Property reassignment: $(ComputeCompileInputsTargets)="
+                         
+                         
+                         
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ;
+                         ComputeMIDLGeneratedCompileInputs;
+                       ;
+                         ComputeCLInputPDBName;
+                         ComputeReferenceCLInput;
+                         WarnCompileDuplicatedFilename
+                       ;
+                         ComputeStdModulesCompileInputs;
+                         ;
+                         FixupCLCompileOptions;
+                       " (previous value: "
+                         
+                         
+                         ;
+                         GenerateTargetFrameworkMonikerAttribute;
+                       ;
+                         ComputeMIDLGeneratedCompileInputs;
+                       ;
+                         ComputeCLInputPDBName;
+                         ComputeReferenceCLInput;
+                         WarnCompileDuplicatedFilename
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (310,5)
+                   Property reassignment: $(BuildingProject)="true" (previous value: "false") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (2058,5)
+                   Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc;_CreateCopyFileItems;" (previous value: "PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (2610,5)
+                   Property reassignment: $(PrepareForBuildDependsOn)="_CheckWindowsSDKInstalled;;GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets (16,5)
+                   Property reassignment: $(CleanDependsOn)="
+                         
+                         _PrepareForClean;
+                         
+                         BeforeClean;
+                         UnmanagedUnregistration;
+                         CoreClean;
+                         CleanReferencedProjects;
+                         CleanPublishFolder;
+                         AfterClean
+                       ;
+                       ;
+                         CppClean
+                       " (previous value: "
+                         _PrepareForClean;
+                         
+                         BeforeClean;
+                         UnmanagedUnregistration;
+                         CoreClean;
+                         CleanReferencedProjects;
+                         CleanPublishFolder;
+                         AfterClean
+                       ;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets (22,5)
+                   Property reassignment: $(CppCleanDependsOn)="
+                         BeforeCppClean;
+                         ;
+                         CoreCppClean;
+                         AfterCppClean;
+                       ;PGInstrumentedClean" (previous value: "
+                         BeforeCppClean;
+                         ;
+                         CoreCppClean;
+                         AfterCppClean;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets (92,5)
+                   Property reassignment: $(BuildDependsOn)="SetTelemetryEnvironmentVariables;
+                         _PrepareForBuild;
+                         
+                         ResolveReferences;
+                         PrepareForBuild;
+                         InitializeBuildStatus;
+                         BuildGenerateSources;
+                         BuildCompile;
+                         BuildLink;
+                       ;
+                         AfterBuild;
+                         IncrementalClean;
+                         TlogCleanup;
+                         FinalizeBuildStatus;
+                       " (previous value: "
+                         _PrepareForBuild;
+                         
+                         ResolveReferences;
+                         PrepareForBuild;
+                         InitializeBuildStatus;
+                         BuildGenerateSources;
+                         BuildCompile;
+                         BuildLink;
+                       ;
+                         AfterBuild;
+                         IncrementalClean;
+                         TlogCleanup;
+                         FinalizeBuildStatus;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets (538,5)
+                   Property reassignment: $(RebuildDependsOn)="SetTelemetryEnvironmentVariables;
+                         _PrepareForRebuild;
+                         
+                         BeforeRebuild;
+                         Clean;
+                         Build;
+                         AfterRebuild;
+                       ;
+                       " (previous value: "
+                         _PrepareForRebuild;
+                         
+                         BeforeRebuild;
+                         Clean;
+                         Build;
+                         AfterRebuild;
+                       ;
+                       ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets (539,5)
+                   Overriding target "GenerateTargetFrameworkMonikerAttribute" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GenerateTargetFrameworkMonikerAttribute" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+                   Overriding target "Build" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "Build" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+                   Overriding target "Rebuild" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "Rebuild" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+                   Overriding target "AfterBuild" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "AfterBuild" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+                   Overriding target "PrepareForBuild" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "PrepareForBuild" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "GetTargetPath" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPath" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "ComputeIntermediateSatelliteAssemblies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "ComputeIntermediateSatelliteAssemblies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "ClCompile" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "ResourceCompile" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "Lib" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "Link" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "AllProjectOutputGroups" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroups" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "BuiltProjectOutputGroup" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroup" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "DebugSymbolsProjectOutputGroup" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroup" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "DocumentationProjectOutputGroup" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroup" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "SourceFilesProjectOutputGroup" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "SourceFilesProjectOutputGroup" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "ContentFilesProjectOutputGroup" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "ContentFilesProjectOutputGroup" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "AllProjectOutputGroupsDependencies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroupsDependencies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "BuiltProjectOutputGroupDependencies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroupDependencies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "DebugSymbolsProjectOutputGroupDependencies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroupDependencies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "DocumentationProjectOutputGroupDependencies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroupDependencies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+                   Overriding target "PreBuildEvent" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "PreBuildEvent" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "PostBuildEvent" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "PostBuildEvent" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "ClCompile" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "Link" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "Lib" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "ImpLib" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ImpLib" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "Midl" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Midl" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "ResourceCompile" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "BeforeResGen" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "BeforeResGen" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "ResGen" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "ResGen" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "GenerateSatelliteAssemblies" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GenerateSatelliteAssemblies" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "Manifest" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Manifest" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "XdcMake" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "XdcMake" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+                   Overriding target "BscMake" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "BscMake" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Build started 5/16/2024 4:10:17 PM.
+Logging verbosity is set to: Diagnostic.16:10:17.835     1>Project "C:\Users\seski\source\repos\xemu-uwp\build\REGEN.vcxproj" on node 2 (GetTargetPath target(s)).
+16:10:17.835     1>Target "GetTargetPath" skipped. Previously built successfully.
+16:10:17.835     1>Done Building Project "C:\Users\seski\source\repos\xemu-uwp\build\REGEN.vcxproj" (GetTargetPath target(s)).
+
+Project Evaluation Performance Summary:
+        0 ms  C:\Users\seski\source\repos\xemu-uwp\build\trace\eafe895@@trace-target_ppc.h@cus.vcxproj   1 calls
+
+Project Performance Summary:
+        0 ms  C:\Users\seski\source\repos\xemu-uwp\build\REGEN.vcxproj   1 calls
+                  0 ms  GetTargetPath                              1 calls
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.00

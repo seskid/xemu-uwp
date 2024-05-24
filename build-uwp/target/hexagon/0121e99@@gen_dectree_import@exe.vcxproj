@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{EA656EBF-749A-441B-8231-7E087EEA3D4D}</ProjectGuid>
+		<ProjectGuid>{4F7EF8AB-19DD-4936-9D8D-48025708374B}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>gen_dectree_import</ProjectName>
 		<RootNamespace>gen_dectree_import</RootNamespace>
@@ -80,19 +80,19 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./0121e99@@opcodes_def_generated.h.inc@cus.vcxproj">
-			<Project>{AEB8CE3D-A2CF-4315-AC99-DE90E004E231}</Project>
+			<Project>{DB3F0B72-5535-415B-BD20-4553F5A0D1E1}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./0121e99@@op_regs_generated.h.inc@cus.vcxproj">
-			<Project>{47F89302-7B1B-4E2A-89DF-6B1BFC4C1DE6}</Project>
+			<Project>{E88E407B-DEA7-4984-A206-097B9726973B}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

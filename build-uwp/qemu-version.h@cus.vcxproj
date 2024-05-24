@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{73A6628B-A0A2-49C7-B219-F44CD822983D}</ProjectGuid>
+		<ProjectGuid>{19D942BA-B317-4852-ACEA-94A3E079F163}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>qemu-version.h</ProjectName>
 		<RootNamespace>qemu-version.h</RootNamespace>
@@ -42,7 +42,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

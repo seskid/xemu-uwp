@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{444AC96E-0BF2-4506-A525-C6F1026ABA87}</ProjectGuid>
+		<ProjectGuid>{4EC2DF68-14E8-4294-B2A0-17C49E79BCCF}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>QAPI test (include)</ProjectName>
 		<RootNamespace>QAPI test (include)</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="../59830eb@@Test QAPI files@cus.vcxproj">
-			<Project>{3E0844C8-74FA-4309-8A06-486532E83EB2}</Project>
+			<Project>{CAD1739F-39D3-4CD0-908C-D86627A0CBEE}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

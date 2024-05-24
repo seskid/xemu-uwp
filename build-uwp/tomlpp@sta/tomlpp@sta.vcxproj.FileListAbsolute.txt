@@ -1,0 +1,16 @@
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\priconfig.xml
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\priconfig.xml.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\unfiltered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\unfiltered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\filtered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\filtered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\excluded.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\excluded.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\resources.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\resources.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\pri.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\pri.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\libtomlpp.pri
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\qualifiers.txt
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\qualifiers.txt.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\tomlpp@sta\MultipleQualifiersPerDimensionFound.txt

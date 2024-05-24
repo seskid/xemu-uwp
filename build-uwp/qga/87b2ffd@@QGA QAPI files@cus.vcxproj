@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{7585CD97-C983-4BEE-8423-0EBEA4E4FEDC}</ProjectGuid>
+		<ProjectGuid>{7D387CC4-B6C5-4556-A55B-4A538EC20FDD}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>QGA QAPI files</ProjectName>
 		<RootNamespace>QGA QAPI files</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

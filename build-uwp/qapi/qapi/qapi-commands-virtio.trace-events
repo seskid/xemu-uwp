@@ -1,0 +1,12 @@
+# AUTOMATICALLY GENERATED, DO NOT MODIFY
+
+qmp_enter_x_query_virtio(const char *json) "%s"
+qmp_exit_x_query_virtio(const char *result, bool succeeded) "%s %d"
+qmp_enter_x_query_virtio_status(const char *json) "%s"
+qmp_exit_x_query_virtio_status(const char *result, bool succeeded) "%s %d"
+qmp_enter_x_query_virtio_queue_status(const char *json) "%s"
+qmp_exit_x_query_virtio_queue_status(const char *result, bool succeeded) "%s %d"
+qmp_enter_x_query_virtio_vhost_queue_status(const char *json) "%s"
+qmp_exit_x_query_virtio_vhost_queue_status(const char *result, bool succeeded) "%s %d"
+qmp_enter_x_query_virtio_queue_element(const char *json) "%s"
+qmp_exit_x_query_virtio_queue_element(const char *result, bool succeeded) "%s %d"

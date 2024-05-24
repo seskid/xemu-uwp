@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{14708A98-CA10-457C-A101-6E27F300C8EA}</ProjectGuid>
+		<ProjectGuid>{58D35339-7FF0-4FCF-B32A-7C4325B0D6FD}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>input-keymap-win32-to-qcode.c.inc</ProjectName>
 		<RootNamespace>input-keymap-win32-to-qcode.c.inc</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

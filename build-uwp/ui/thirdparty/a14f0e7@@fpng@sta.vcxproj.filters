@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="fpng">
-			<UniqueIdentifier>{008CB0BF-91F1-4670-9A0D-D68220DB9BDA}</UniqueIdentifier>
+			<UniqueIdentifier>{997FB867-8C65-4AC2-97E9-FA845213D009}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

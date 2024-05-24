@@ -1,0 +1,6 @@
+# AUTOMATICALLY GENERATED, DO NOT MODIFY
+
+qmp_enter_query_stats(const char *json) "%s"
+qmp_exit_query_stats(const char *result, bool succeeded) "%s %d"
+qmp_enter_query_stats_schemas(const char *json) "%s"
+qmp_exit_query_stats_schemas(const char *result, bool succeeded) "%s %d"

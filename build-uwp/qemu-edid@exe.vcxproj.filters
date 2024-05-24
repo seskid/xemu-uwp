@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="hw/display">
-			<UniqueIdentifier>{44A51DAF-191F-4688-9E79-D8ECC70C9E69}</UniqueIdentifier>
+			<UniqueIdentifier>{ADA97403-4B4C-4813-9D98-24BC5462BC4F}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

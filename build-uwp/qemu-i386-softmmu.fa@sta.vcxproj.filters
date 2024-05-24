@@ -1,598 +1,1350 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-	<ItemGroup>
-		<Filter Include="target/i386">
-			<UniqueIdentifier>{281F54BB-87AE-4F4F-B57F-F62A2A05A804}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="target/i386\kvm">
-			<UniqueIdentifier>{D52BDAF1-542C-4028-9058-B87B4A9CFAC1}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="target/i386\hax">
-			<UniqueIdentifier>{0402C353-4B70-4DB5-97FA-9639962E4E00}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="target/i386\whpx">
-			<UniqueIdentifier>{F78F620F-C0E4-44C1-B0DF-FE0D15122BE9}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="target/i386\tcg\sysemu">
-			<UniqueIdentifier>{34C301F4-80FA-4A0E-863B-8B38F87A22DF}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/i386">
-			<UniqueIdentifier>{B1443ABA-08CE-4C5B-9937-859AA4903B7E}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="target/i386\tcg">
-			<UniqueIdentifier>{B0663290-FC09-4D58-A2E6-D9E4D268142F}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="trace">
-			<UniqueIdentifier>{FE9635E4-A720-40CC-81A5-1253DEE4B81C}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/block">
-			<UniqueIdentifier>{0C2903EC-14FD-45FB-A298-7FAFDC5158C6}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/block\dataplane">
-			<UniqueIdentifier>{7DFC255D-D5F9-4708-B83C-F03A1470E613}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/char">
-			<UniqueIdentifier>{22EF1571-4F0C-4A72-916E-9CB8299D3759}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/core">
-			<UniqueIdentifier>{2D694EA1-DB29-429D-95BF-82E5196B63CA}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/display">
-			<UniqueIdentifier>{C65A0084-274E-488A-BB15-647A17B01FD4}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/intc">
-			<UniqueIdentifier>{A0F24423-DF83-47DE-A4AE-4BC922E21643}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/net">
-			<UniqueIdentifier>{D607AEE7-E288-4B91-B068-4F619FB74816}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/rtc">
-			<UniqueIdentifier>{658369EB-E10B-40DC-B9FE-A2DEDFAA3C1C}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/scsi">
-			<UniqueIdentifier>{171830AB-4FE8-4707-8FEF-BB3B9D0096B1}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/virtio">
-			<UniqueIdentifier>{DF674431-E6C2-42B5-9D1E-183D92640576}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/xbox">
-			<UniqueIdentifier>{FD4DABB7-95E9-4CDD-A475-3436758AEFD4}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/xbox\nv2a">
-			<UniqueIdentifier>{17D8966D-A95B-472B-84FD-91888705705C}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/xbox\mcpx">
-			<UniqueIdentifier>{1FB452C2-A819-4E54-88BC-821CC9535F94}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="hw/xbox\mcpx\dsp">
-			<UniqueIdentifier>{25510F0A-5E6F-4C33-A57B-33144FD4D2E5}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="gdbstub">
-			<UniqueIdentifier>{971788E7-2341-4EAC-9637-A433B1402E8E}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="dump">
-			<UniqueIdentifier>{0CAC2D75-1912-42B0-BC91-0B89426BE86F}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="softmmu">
-			<UniqueIdentifier>{E2FE169D-EE4A-45CC-9582-49451C30E8DB}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="migration">
-			<UniqueIdentifier>{5DAA4D02-B46E-42EF-A8C2-D552D5137F03}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="monitor">
-			<UniqueIdentifier>{9236D365-44C4-44CF-B5D4-68800A6F38C3}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="tcg">
-			<UniqueIdentifier>{2F3A8D84-E108-4BE7-ACBA-EAA3D3A2B279}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="fpu">
-			<UniqueIdentifier>{23422A01-7CFD-4630-9D52-2FB834C7E62A}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="accel">
-			<UniqueIdentifier>{67919AF6-626A-4D9B-BCC8-F4FF9CA0EAE8}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="accel\tcg">
-			<UniqueIdentifier>{5287D280-B450-4D2C-BF39-568BCD82CB38}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="accel\stubs">
-			<UniqueIdentifier>{CD707E77-9B14-4EBF-92E5-DBAE73BF9916}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="accel\qtest">
-			<UniqueIdentifier>{2E77B1D3-4D6A-47EA-A0B3-BF563A36BE01}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClCompile Include="../target/i386/arch_dump.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/arch_memory_mapping.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/machine.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/monitor.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/cpu-sysemu.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/sev-sysemu-stub.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/kvm/hyperv-stub.c">
-			<Filter>target/i386\kvm</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/hax/hax-all.c">
-			<Filter>target/i386\hax</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/hax/hax-mem.c">
-			<Filter>target/i386\hax</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/hax/hax-accel-ops.c">
-			<Filter>target/i386\hax</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/hax/hax-windows.c">
-			<Filter>target/i386\hax</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/whpx/whpx-all.c">
-			<Filter>target/i386\whpx</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/whpx/whpx-apic.c">
-			<Filter>target/i386\whpx</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/whpx/whpx-accel-ops.c">
-			<Filter>target/i386\whpx</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/tcg-cpu.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/smm_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/excp_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/bpt_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/misc_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/fpu_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/svm_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/sysemu/seg_helper.c">
-			<Filter>target/i386\tcg\sysemu</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/fw_cfg.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/kvmvapic.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/e820_memory_layout.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/multiboot.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/x86.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/x86-iommu-stub.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/sgx-stub.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/acpi-common.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/pc.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/pc_sysfw.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/acpi-build.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/port92.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/i386/pc_sysfw_ovmf-stubs.c">
-			<Filter>hw/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/cpu.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/gdbstub.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/helper.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/xsave_helper.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/cpu-dump.c">
-			<Filter>target/i386</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/kvm/kvm-stub.c">
-			<Filter>target/i386\kvm</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/bpt_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/cc_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/excp_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/fpu_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/fpu_helper_hard.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/int_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/mem_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/misc_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/mpx_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/seg_helper.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/tcg-cpu.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../target/i386/tcg/translate.c">
-			<Filter>target/i386\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../trace/control-target.c">
-			<Filter>trace</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/block/virtio-blk.c">
-			<Filter>hw/block</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/block/virtio-blk-common.c">
-			<Filter>hw/block</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/block/dataplane/virtio-blk.c">
-			<Filter>hw/block\dataplane</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/char/virtio-serial-bus.c">
-			<Filter>hw/char</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/core/machine-qmp-cmds.c">
-			<Filter>hw/core</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/core/numa.c">
-			<Filter>hw/core</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/display/vga.c">
-			<Filter>hw/display</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/intc/apic.c">
-			<Filter>hw/intc</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/intc/apic_common.c">
-			<Filter>hw/intc</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/intc/ioapic.c">
-			<Filter>hw/intc</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/net/virtio-net.c">
-			<Filter>hw/net</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/rtc/mc146818rtc.c">
-			<Filter>hw/rtc</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/scsi/virtio-scsi.c">
-			<Filter>hw/scsi</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/scsi/virtio-scsi-dataplane.c">
-			<Filter>hw/scsi</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-balloon.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-crypto.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-pmem.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-rng.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-iommu.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-crypto-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-input-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-rng-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-balloon-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-scsi-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-blk-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-net-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-serial-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-pmem-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/virtio/virtio-iommu-pci.c">
-			<Filter>hw/virtio</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/acpi_xbox.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/amd_smbus.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/eeprom_generation.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/lpc47m157.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nvnet.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_adm1032.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_cx25871.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_fs454.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_xcalibur.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_storage.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/smbus_xbox_smc.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/xbox.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/xbox_pci.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/xid.c">
-			<Filter>hw/xbox</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/nv2a.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/debug.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pbus.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pcrtc.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pfb.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pfifo.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pgraph.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pmc.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pramdac.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/prmcio.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/prmdio.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/prmvio.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/psh.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/ptimer.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/pvideo.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/shaders.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/stubs.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/user.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/vsh.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/swizzle.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/nv2a/s3tc.c">
-			<Filter>hw/xbox\nv2a</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/mcpx/apu.c">
-			<Filter>hw/xbox\mcpx</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/mcpx/aci.c">
-			<Filter>hw/xbox\mcpx</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/mcpx/dsp/dsp.c">
-			<Filter>hw/xbox\mcpx\dsp</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/mcpx/dsp/dsp_cpu.c">
-			<Filter>hw/xbox\mcpx\dsp</Filter>
-		</ClCompile>
-		<ClCompile Include="../hw/xbox/mcpx/dsp/dsp_dma.c">
-			<Filter>hw/xbox\mcpx\dsp</Filter>
-		</ClCompile>
-		<ClCompile Include="../gdbstub/gdbstub.c">
-			<Filter>gdbstub</Filter>
-		</ClCompile>
-		<ClCompile Include="../dump/dump.c">
-			<Filter>dump</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/arch_init.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/ioport.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/memory.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/physmem.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/qtest.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/dirtylimit.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../softmmu/icount.c">
-			<Filter>softmmu</Filter>
-		</ClCompile>
-		<ClCompile Include="../migration/dirtyrate.c">
-			<Filter>migration</Filter>
-		</ClCompile>
-		<ClCompile Include="../migration/ram.c">
-			<Filter>migration</Filter>
-		</ClCompile>
-		<ClCompile Include="../migration/target.c">
-			<Filter>migration</Filter>
-		</ClCompile>
-		<ClCompile Include="../monitor/misc.c">
-			<Filter>monitor</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/optimize.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/region.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/tcg.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/tcg-common.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/tcg-op.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/tcg-op-gvec.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../tcg/tcg-op-vec.c">
-			<Filter>tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../fpu/softfloat.c">
-			<Filter>fpu</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/accel-common.c">
-			<Filter>accel</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-all.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/cpu-exec-common.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/cpu-exec.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tb-maint.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-runtime-gvec.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-runtime.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/translate-all.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/translator.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/cputlb.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/hmp.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/stubs/xen-stub.c">
-			<Filter>accel\stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/stubs/kvm-stub.c">
-			<Filter>accel\stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/dummy-cpus.c">
-			<Filter>accel</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/qtest/qtest.c">
-			<Filter>accel\qtest</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-accel-ops.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-accel-ops-mttcg.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-accel-ops-icount.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-		<ClCompile Include="../accel/tcg/tcg-accel-ops-rr.c">
-			<Filter>accel\tcg</Filter>
-		</ClCompile>
-	</ItemGroup>
+  <ItemGroup>
+    <Filter Include="target/i386">
+      <UniqueIdentifier>{613C4B8A-2D4C-405C-8F2B-B06D14200B54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target/i386\kvm">
+      <UniqueIdentifier>{B09F47D9-3C4D-4305-9CDC-029B85CA0702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target/i386\hax">
+      <UniqueIdentifier>{574B77C3-CEDF-48EE-A167-9C01BE28B1E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target/i386\whpx">
+      <UniqueIdentifier>{B07586D1-2AFB-48FF-889C-DBA4B38CB9F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target/i386\tcg\sysemu">
+      <UniqueIdentifier>{7C0BD30B-76E7-4200-8772-79F993863B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/i386">
+      <UniqueIdentifier>{D9867ED8-732D-406A-AE7D-941A4E4D0ACF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target/i386\tcg">
+      <UniqueIdentifier>{879B2561-6FB1-4354-BB47-260D0F89E2CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace">
+      <UniqueIdentifier>{749A52D7-BF42-46BA-AF36-71F09469609E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/block">
+      <UniqueIdentifier>{9C08110F-3ABC-4707-BA71-6F4708C74286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/block\dataplane">
+      <UniqueIdentifier>{5D1AE023-5B27-452A-8B90-4EA7BA5994AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/char">
+      <UniqueIdentifier>{BDCAF146-04EC-4168-BCC2-3EBF84B7F1E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/core">
+      <UniqueIdentifier>{DE62D892-125C-4CE3-BCF8-AB0BE8C0DF39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/display">
+      <UniqueIdentifier>{0A3B7823-517A-47C8-9CCF-5D6EA14771FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/intc">
+      <UniqueIdentifier>{8AEB48AB-41E2-47D0-99F9-490291F4BA5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/net">
+      <UniqueIdentifier>{C0171D24-C584-4BCA-8332-D281B95E059D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/rtc">
+      <UniqueIdentifier>{D2BE3681-92DB-4289-8931-9C49083C197B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/scsi">
+      <UniqueIdentifier>{AEF23431-1E42-4F7A-9005-C26D0689FFB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/virtio">
+      <UniqueIdentifier>{B66E9ED3-238B-4B4F-8DD2-99210964D400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/xbox">
+      <UniqueIdentifier>{30229735-F44D-4AA1-BCED-9CC36880B6CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/xbox\nv2a">
+      <UniqueIdentifier>{742903DF-C5E4-442D-8411-E55F9C1B6AF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/xbox\mcpx">
+      <UniqueIdentifier>{28904594-C70F-4F1C-9B65-94412F8A0186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw/xbox\mcpx\dsp">
+      <UniqueIdentifier>{40F4B955-0F5B-4686-9FB5-89EBAA9400F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdbstub">
+      <UniqueIdentifier>{F9E2BFAE-5D2A-4358-B7F0-DEC226AA7B09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dump">
+      <UniqueIdentifier>{F68508FD-C04A-4592-B602-1A0EC080E7D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="softmmu">
+      <UniqueIdentifier>{EE8FFC05-BE37-487F-9C07-B9F6A241BE6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="migration">
+      <UniqueIdentifier>{7230EBD3-7875-4DBF-9B28-92D4E51C5C2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="monitor">
+      <UniqueIdentifier>{68720906-F19C-404A-9407-FE20A35E055D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tcg">
+      <UniqueIdentifier>{0B07BA6F-C142-4B80-95C2-5C2F6C362A61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fpu">
+      <UniqueIdentifier>{C0D37414-B00B-4E33-B229-062F1C71DDAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="accel">
+      <UniqueIdentifier>{5CA835EC-84B4-4904-A69C-B955BED44610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="accel\tcg">
+      <UniqueIdentifier>{22BB6CE8-7A44-422F-BF9C-F5CEAC2E53A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="accel\stubs">
+      <UniqueIdentifier>{B8BF4934-F4AF-4B8D-83DE-4B46C658477D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="accel\qtest">
+      <UniqueIdentifier>{D7978002-DD10-442B-84DB-AB9E13E42142}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../target/i386/arch_dump.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/arch_memory_mapping.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/machine.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/monitor.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/cpu-sysemu.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/sev-sysemu-stub.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/kvm/hyperv-stub.c">
+      <Filter>target/i386\kvm</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/hax/hax-all.c">
+      <Filter>target/i386\hax</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/hax/hax-mem.c">
+      <Filter>target/i386\hax</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/hax/hax-accel-ops.c">
+      <Filter>target/i386\hax</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/hax/hax-windows.c">
+      <Filter>target/i386\hax</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/whpx/whpx-all.c">
+      <Filter>target/i386\whpx</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/whpx/whpx-apic.c">
+      <Filter>target/i386\whpx</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/whpx/whpx-accel-ops.c">
+      <Filter>target/i386\whpx</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/tcg-cpu.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/smm_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/excp_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/bpt_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/misc_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/fpu_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/svm_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/sysemu/seg_helper.c">
+      <Filter>target/i386\tcg\sysemu</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/fw_cfg.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/kvmvapic.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/e820_memory_layout.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/multiboot.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/x86.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/x86-iommu-stub.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/sgx-stub.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/acpi-common.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/pc.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/pc_sysfw.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/acpi-build.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/port92.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/i386/pc_sysfw_ovmf-stubs.c">
+      <Filter>hw/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/cpu.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/gdbstub.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/helper.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/xsave_helper.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/cpu-dump.c">
+      <Filter>target/i386</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/kvm/kvm-stub.c">
+      <Filter>target/i386\kvm</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/bpt_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/cc_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/excp_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/fpu_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/fpu_helper_hard.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/int_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/mem_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/misc_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/mpx_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/seg_helper.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/tcg-cpu.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../target/i386/tcg/translate.c">
+      <Filter>target/i386\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../trace/control-target.c">
+      <Filter>trace</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/block/virtio-blk.c">
+      <Filter>hw/block</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/block/virtio-blk-common.c">
+      <Filter>hw/block</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/block/dataplane/virtio-blk.c">
+      <Filter>hw/block\dataplane</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/char/virtio-serial-bus.c">
+      <Filter>hw/char</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/core/machine-qmp-cmds.c">
+      <Filter>hw/core</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/core/numa.c">
+      <Filter>hw/core</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/display/vga.c">
+      <Filter>hw/display</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/intc/apic.c">
+      <Filter>hw/intc</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/intc/apic_common.c">
+      <Filter>hw/intc</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/intc/ioapic.c">
+      <Filter>hw/intc</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/net/virtio-net.c">
+      <Filter>hw/net</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/rtc/mc146818rtc.c">
+      <Filter>hw/rtc</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/scsi/virtio-scsi.c">
+      <Filter>hw/scsi</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/scsi/virtio-scsi-dataplane.c">
+      <Filter>hw/scsi</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-balloon.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-crypto.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-pmem.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-rng.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-iommu.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-crypto-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-input-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-rng-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-balloon-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-scsi-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-blk-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-net-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-serial-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-pmem-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/virtio/virtio-iommu-pci.c">
+      <Filter>hw/virtio</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/acpi_xbox.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/amd_smbus.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/eeprom_generation.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/lpc47m157.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nvnet.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_adm1032.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_cx25871.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_fs454.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_xcalibur.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_storage.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/smbus_xbox_smc.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/xbox.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/xbox_pci.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/xid.c">
+      <Filter>hw/xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/nv2a.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/debug.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pbus.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pcrtc.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pfb.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pfifo.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pgraph.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pmc.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pramdac.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/prmcio.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/prmdio.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/prmvio.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/psh.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/ptimer.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/pvideo.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/shaders.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/stubs.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/user.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/vsh.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/swizzle.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/nv2a/s3tc.c">
+      <Filter>hw/xbox\nv2a</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/mcpx/apu.c">
+      <Filter>hw/xbox\mcpx</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/mcpx/aci.c">
+      <Filter>hw/xbox\mcpx</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/mcpx/dsp/dsp.c">
+      <Filter>hw/xbox\mcpx\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/mcpx/dsp/dsp_cpu.c">
+      <Filter>hw/xbox\mcpx\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="../hw/xbox/mcpx/dsp/dsp_dma.c">
+      <Filter>hw/xbox\mcpx\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="../gdbstub/gdbstub.c">
+      <Filter>gdbstub</Filter>
+    </ClCompile>
+    <ClCompile Include="../dump/dump.c">
+      <Filter>dump</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/arch_init.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/ioport.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/memory.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/physmem.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/qtest.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/dirtylimit.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../softmmu/icount.c">
+      <Filter>softmmu</Filter>
+    </ClCompile>
+    <ClCompile Include="../migration/dirtyrate.c">
+      <Filter>migration</Filter>
+    </ClCompile>
+    <ClCompile Include="../migration/ram.c">
+      <Filter>migration</Filter>
+    </ClCompile>
+    <ClCompile Include="../migration/target.c">
+      <Filter>migration</Filter>
+    </ClCompile>
+    <ClCompile Include="../monitor/misc.c">
+      <Filter>monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/optimize.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/region.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/tcg.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/tcg-common.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/tcg-op.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/tcg-op-gvec.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../tcg/tcg-op-vec.c">
+      <Filter>tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../fpu/softfloat.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/accel-common.c">
+      <Filter>accel</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-all.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/cpu-exec-common.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/cpu-exec.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tb-maint.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-runtime-gvec.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-runtime.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/translate-all.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/translator.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/cputlb.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/hmp.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/stubs/xen-stub.c">
+      <Filter>accel\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/stubs/kvm-stub.c">
+      <Filter>accel\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/dummy-cpus.c">
+      <Filter>accel</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/qtest/qtest.c">
+      <Filter>accel\qtest</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-accel-ops.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-accel-ops-mttcg.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-accel-ops-icount.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="../accel/tcg/tcg-accel-ops-rr.c">
+      <Filter>accel\tcg</Filter>
+    </ClCompile>
+    <CLCompile Include="../xemu-xbe.c" />
+    <CLCompile Include="../xemu-version.c" />
+    <CLCompile Include="../cpu.c" />
+    <CLCompile Include="../disas.c" />
+    <CLCompile Include="../page-vary.c" />
+    <CLCompile Include="i386-softmmu-gdbstub-xml.c" />
+    <CLCompile Include="qapi/qapi-types-machine-target.c" />
+    <CLCompile Include="qapi/qapi-visit-machine-target.c" />
+    <CLCompile Include="qapi/qapi-events-machine-target.c" />
+    <CLCompile Include="qapi/qapi-commands-machine-target.c" />
+    <CLCompile Include="qapi/qapi-types-misc-target.c" />
+    <CLCompile Include="qapi/qapi-visit-misc-target.c" />
+    <CLCompile Include="qapi/qapi-events-misc-target.c" />
+    <CLCompile Include="qapi/qapi-commands-misc-target.c" />
+    <CLCompile Include="qapi/qapi-introspect.c" />
+    <CLCompile Include="qapi/qapi-types.c" />
+    <CLCompile Include="qapi/qapi-visit.c" />
+    <CLCompile Include="qapi/qapi-commands.c" />
+    <CLCompile Include="qapi/qapi-init-commands.c" />
+    <CLCompile Include="qapi/qapi-events.c" />
+    <CLCompile Include="qapi/qapi-emit-events.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="common.fa@sta/hw_core_cpu-common.c.obj" />
+    <Object Include="common.fa@sta/hw_core_machine-smp.c.obj" />
+    <Object Include="common.fa@sta/cpus-common.c.obj" />
+    <Object Include="common.fa@sta/page-vary-common.c.obj" />
+    <Object Include="common.fa@sta/qom_qom-hmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/ui_clipboard.c.obj" />
+    <Object Include="common.fa@sta/ui_console.c.obj" />
+    <Object Include="common.fa@sta/ui_cursor.c.obj" />
+    <Object Include="common.fa@sta/ui_input-keymap.c.obj" />
+    <Object Include="common.fa@sta/ui_input-legacy.c.obj" />
+    <Object Include="common.fa@sta/ui_input-barrier.c.obj" />
+    <Object Include="common.fa@sta/ui_input.c.obj" />
+    <Object Include="common.fa@sta/ui_kbd-state.c.obj" />
+    <Object Include="common.fa@sta/ui_keymaps.c.obj" />
+    <Object Include="common.fa@sta/ui_qemu-pixman.c.obj" />
+    <Object Include="common.fa@sta/ui_util.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-input.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-monitor.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-net.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-settings.cc.obj" />
+    <Object Include="common.fa@sta/ui_xemu.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-data.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-snapshots.c.obj" />
+    <Object Include="common.fa@sta/ui_xemu-thumbnail.cc.obj" />
+    <Object Include="common.fa@sta/ui_xemu-widescreen.c.obj" />
+    <Object Include="common.fa@sta/ui_xui_actions.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_animation.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_compat.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_debug.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_font-manager.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_gl-helpers.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_input-manager.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_main-menu.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_main.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_menubar.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_monitor.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_notifications.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_popup-menu.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_reporting.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_scene-components.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_scene-manager.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_scene.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_snapshot-manager.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_viewport-manager.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_welcome.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_widgets.cc.obj" />
+    <Object Include="common.fa@sta/ui_xui_update.cc.obj" />
+    <Object Include="common.fa@sta/ui_xemu-os-utils-windows.c.obj" />
+    <Object Include="common.fa@sta/ui_spice-module.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-enc-zlib.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-enc-hextile.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-enc-tight.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-palette.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-enc-zrle.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-auth-vencrypt.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-ws.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-jobs.c.obj" />
+    <Object Include="common.fa@sta/ui_vnc-clipboard.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_acpi_interface.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_aml-build.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_bios-linker-loader.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_core.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_utils.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_cpu.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_cpu_hotplug.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_memory_hotplug.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_nvdimm.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_cxl.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_vmgenid.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_hmat.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_ghes-stub.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_piix4.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_pcihp.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_viot.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_erst.c.obj" />
+    <Object Include="common.fa@sta/hw_acpi_ipmi.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_soundhw.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_ac97.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_fmopl.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_adlib.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_cs4231a.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_es1370.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_gus.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_gusemu_hal.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_gusemu_mixer.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_intel-hda.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_hda-codec.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_pcspk.c.obj" />
+    <Object Include="common.fa@sta/hw_audio_sb16.c.obj" />
+    <Object Include="common.fa@sta/hw_block_block.c.obj" />
+    <Object Include="common.fa@sta/hw_block_cdrom.c.obj" />
+    <Object Include="common.fa@sta/hw_block_hd-geometry.c.obj" />
+    <Object Include="common.fa@sta/hw_block_fdc.c.obj" />
+    <Object Include="common.fa@sta/hw_block_fdc-isa.c.obj" />
+    <Object Include="common.fa@sta/hw_block_pflash_cfi01.c.obj" />
+    <Object Include="common.fa@sta/hw_char_ipoctal232.c.obj" />
+    <Object Include="common.fa@sta/hw_char_parallel-isa.c.obj" />
+    <Object Include="common.fa@sta/hw_char_debugcon.c.obj" />
+    <Object Include="common.fa@sta/hw_char_parallel.c.obj" />
+    <Object Include="common.fa@sta/hw_char_serial.c.obj" />
+    <Object Include="common.fa@sta/hw_char_serial-isa.c.obj" />
+    <Object Include="common.fa@sta/hw_char_serial-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_char_serial-pci-multi.c.obj" />
+    <Object Include="common.fa@sta/hw_char_virtio-console.c.obj" />
+    <Object Include="common.fa@sta/hw_core_generic-loader.c.obj" />
+    <Object Include="common.fa@sta/hw_core_guest-loader.c.obj" />
+    <Object Include="common.fa@sta/hw_core_cpu-sysemu.c.obj" />
+    <Object Include="common.fa@sta/hw_core_fw-path-provider.c.obj" />
+    <Object Include="common.fa@sta/hw_core_gpio.c.obj" />
+    <Object Include="common.fa@sta/hw_core_loader.c.obj" />
+    <Object Include="common.fa@sta/hw_core_machine-hmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/hw_core_machine.c.obj" />
+    <Object Include="common.fa@sta/hw_core_nmi.c.obj" />
+    <Object Include="common.fa@sta/hw_core_null-machine.c.obj" />
+    <Object Include="common.fa@sta/hw_core_qdev-fw.c.obj" />
+    <Object Include="common.fa@sta/hw_core_qdev-properties-system.c.obj" />
+    <Object Include="common.fa@sta/hw_core_sysbus.c.obj" />
+    <Object Include="common.fa@sta/hw_core_vm-change-state-handler.c.obj" />
+    <Object Include="common.fa@sta/hw_core_clock-vmstate.c.obj" />
+    <Object Include="common.fa@sta/hw_cpu_core.c.obj" />
+    <Object Include="common.fa@sta/hw_cpu_cluster.c.obj" />
+    <Object Include="common.fa@sta/hw_cxl_cxl-host-stubs.c.obj" />
+    <Object Include="common.fa@sta/hw_display_i2c-ddc.c.obj" />
+    <Object Include="common.fa@sta/hw_display_edid-generate.c.obj" />
+    <Object Include="common.fa@sta/hw_display_edid-region.c.obj" />
+    <Object Include="common.fa@sta/hw_display_cirrus_vga.c.obj" />
+    <Object Include="common.fa@sta/hw_display_vga-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_display_vmware_vga.c.obj" />
+    <Object Include="common.fa@sta/hw_display_bochs-display.c.obj" />
+    <Object Include="common.fa@sta/hw_display_acpi-vga.c.obj" />
+    <Object Include="common.fa@sta/hw_display_ati.c.obj" />
+    <Object Include="common.fa@sta/hw_display_ati_2d.c.obj" />
+    <Object Include="common.fa@sta/hw_display_ati_dbg.c.obj" />
+    <Object Include="common.fa@sta/hw_dma_i8257.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_core.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_smbus_slave.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_smbus_master.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_pm_smbus.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_bitbang_i2c.c.obj" />
+    <Object Include="common.fa@sta/hw_i2c_smbus_eeprom.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_ahci.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_ich.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_core.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_atapi.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_piix.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_ioport.c.obj" />
+    <Object Include="common.fa@sta/hw_ide_qdev.c.obj" />
+    <Object Include="common.fa@sta/hw_input_hid.c.obj" />
+    <Object Include="common.fa@sta/hw_input_pckbd.c.obj" />
+    <Object Include="common.fa@sta/hw_input_ps2.c.obj" />
+    <Object Include="common.fa@sta/hw_input_virtio-input.c.obj" />
+    <Object Include="common.fa@sta/hw_input_virtio-input-hid.c.obj" />
+    <Object Include="common.fa@sta/hw_intc_intc.c.obj" />
+    <Object Include="common.fa@sta/hw_intc_i8259_common.c.obj" />
+    <Object Include="common.fa@sta/hw_intc_i8259.c.obj" />
+    <Object Include="common.fa@sta/hw_intc_ioapic_common.c.obj" />
+    <Object Include="common.fa@sta/hw_ipack_ipack.c.obj" />
+    <Object Include="common.fa@sta/hw_ipack_tpci200.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_ipmi.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_ipmi_kcs.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_ipmi_bt.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_ipmi_bmc_sim.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_ipmi_bmc_extern.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_isa_ipmi_kcs.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_pci_ipmi_kcs.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_isa_ipmi_bt.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_pci_ipmi_bt.c.obj" />
+    <Object Include="common.fa@sta/hw_ipmi_smbus_ipmi.c.obj" />
+    <Object Include="common.fa@sta/hw_isa_apm.c.obj" />
+    <Object Include="common.fa@sta/hw_isa_isa-bus.c.obj" />
+    <Object Include="common.fa@sta/hw_isa_piix3.c.obj" />
+    <Object Include="common.fa@sta/hw_mem_memory-device.c.obj" />
+    <Object Include="common.fa@sta/hw_mem_pc-dimm.c.obj" />
+    <Object Include="common.fa@sta/hw_mem_nvdimm.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_applesmc.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_edu.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_debugexit.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_pc-testdev.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_pci-testdev.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_sga.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_pvpanic.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_pvpanic-isa.c.obj" />
+    <Object Include="common.fa@sta/hw_misc_pvpanic-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_ne2000.c.obj" />
+    <Object Include="common.fa@sta/hw_net_ne2000-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_eepro100.c.obj" />
+    <Object Include="common.fa@sta/hw_net_pcnet-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_pcnet.c.obj" />
+    <Object Include="common.fa@sta/hw_net_e1000.c.obj" />
+    <Object Include="common.fa@sta/hw_net_e1000x_common.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rtl8139.c.obj" />
+    <Object Include="common.fa@sta/hw_net_tulip.c.obj" />
+    <Object Include="common.fa@sta/hw_net_net_tx_pkt.c.obj" />
+    <Object Include="common.fa@sta/hw_net_net_rx_pkt.c.obj" />
+    <Object Include="common.fa@sta/hw_net_vmxnet3.c.obj" />
+    <Object Include="common.fa@sta/hw_net_ne2000-isa.c.obj" />
+    <Object Include="common.fa@sta/hw_net_vhost_net-stub.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rocker_rocker.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rocker_rocker_desc.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rocker_rocker_fp.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rocker_rocker_of_dpa.c.obj" />
+    <Object Include="common.fa@sta/hw_net_rocker_rocker_world.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_can_sja1000.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_can_kvaser_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_can_pcm3680_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_can_mioe3680_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_ctucan_core.c.obj" />
+    <Object Include="common.fa@sta/hw_net_can_ctucan_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_nvme_ctrl.c.obj" />
+    <Object Include="common.fa@sta/hw_nvme_dif.c.obj" />
+    <Object Include="common.fa@sta/hw_nvme_ns.c.obj" />
+    <Object Include="common.fa@sta/hw_nvme_subsys.c.obj" />
+    <Object Include="common.fa@sta/hw_nvram_fw_cfg.c.obj" />
+    <Object Include="common.fa@sta/hw_nvram_eeprom93xx.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_msi.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_msix.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pci.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pci_bridge.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pci_host.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pcie_sriov.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_shpc.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_slotid_cap.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pcie.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pcie_aer.c.obj" />
+    <Object Include="common.fa@sta/hw_pci_pcie_doe.c.obj" />
+    <Object Include="common.fa@sta/hw_pci-bridge_pci_bridge_dev.c.obj" />
+    <Object Include="common.fa@sta/hw_pci-bridge_pci_expander_bridge_stubs.c.obj" />
+    <Object Include="common.fa@sta/hw_pci-host_pam.c.obj" />
+    <Object Include="common.fa@sta/hw_pci-host_i440fx.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_emulation.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_scsi-bus.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_scsi-disk.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_scsi-generic.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_esp.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_esp-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_lsi53c895a.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_megasas.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_mptsas.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_mptconfig.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_mptendian.c.obj" />
+    <Object Include="common.fa@sta/hw_scsi_vmw_pvscsi.c.obj" />
+    <Object Include="common.fa@sta/hw_sd_sd.c.obj" />
+    <Object Include="common.fa@sta/hw_sd_core.c.obj" />
+    <Object Include="common.fa@sta/hw_sd_sdmmc-internal.c.obj" />
+    <Object Include="common.fa@sta/hw_sd_sdhci.c.obj" />
+    <Object Include="common.fa@sta/hw_sd_sdhci-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_smbios_smbios-stub.c.obj" />
+    <Object Include="common.fa@sta/hw_timer_hpet.c.obj" />
+    <Object Include="common.fa@sta/hw_timer_i8254_common.c.obj" />
+    <Object Include="common.fa@sta/hw_timer_i8254.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_bus.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_combined-packet.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_core.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_desc.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_desc-msos.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_libhw.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_pcap.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-uhci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-ohci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-ohci-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-ehci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-ehci-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-xhci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-xhci-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_hcd-xhci-nec.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_imx-usb-phy.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-hub.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-hid.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-wacom.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-storage.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-storage-bot.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-storage-classic.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-uas.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-audio.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-serial.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-network.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_dev-smartcard-reader.c.obj" />
+    <Object Include="common.fa@sta/hw_usb_u2f.c.obj" />
+    <Object Include="common.fa@sta/hw_virtio_virtio-bus.c.obj" />
+    <Object Include="common.fa@sta/hw_virtio_virtio-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_virtio_vhost-stub.c.obj" />
+    <Object Include="common.fa@sta/hw_watchdog_watchdog.c.obj" />
+    <Object Include="common.fa@sta/hw_watchdog_wdt_i6300esb.c.obj" />
+    <Object Include="common.fa@sta/hw_watchdog_wdt_ib700.c.obj" />
+    <Object Include="common.fa@sta/hw_xbox_nv2a_gl_gloffscreen_common.c.obj" />
+    <Object Include="common.fa@sta/hw_xbox_nv2a_gl_gloffscreen_sdl.c.obj" />
+    <Object Include="common.fa@sta/gdbstub_softmmu.c.obj" />
+    <Object Include="common.fa@sta/winpcap-loader_loader.c.obj" />
+    <Object Include="common.fa@sta/audio_audio.c.obj" />
+    <Object Include="common.fa@sta/audio_audio_legacy.c.obj" />
+    <Object Include="common.fa@sta/audio_mixeng.c.obj" />
+    <Object Include="common.fa@sta/audio_noaudio.c.obj" />
+    <Object Include="common.fa@sta/audio_wavaudio.c.obj" />
+    <Object Include="common.fa@sta/audio_wavcapture.c.obj" />
+    <Object Include="common.fa@sta/audio_dsoundaudio.c.obj" />
+    <Object Include="common.fa@sta/audio_audio_win_int.c.obj" />
+    <Object Include="common.fa@sta/chardev_msmouse.c.obj" />
+    <Object Include="common.fa@sta/chardev_wctablet.c.obj" />
+    <Object Include="common.fa@sta/chardev_testdev.c.obj" />
+    <Object Include="common.fa@sta/dump_dump-hmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/block_blkreplay.c.obj" />
+    <Object Include="common.fa@sta/block_block-ram-registrar.c.obj" />
+    <Object Include="common.fa@sta/block_qapi-sysemu.c.obj" />
+    <Object Include="common.fa@sta/block_monitor_block-hmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/os-win32.c.obj" />
+    <Object Include="common.fa@sta/softmmu_balloon.c.obj" />
+    <Object Include="common.fa@sta/softmmu_bootdevice.c.obj" />
+    <Object Include="common.fa@sta/softmmu_cpus.c.obj" />
+    <Object Include="common.fa@sta/softmmu_cpu-throttle.c.obj" />
+    <Object Include="common.fa@sta/softmmu_cpu-timers.c.obj" />
+    <Object Include="common.fa@sta/softmmu_datadir.c.obj" />
+    <Object Include="common.fa@sta/softmmu_dma-helpers.c.obj" />
+    <Object Include="common.fa@sta/softmmu_globals.c.obj" />
+    <Object Include="common.fa@sta/softmmu_memory_mapping.c.obj" />
+    <Object Include="common.fa@sta/softmmu_qdev-monitor.c.obj" />
+    <Object Include="common.fa@sta/softmmu_rtc.c.obj" />
+    <Object Include="common.fa@sta/softmmu_runstate-action.c.obj" />
+    <Object Include="common.fa@sta/softmmu_runstate.c.obj" />
+    <Object Include="common.fa@sta/softmmu_vl.c.obj" />
+    <Object Include="common.fa@sta/softmmu_device_tree.c.obj" />
+    <Object Include="common.fa@sta/backends_cryptodev-builtin.c.obj" />
+    <Object Include="common.fa@sta/backends_cryptodev.c.obj" />
+    <Object Include="common.fa@sta/backends_hostmem-ram.c.obj" />
+    <Object Include="common.fa@sta/backends_hostmem.c.obj" />
+    <Object Include="common.fa@sta/backends_rng-builtin.c.obj" />
+    <Object Include="common.fa@sta/backends_rng-egd.c.obj" />
+    <Object Include="common.fa@sta/backends_rng.c.obj" />
+    <Object Include="common.fa@sta/backends_confidential-guest-support.c.obj" />
+    <Object Include="common.fa@sta/backends_cryptodev-vhost.c.obj" />
+    <Object Include="common.fa@sta/migration_page_cache.c.obj" />
+    <Object Include="common.fa@sta/migration_xbzrle.c.obj" />
+    <Object Include="common.fa@sta/migration_vmstate-types.c.obj" />
+    <Object Include="common.fa@sta/migration_vmstate.c.obj" />
+    <Object Include="common.fa@sta/migration_qemu-file.c.obj" />
+    <Object Include="common.fa@sta/migration_yank_functions.c.obj" />
+    <Object Include="common.fa@sta/migration_block-dirty-bitmap.c.obj" />
+    <Object Include="common.fa@sta/migration_channel.c.obj" />
+    <Object Include="common.fa@sta/migration_channel-block.c.obj" />
+    <Object Include="common.fa@sta/migration_colo-failover.c.obj" />
+    <Object Include="common.fa@sta/migration_colo.c.obj" />
+    <Object Include="common.fa@sta/migration_exec.c.obj" />
+    <Object Include="common.fa@sta/migration_fd.c.obj" />
+    <Object Include="common.fa@sta/migration_global_state.c.obj" />
+    <Object Include="common.fa@sta/migration_migration.c.obj" />
+    <Object Include="common.fa@sta/migration_multifd.c.obj" />
+    <Object Include="common.fa@sta/migration_multifd-zlib.c.obj" />
+    <Object Include="common.fa@sta/migration_postcopy-ram.c.obj" />
+    <Object Include="common.fa@sta/migration_savevm.c.obj" />
+    <Object Include="common.fa@sta/migration_socket.c.obj" />
+    <Object Include="common.fa@sta/migration_tls.c.obj" />
+    <Object Include="common.fa@sta/migration_block.c.obj" />
+    <Object Include="common.fa@sta/migration_multifd-zstd.c.obj" />
+    <Object Include="common.fa@sta/monitor_hmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/monitor_hmp.c.obj" />
+    <Object Include="common.fa@sta/monitor_qmp-cmds.c.obj" />
+    <Object Include="common.fa@sta/net_announce.c.obj" />
+    <Object Include="common.fa@sta/net_checksum.c.obj" />
+    <Object Include="common.fa@sta/net_colo-compare.c.obj" />
+    <Object Include="common.fa@sta/net_colo.c.obj" />
+    <Object Include="common.fa@sta/net_dump.c.obj" />
+    <Object Include="common.fa@sta/net_eth.c.obj" />
+    <Object Include="common.fa@sta/net_filter-buffer.c.obj" />
+    <Object Include="common.fa@sta/net_filter-mirror.c.obj" />
+    <Object Include="common.fa@sta/net_filter-rewriter.c.obj" />
+    <Object Include="common.fa@sta/net_filter.c.obj" />
+    <Object Include="common.fa@sta/net_hub.c.obj" />
+    <Object Include="common.fa@sta/net_net.c.obj" />
+    <Object Include="common.fa@sta/net_queue.c.obj" />
+    <Object Include="common.fa@sta/net_socket.c.obj" />
+    <Object Include="common.fa@sta/net_stream.c.obj" />
+    <Object Include="common.fa@sta/net_dgram.c.obj" />
+    <Object Include="common.fa@sta/net_util.c.obj" />
+    <Object Include="common.fa@sta/net_filter-replay.c.obj" />
+    <Object Include="common.fa@sta/net_slirp.c.obj" />
+    <Object Include="common.fa@sta/net_tap-win32.c.obj" />
+    <Object Include="common.fa@sta/net_pcap.c.obj" />
+    <Object Include="common.fa@sta/net_can_can_core.c.obj" />
+    <Object Include="common.fa@sta/net_can_can_host.c.obj" />
+    <Object Include="common.fa@sta/replay_replay.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-internal.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-events.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-time.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-input.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-char.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-snapshot.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-net.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-audio.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-random.c.obj" />
+    <Object Include="common.fa@sta/replay_replay-debugging.c.obj" />
+    <Object Include="common.fa@sta/accel_accel-softmmu.c.obj" />
+    <Object Include="common.fa@sta/ebpf_ebpf_rss-stub.c.obj" />
+    <Object Include="common.fa@sta/hw_display_virtio-gpu-base.c.obj" />
+    <Object Include="common.fa@sta/hw_display_virtio-gpu.c.obj" />
+    <Object Include="common.fa@sta/hw_display_virtio-gpu-udmabuf-stubs.c.obj" />
+    <Object Include="common.fa@sta/hw_display_virtio-gpu-pci.c.obj" />
+    <Object Include="common.fa@sta/hw_display_virtio-vga.c.obj" />
+    <Object Include="common.fa@sta/audio_sdlaudio.c.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="i386-softmmu-config-target.h" />
+    <CLInclude Include="i386-softmmu-config-devices.h" />
+    <CLInclude Include="config-host.h" />
+    <CLInclude Include="qapi/qapi-types-machine-target.h" />
+    <CLInclude Include="qapi/qapi-visit-machine-target.h" />
+    <CLInclude Include="qapi/qapi-events-machine-target.h" />
+    <CLInclude Include="qapi/qapi-commands-machine-target.h" />
+    <CLInclude Include="qapi/qapi-commands-machine-target.trace-events" />
+    <CLInclude Include="qapi/qapi-types-misc-target.h" />
+    <CLInclude Include="qapi/qapi-visit-misc-target.h" />
+    <CLInclude Include="qapi/qapi-events-misc-target.h" />
+    <CLInclude Include="qapi/qapi-commands-misc-target.h" />
+    <CLInclude Include="qapi/qapi-commands-misc-target.trace-events" />
+    <CLInclude Include="qapi/qapi-introspect.h" />
+    <CLInclude Include="qapi/qapi-types.h" />
+    <CLInclude Include="qapi/qapi-visit.h" />
+    <CLInclude Include="qapi/qapi-commands.h" />
+    <CLInclude Include="qapi/qapi-init-commands.h" />
+    <CLInclude Include="qapi/qapi-events.h" />
+    <CLInclude Include="qapi/qapi-emit-events.h" />
+    <CLInclude Include="config-poison.h" />
+    <CLInclude Include="qemu-version.h" />
+    <CLInclude Include="xemu-version-macro.h" />
+    <CLInclude Include="xemu-config.h" />
+    <CLInclude Include="qemu-options.def" />
+    <CLInclude Include="qemu-img-cmds.h" />
+    <CLInclude Include="hmp-commands.h" />
+    <CLInclude Include="hmp-commands-info.h" />
+    <CLInclude Include="qapi/qapi-builtin-types.h" />
+    <CLInclude Include="qapi/qapi-builtin-visit.h" />
+    <CLInclude Include="qapi/qapi-types-authz.h" />
+    <CLInclude Include="qapi/qapi-visit-authz.h" />
+    <CLInclude Include="qapi/qapi-events-authz.h" />
+    <CLInclude Include="qapi/qapi-commands-authz.h" />
+    <CLInclude Include="qapi/qapi-types-block.h" />
+    <CLInclude Include="qapi/qapi-visit-block.h" />
+    <CLInclude Include="qapi/qapi-events-block.h" />
+    <CLInclude Include="qapi/qapi-commands-block.h" />
+    <CLInclude Include="qapi/qapi-types-block-core.h" />
+    <CLInclude Include="qapi/qapi-visit-block-core.h" />
+    <CLInclude Include="qapi/qapi-events-block-core.h" />
+    <CLInclude Include="qapi/qapi-commands-block-core.h" />
+    <CLInclude Include="qapi/qapi-types-block-export.h" />
+    <CLInclude Include="qapi/qapi-visit-block-export.h" />
+    <CLInclude Include="qapi/qapi-events-block-export.h" />
+    <CLInclude Include="qapi/qapi-commands-block-export.h" />
+    <CLInclude Include="qapi/qapi-types-char.h" />
+    <CLInclude Include="qapi/qapi-visit-char.h" />
+    <CLInclude Include="qapi/qapi-events-char.h" />
+    <CLInclude Include="qapi/qapi-commands-char.h" />
+    <CLInclude Include="qapi/qapi-types-common.h" />
+    <CLInclude Include="qapi/qapi-visit-common.h" />
+    <CLInclude Include="qapi/qapi-events-common.h" />
+    <CLInclude Include="qapi/qapi-commands-common.h" />
+    <CLInclude Include="qapi/qapi-types-compat.h" />
+    <CLInclude Include="qapi/qapi-visit-compat.h" />
+    <CLInclude Include="qapi/qapi-events-compat.h" />
+    <CLInclude Include="qapi/qapi-commands-compat.h" />
+    <CLInclude Include="qapi/qapi-types-control.h" />
+    <CLInclude Include="qapi/qapi-visit-control.h" />
+    <CLInclude Include="qapi/qapi-events-control.h" />
+    <CLInclude Include="qapi/qapi-commands-control.h" />
+    <CLInclude Include="qapi/qapi-types-crypto.h" />
+    <CLInclude Include="qapi/qapi-visit-crypto.h" />
+    <CLInclude Include="qapi/qapi-events-crypto.h" />
+    <CLInclude Include="qapi/qapi-commands-crypto.h" />
+    <CLInclude Include="qapi/qapi-types-dump.h" />
+    <CLInclude Include="qapi/qapi-visit-dump.h" />
+    <CLInclude Include="qapi/qapi-events-dump.h" />
+    <CLInclude Include="qapi/qapi-commands-dump.h" />
+    <CLInclude Include="qapi/qapi-types-error.h" />
+    <CLInclude Include="qapi/qapi-visit-error.h" />
+    <CLInclude Include="qapi/qapi-events-error.h" />
+    <CLInclude Include="qapi/qapi-commands-error.h" />
+    <CLInclude Include="qapi/qapi-types-introspect.h" />
+    <CLInclude Include="qapi/qapi-visit-introspect.h" />
+    <CLInclude Include="qapi/qapi-events-introspect.h" />
+    <CLInclude Include="qapi/qapi-commands-introspect.h" />
+    <CLInclude Include="qapi/qapi-types-job.h" />
+    <CLInclude Include="qapi/qapi-visit-job.h" />
+    <CLInclude Include="qapi/qapi-events-job.h" />
+    <CLInclude Include="qapi/qapi-commands-job.h" />
+    <CLInclude Include="qapi/qapi-types-machine.h" />
+    <CLInclude Include="qapi/qapi-visit-machine.h" />
+    <CLInclude Include="qapi/qapi-events-machine.h" />
+    <CLInclude Include="qapi/qapi-commands-machine.h" />
+    <CLInclude Include="qapi/qapi-types-migration.h" />
+    <CLInclude Include="qapi/qapi-visit-migration.h" />
+    <CLInclude Include="qapi/qapi-events-migration.h" />
+    <CLInclude Include="qapi/qapi-commands-migration.h" />
+    <CLInclude Include="qapi/qapi-types-misc.h" />
+    <CLInclude Include="qapi/qapi-visit-misc.h" />
+    <CLInclude Include="qapi/qapi-events-misc.h" />
+    <CLInclude Include="qapi/qapi-commands-misc.h" />
+    <CLInclude Include="qapi/qapi-types-net.h" />
+    <CLInclude Include="qapi/qapi-visit-net.h" />
+    <CLInclude Include="qapi/qapi-events-net.h" />
+    <CLInclude Include="qapi/qapi-commands-net.h" />
+    <CLInclude Include="qapi/qapi-types-pragma.h" />
+    <CLInclude Include="qapi/qapi-visit-pragma.h" />
+    <CLInclude Include="qapi/qapi-events-pragma.h" />
+    <CLInclude Include="qapi/qapi-commands-pragma.h" />
+    <CLInclude Include="qapi/qapi-types-qom.h" />
+    <CLInclude Include="qapi/qapi-visit-qom.h" />
+    <CLInclude Include="qapi/qapi-events-qom.h" />
+    <CLInclude Include="qapi/qapi-commands-qom.h" />
+    <CLInclude Include="qapi/qapi-types-replay.h" />
+    <CLInclude Include="qapi/qapi-visit-replay.h" />
+    <CLInclude Include="qapi/qapi-events-replay.h" />
+    <CLInclude Include="qapi/qapi-commands-replay.h" />
+    <CLInclude Include="qapi/qapi-types-run-state.h" />
+    <CLInclude Include="qapi/qapi-visit-run-state.h" />
+    <CLInclude Include="qapi/qapi-events-run-state.h" />
+    <CLInclude Include="qapi/qapi-commands-run-state.h" />
+    <CLInclude Include="qapi/qapi-types-sockets.h" />
+    <CLInclude Include="qapi/qapi-visit-sockets.h" />
+    <CLInclude Include="qapi/qapi-events-sockets.h" />
+    <CLInclude Include="qapi/qapi-commands-sockets.h" />
+    <CLInclude Include="qapi/qapi-types-stats.h" />
+    <CLInclude Include="qapi/qapi-visit-stats.h" />
+    <CLInclude Include="qapi/qapi-events-stats.h" />
+    <CLInclude Include="qapi/qapi-commands-stats.h" />
+    <CLInclude Include="qapi/qapi-types-trace.h" />
+    <CLInclude Include="qapi/qapi-visit-trace.h" />
+    <CLInclude Include="qapi/qapi-events-trace.h" />
+    <CLInclude Include="qapi/qapi-commands-trace.h" />
+    <CLInclude Include="qapi/qapi-types-transaction.h" />
+    <CLInclude Include="qapi/qapi-visit-transaction.h" />
+    <CLInclude Include="qapi/qapi-events-transaction.h" />
+    <CLInclude Include="qapi/qapi-commands-transaction.h" />
+    <CLInclude Include="qapi/qapi-types-virtio.h" />
+    <CLInclude Include="qapi/qapi-visit-virtio.h" />
+    <CLInclude Include="qapi/qapi-events-virtio.h" />
+    <CLInclude Include="qapi/qapi-commands-virtio.h" />
+    <CLInclude Include="qapi/qapi-types-yank.h" />
+    <CLInclude Include="qapi/qapi-visit-yank.h" />
+    <CLInclude Include="qapi/qapi-events-yank.h" />
+    <CLInclude Include="qapi/qapi-commands-yank.h" />
+    <CLInclude Include="qapi/qapi-types-acpi.h" />
+    <CLInclude Include="qapi/qapi-visit-acpi.h" />
+    <CLInclude Include="qapi/qapi-events-acpi.h" />
+    <CLInclude Include="qapi/qapi-commands-acpi.h" />
+    <CLInclude Include="qapi/qapi-types-audio.h" />
+    <CLInclude Include="qapi/qapi-visit-audio.h" />
+    <CLInclude Include="qapi/qapi-events-audio.h" />
+    <CLInclude Include="qapi/qapi-commands-audio.h" />
+    <CLInclude Include="qapi/qapi-types-qdev.h" />
+    <CLInclude Include="qapi/qapi-visit-qdev.h" />
+    <CLInclude Include="qapi/qapi-events-qdev.h" />
+    <CLInclude Include="qapi/qapi-commands-qdev.h" />
+    <CLInclude Include="qapi/qapi-types-pci.h" />
+    <CLInclude Include="qapi/qapi-visit-pci.h" />
+    <CLInclude Include="qapi/qapi-events-pci.h" />
+    <CLInclude Include="qapi/qapi-commands-pci.h" />
+    <CLInclude Include="qapi/qapi-types-rdma.h" />
+    <CLInclude Include="qapi/qapi-visit-rdma.h" />
+    <CLInclude Include="qapi/qapi-events-rdma.h" />
+    <CLInclude Include="qapi/qapi-commands-rdma.h" />
+    <CLInclude Include="qapi/qapi-types-rocker.h" />
+    <CLInclude Include="qapi/qapi-visit-rocker.h" />
+    <CLInclude Include="qapi/qapi-events-rocker.h" />
+    <CLInclude Include="qapi/qapi-commands-rocker.h" />
+    <CLInclude Include="qapi/qapi-types-tpm.h" />
+    <CLInclude Include="qapi/qapi-visit-tpm.h" />
+    <CLInclude Include="qapi/qapi-events-tpm.h" />
+    <CLInclude Include="qapi/qapi-commands-tpm.h" />
+    <CLInclude Include="qapi/qapi-types-ui.h" />
+    <CLInclude Include="qapi/qapi-visit-ui.h" />
+    <CLInclude Include="qapi/qapi-events-ui.h" />
+    <CLInclude Include="qapi/qapi-commands-ui.h" />
+    <CLInclude Include="trace/trace-root.h" />
+    <CLInclude Include="trace/trace-crypto.h" />
+    <CLInclude Include="trace/trace-qapi.h" />
+    <CLInclude Include="trace/trace-qom.h" />
+    <CLInclude Include="trace/trace-monitor.h" />
+    <CLInclude Include="trace/trace-util.h" />
+    <CLInclude Include="trace/trace-gdbstub.h" />
+    <CLInclude Include="trace/trace-authz.h" />
+    <CLInclude Include="trace/trace-block.h" />
+    <CLInclude Include="trace/trace-io.h" />
+    <CLInclude Include="trace/trace-nbd.h" />
+    <CLInclude Include="trace/trace-scsi.h" />
+    <CLInclude Include="trace/trace-accel_kvm.h" />
+    <CLInclude Include="trace/trace-audio.h" />
+    <CLInclude Include="trace/trace-backends.h" />
+    <CLInclude Include="trace/trace-backends_tpm.h" />
+    <CLInclude Include="trace/trace-chardev.h" />
+    <CLInclude Include="trace/trace-ebpf.h" />
+    <CLInclude Include="trace/trace-hw_9pfs.h" />
+    <CLInclude Include="trace/trace-hw_acpi.h" />
+    <CLInclude Include="trace/trace-hw_adc.h" />
+    <CLInclude Include="trace/trace-hw_alpha.h" />
+    <CLInclude Include="trace/trace-hw_arm.h" />
+    <CLInclude Include="trace/trace-hw_audio.h" />
+    <CLInclude Include="trace/trace-hw_block.h" />
+    <CLInclude Include="trace/trace-hw_block_dataplane.h" />
+    <CLInclude Include="trace/trace-hw_char.h" />
+    <CLInclude Include="trace/trace-hw_display.h" />
+    <CLInclude Include="trace/trace-hw_dma.h" />
+    <CLInclude Include="trace/trace-hw_hyperv.h" />
+    <CLInclude Include="trace/trace-hw_i2c.h" />
+    <CLInclude Include="trace/trace-hw_i386.h" />
+    <CLInclude Include="trace/trace-hw_i386_xen.h" />
+    <CLInclude Include="trace/trace-hw_ide.h" />
+    <CLInclude Include="trace/trace-hw_input.h" />
+    <CLInclude Include="trace/trace-hw_intc.h" />
+    <CLInclude Include="trace/trace-hw_isa.h" />
+    <CLInclude Include="trace/trace-hw_mem.h" />
+    <CLInclude Include="trace/trace-hw_mips.h" />
+    <CLInclude Include="trace/trace-hw_misc.h" />
+    <CLInclude Include="trace/trace-hw_misc_macio.h" />
+    <CLInclude Include="trace/trace-hw_net.h" />
+    <CLInclude Include="trace/trace-hw_net_can.h" />
+    <CLInclude Include="trace/trace-hw_nubus.h" />
+    <CLInclude Include="trace/trace-hw_nvme.h" />
+    <CLInclude Include="trace/trace-hw_nvram.h" />
+    <CLInclude Include="trace/trace-hw_pci.h" />
+    <CLInclude Include="trace/trace-hw_pci_host.h" />
+    <CLInclude Include="trace/trace-hw_ppc.h" />
+    <CLInclude Include="trace/trace-hw_rdma.h" />
+    <CLInclude Include="trace/trace-hw_rdma_vmw.h" />
+    <CLInclude Include="trace/trace-hw_rtc.h" />
+    <CLInclude Include="trace/trace-hw_s390x.h" />
+    <CLInclude Include="trace/trace-hw_scsi.h" />
+    <CLInclude Include="trace/trace-hw_sd.h" />
+    <CLInclude Include="trace/trace-hw_sh4.h" />
+    <CLInclude Include="trace/trace-hw_sparc.h" />
+    <CLInclude Include="trace/trace-hw_sparc64.h" />
+    <CLInclude Include="trace/trace-hw_ssi.h" />
+    <CLInclude Include="trace/trace-hw_timer.h" />
+    <CLInclude Include="trace/trace-hw_tpm.h" />
+    <CLInclude Include="trace/trace-hw_usb.h" />
+    <CLInclude Include="trace/trace-hw_vfio.h" />
+    <CLInclude Include="trace/trace-hw_virtio.h" />
+    <CLInclude Include="trace/trace-hw_watchdog.h" />
+    <CLInclude Include="trace/trace-hw_xen.h" />
+    <CLInclude Include="trace/trace-hw_gpio.h" />
+    <CLInclude Include="trace/trace-migration.h" />
+    <CLInclude Include="trace/trace-net.h" />
+    <CLInclude Include="trace/trace-softmmu.h" />
+    <CLInclude Include="trace/trace-ui.h" />
+    <CLInclude Include="trace/trace-hw_remote.h" />
+    <CLInclude Include="trace/trace-hw_xbox_nv2a.h" />
+    <CLInclude Include="trace/trace-hw_xbox_mcpx.h" />
+    <CLInclude Include="trace/trace-hw_xbox.h" />
+    <CLInclude Include="trace/trace-accel_tcg.h" />
+    <CLInclude Include="trace/trace-hw_core.h" />
+    <CLInclude Include="trace/trace-target_arm.h" />
+    <CLInclude Include="trace/trace-target_arm_hvf.h" />
+    <CLInclude Include="trace/trace-target_hppa.h" />
+    <CLInclude Include="trace/trace-target_i386.h" />
+    <CLInclude Include="trace/trace-target_i386_kvm.h" />
+    <CLInclude Include="trace/trace-target_mips_tcg.h" />
+    <CLInclude Include="trace/trace-target_nios2.h" />
+    <CLInclude Include="trace/trace-target_ppc.h" />
+    <CLInclude Include="trace/trace-target_riscv.h" />
+    <CLInclude Include="trace/trace-target_s390x.h" />
+    <CLInclude Include="trace/trace-target_s390x_kvm.h" />
+    <CLInclude Include="trace/trace-target_sparc.h" />
+    <CLInclude Include="trace/trace-qapi_commands_authz_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_core_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_export_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_char_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_common_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_compat_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_control_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_crypto_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_dump_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_error_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_introspect_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_job_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_machine_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_migration_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_misc_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_net_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_pragma_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_qom_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_replay_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_run_state_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_sockets_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_stats_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_trace_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_transaction_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_virtio_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_yank_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_acpi_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_audio_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_qdev_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_pci_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_rdma_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_rocker_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_tpm_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_ui_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_machine_target_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_misc_target_trace_events.h" />
+    <CLInclude Include="ui/input-keymap-atset1-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-linux-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset1.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset2.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset3.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-linux.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-qnum.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-sun.c.inc" />
+    <CLInclude Include="ui/input-keymap-qnum-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-usb-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-win32-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-x11-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgevdev-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgkbd-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgxquartz-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgxwin-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-osx-to-qcode.c.inc" />
+    <CLInclude Include="ui/shader/texture-blit-frag.h" />
+    <CLInclude Include="ui/shader/texture-blit-vert.h" />
+    <CLInclude Include="ui/shader/texture-blit-flip-vert.h" />
+    <CLInclude Include="ui/shader/xemu-logo-frag.h" />
+    <CLInclude Include="data/controller_mask.png.h" />
+    <CLInclude Include="data/logo_sdf.png.h" />
+    <CLInclude Include="data/xemu_64x64.png.h" />
+    <CLInclude Include="data/abxy.ttf.h" />
+    <CLInclude Include="data/Roboto-Medium.ttf.h" />
+    <CLInclude Include="data/RobotoCondensed-Regular.ttf.h" />
+    <CLInclude Include="data/font_awesome_6_1_1_solid.otf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../meson.build" />
+  </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{49DA73D3-2B2C-4506-B6DC-6CEE58163A6D}</ProjectGuid>
+		<ProjectGuid>{6326D51A-2595-47D6-B2BD-1F475283FD86}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>helper_funcs_generated.c.inc</ProjectName>
 		<RootNamespace>helper_funcs_generated.c.inc</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./0121e99@@semantics_generated.pyinc@cus.vcxproj">
-			<Project>{00CAD87E-8456-497C-AFB4-28D3F9A3E80F}</Project>
+			<Project>{A7B3DCDE-E29F-4172-B401-6C4F83DF46E2}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

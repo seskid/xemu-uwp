@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{9536E4D7-E76E-4FB3-A088-7E4BE4DEA788}</ProjectGuid>
+		<ProjectGuid>{C69BC01C-DE13-4CF0-AC3A-39ADAA8A203E}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>block.syms</ProjectName>
 		<RootNamespace>block.syms</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./qemuutil@sta.vcxproj">
-			<Project>{7C270E5D-5E7C-49AF-BA9A-64551757EEC9}</Project>
+			<Project>{D46BFAA8-23B3-46D3-A51F-84D00F64EA28}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

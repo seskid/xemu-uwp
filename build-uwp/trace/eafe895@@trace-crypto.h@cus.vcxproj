@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{DEE3B1C6-82EA-4250-9694-E6EC9C2356CA}</ProjectGuid>
+		<ProjectGuid>{49607FC2-DDBB-428D-9C7D-426D5AB92C51}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-crypto.h</ProjectName>
 		<RootNamespace>trace-crypto.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

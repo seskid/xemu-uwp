@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C8918DD5-D791-488A-97FD-7A9F7F3DC20C}</ProjectGuid>
+		<ProjectGuid>{4CBFDF40-631C-470B-A88F-B6548BECFA0B}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>font_awesome_6_1_1_solid.otf.[ch]</ProjectName>
 		<RootNamespace>font_awesome_6_1_1_solid.otf.[ch]</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

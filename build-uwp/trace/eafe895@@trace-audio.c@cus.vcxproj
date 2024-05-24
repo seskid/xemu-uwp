@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{BA8FD8EA-B2C6-43D5-B23C-26074D07ABA1}</ProjectGuid>
+		<ProjectGuid>{DDAA9451-6259-4BDF-B5B8-12066061B3D0}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-audio.c</ProjectName>
 		<RootNamespace>trace-audio.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

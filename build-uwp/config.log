@@ -1,326 +1,112 @@
-# QEMU configure log Wed May 15 12:47:14 CDT 2024
+# QEMU configure log Thu May 16 16:05:09 CDT 2024
 # Configured with: '/c/users/seski/source/repos/xemu-uwp/configure' '--extra-cflags=-DXBOX=1  -Wno-error ' '--extra-ldflags=' '--target-list=i386-softmmu' '--enable-lto' '--disable-fortify-source'
 #
 
 funcs: do_compiler_werror do_cc compile_object check_define main
-lines: 157 171 406 423 0
-cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 405 422 0
+cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 config-temp/qemu-conf.c:2:2: error: #error __linux__ not defined
     2 | #error __linux__ not defined
       |  ^~~~~
 
 funcs: do_compiler_werror do_cc compile_object check_define main
-lines: 157 171 406 425 0
-cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 405 424 0
+cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_object check_define main
-lines: 157 171 406 516 0
-cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 405 515 0
+cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 config-temp/qemu-conf.c:2:2: error: #error __i386__ not defined
     2 | #error __i386__ not defined
       |  ^~~~~
 
 funcs: do_compiler_werror do_cc compile_object check_define main
-lines: 157 171 406 518 0
-cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 405 517 0
+cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_object check_define main
-lines: 157 171 406 519 0
-cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 405 518 0
+cc -DXBOX=1 -Wno-error -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 config-temp/qemu-conf.c:2:2: error: #error __ILP32__ not defined
     2 | #error __ILP32__ not defined
       |  ^~~~~
 
 funcs: do_compiler_werror do_cc compile_object main
-lines: 157 171 1143 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 1142 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1148 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
+lines: 157 177 1147 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1192 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Werror -Wold-style-declaration -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wold-style-declaration -DXBOX=1 -Wno-error -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Werror -Wold-style-definition -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wold-style-definition -DXBOX=1 -Wno-error -Wold-style-declaration -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Werror -Wtype-limits -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wtype-limits -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Werror -Wformat-security -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wformat-security -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Werror -Wformat-y2k -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wformat-y2k -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Werror -Winit-self -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Winit-self -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Werror -Wignored-qualifiers -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wignored-qualifiers -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Werror -Wempty-body -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wempty-body -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Werror -Wnested-externs -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wnested-externs -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Werror -Wendif-labels -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wendif-labels -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Werror -Wexpansion-to-defined -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wexpansion-to-defined -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-1 warning generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Werror -Wimplicit-fallthrough=2 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wimplicit-fallthrough=2 -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Werror -Winitializer-overrides -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-cc.exe: error: unrecognized command-line option '-Winitializer-overrides'
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Winitializer-overrides -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Werror -Wmissing-include-dirs -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wmissing-include-dirs -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Werror -Wshift-negative-value -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wshift-negative-value -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Werror -Wstring-plus-int -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-cc.exe: error: unrecognized command-line option '-Wstring-plus-int'
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wstring-plus-int -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Werror -Wtypedef-redefinition -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-cc.exe: error: unrecognized command-line option '-Wtypedef-redefinition'
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wtypedef-redefinition -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Werror -Wtautological-type-limit-compare -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-cc.exe: error: unrecognized command-line option '-Wtautological-type-limit-compare'; did you mean '-Wtautological-compare'?
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wtautological-type-limit-compare -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -Wno-typedef-redefinition -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Werror -Wpsabi -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wpsabi -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -Wno-typedef-redefinition -Wno-tautological-type-limit-compare -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
-
-funcs: do_compiler_werror do_cc compile_prog cc_has_warning_flag main
-lines: 157 177 1235 1253 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -Werror -Wgnu-variable-sized-type-not-at-end -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
-cc.exe: error: unrecognized command-line option '-Wgnu-variable-sized-type-not-at-end'
-
-funcs: do_compiler_werror do_objc objcc_has_warning_flag main
-lines: 161 1247 1256 0
-clang -m64 -mcx16 -Werror -Wgnu-variable-sized-type-not-at-end -DXBOX=1 -Wno-error -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -Wno-typedef-redefinition -Wno-tautological-type-limit-compare -Wno-psabi -o config-temp/qemu-conf.exe config-temp/qemu-conf.m
-warning: unknown warning option '-Wold-style-declaration'; did you mean '-Wout-of-line-declaration'? [-Wunknown-warning-option]
-warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
-2 warnings generated.
+lines: 157 177 1191 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_object main
-lines: 157 171 1277 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -Werror -fstack-protector-strong -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 1276 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -Werror -fstack-protector-strong -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1278 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -Werror -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
+lines: 157 177 1277 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -Werror -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_object main
-lines: 157 171 1299 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 1298 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -fstack-protector-strong -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1347 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -Werror -fno-pie -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -fstack-protector-strong -no-pie
+lines: 157 177 1346 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -mthreads -std=gnu11 -Wall -fstack-protector-strong -Werror -fno-pie -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -fstack-protector-strong -no-pie
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1440 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
+lines: 157 177 1439 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
 config-temp/qemu-conf.c:2:3: error: #error LITTLE
     2 | # error LITTLE
       |   ^~~~~
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1518 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong -lgthread-2.0 -lglib-2.0 -lintl
+lines: 157 177 1517 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong -lgthread-2.0 -lglib-2.0 -lintl
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1538 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong -lgthread-2.0 -lglib-2.0 -lintl
+lines: 157 177 1537 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong -lgthread-2.0 -lglib-2.0 -lintl
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1581 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
+lines: 157 177 1580 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
 config-temp/qemu-conf.c:1:10: fatal error: ucontext.h: No such file or directory
     1 | #include <ucontext.h>
       |          ^~~~~~~~~~~~
 compilation terminated.
 
 funcs: do_compiler_werror do_cc compile_prog main
-lines: 157 177 1671 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
+lines: 157 177 1670 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -no-pie -fstack-protector-strong
 
 funcs: do_compiler_werror do_cc compile_object main
-lines: 157 171 1706 0
-cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+lines: 157 171 1705 0
+cc -m64 -mcx16 -DXBOX=1 -Wno-error -fno-pie -mthreads -std=gnu11 -Wall -fno-pie -no-pie -fstack-protector-strong -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
 
 funcs: do_compiler probe_target_compiler main
-lines: 2131 2306 0
+lines: 2128 2303 0
 cc -m32 -o config-temp/qemu-conf.o -c config-temp/qemu-conf.c
 
 funcs: do_compiler probe_target_compiler main
-lines: 2132 2306 0
+lines: 2129 2303 0
 cc -m32 -r -nostdlib -o config-temp/qemu-conf2.o config-temp/qemu-conf.o -lgcc
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: skipping incompatible C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0\libgcc.a when searching for -lgcc
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lgcc: No such file or directory
 collect2.exe: error: ld returned 1 exit status
 
 funcs: do_compiler probe_target_compiler main
-lines: 2131 2533 0
+lines: 2128 2530 0
 cc -m32 -o config-temp/qemu-conf.o -c config-temp/qemu-conf.c
 
 funcs: do_compiler probe_target_compiler main
-lines: 2132 2533 0
+lines: 2129 2530 0
 cc -m32 -r -nostdlib -o config-temp/qemu-conf2.o config-temp/qemu-conf.o -lgcc
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: skipping incompatible C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0\libgcc.a when searching for -lgcc
 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lgcc: No such file or directory

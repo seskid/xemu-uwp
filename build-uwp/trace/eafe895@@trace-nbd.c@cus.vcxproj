@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{E690B0E5-39BE-4C12-AA34-7E57AA05B083}</ProjectGuid>
+		<ProjectGuid>{7B0883C8-E0D1-4C8C-873A-0982F9624BFE}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-nbd.c</ProjectName>
 		<RootNamespace>trace-nbd.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

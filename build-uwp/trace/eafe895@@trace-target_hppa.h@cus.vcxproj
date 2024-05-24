@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{768D70B8-83E4-4BEB-A8F7-7D9955D94226}</ProjectGuid>
+		<ProjectGuid>{BBAC2A5E-64C6-4BD5-9F58-E16A16E7D040}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-target_hppa.h</ProjectName>
 		<RootNamespace>trace-target_hppa.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

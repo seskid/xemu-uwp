@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="softmmu">
-			<UniqueIdentifier>{17FBB649-918E-46A6-95FB-A4F6523D8BB9}</UniqueIdentifier>
+			<UniqueIdentifier>{54E436A7-73F2-4178-B474-39C81CABC745}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

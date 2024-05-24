@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{30612EEF-F940-4FED-ABA4-357FEE1D72C6}</ProjectGuid>
+		<ProjectGuid>{79168EB7-4425-4469-9B27-E430B5D0A16F}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-softmmu.h</ProjectName>
 		<RootNamespace>trace-softmmu.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

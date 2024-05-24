@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{42FDFE6C-C14E-45E6-89F5-BA4EB16470C9}</ProjectGuid>
+		<ProjectGuid>{49E6CDA3-A84C-4844-98CA-929A9D077F0A}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-scsi.c</ProjectName>
 		<RootNamespace>trace-scsi.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

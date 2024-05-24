@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{1E67C239-9FDF-4C8F-A519-AC11F913DEFB}</ProjectGuid>
+		<ProjectGuid>{18562DDA-1CD0-4623-8148-1016AB6EE25B}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>edk2-i386-secure-code.fd</ProjectName>
 		<RootNamespace>edk2-i386-secure-code.fd</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

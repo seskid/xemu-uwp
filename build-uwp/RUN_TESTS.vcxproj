@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{5B14A546-B0E1-4115-9264-325AA17B5286}</ProjectGuid>
+		<ProjectGuid>{8708BDB6-5DB0-45AB-BE20-A7B6E1763D14}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>RUN_TESTS</ProjectName>
 		<RootNamespace>RUN_TESTS</RootNamespace>
@@ -50,7 +50,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

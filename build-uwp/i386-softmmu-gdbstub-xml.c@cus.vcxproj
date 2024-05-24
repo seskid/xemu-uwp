@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{007C3782-8E49-4ED3-9CCB-8188D71E2CD8}</ProjectGuid>
+		<ProjectGuid>{9706FB68-297D-4101-97FD-385F2F615B59}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>i386-softmmu-gdbstub-xml.c</ProjectName>
 		<RootNamespace>i386-softmmu-gdbstub-xml.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

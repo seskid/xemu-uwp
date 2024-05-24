@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="dtc/libfdt">
-			<UniqueIdentifier>{A6FE7B29-5793-4D99-9A97-EFD5CC3DF2B9}</UniqueIdentifier>
+			<UniqueIdentifier>{07850E49-6DED-402B-8CCE-2539105992FC}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

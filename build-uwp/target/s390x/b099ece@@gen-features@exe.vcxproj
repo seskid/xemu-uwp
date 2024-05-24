@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{7FB62889-B073-4C10-A798-B96DE05378CB}</ProjectGuid>
+		<ProjectGuid>{8961525F-8713-45F7-BB61-57D363200CA1}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>gen-features</ProjectName>
 		<RootNamespace>gen-features</RootNamespace>
@@ -76,7 +76,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

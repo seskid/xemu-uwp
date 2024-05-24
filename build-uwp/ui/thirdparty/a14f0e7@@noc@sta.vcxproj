@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{10DC549C-4528-4F58-9FCD-8B6C2DDD03EA}</ProjectGuid>
+		<ProjectGuid>{A01EC631-0C0E-48A7-B1AA-9CF25533A208}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>libnoc</ProjectName>
 		<RootNamespace>libnoc</RootNamespace>
@@ -73,8 +73,8 @@
 	</ItemGroup>
 	<ItemGroup>
 		<CLCompile Include="../../../ui/thirdparty/noc_file_dialog/noc_file_dialog_win32.cc">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++17&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++17&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<AdditionalIncludeDirectories>a14f0e7@@noc@sta;.;../../../ui/thirdparty;noc_file_dialog;../../../ui/thirdparty/noc_file_dialog;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 			<ObjectFileName>$(IntDir)noc_file_dialog_noc_file_dialog_win32.cc.obj</ObjectFileName>
 		</CLCompile>
@@ -82,7 +82,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

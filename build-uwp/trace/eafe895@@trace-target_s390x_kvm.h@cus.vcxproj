@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{F2340616-292E-40AE-94A2-4078591BA28C}</ProjectGuid>
+		<ProjectGuid>{BCB5DC16-97B4-414E-A75D-8208676B3A9A}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-target_s390x_kvm.h</ProjectName>
 		<RootNamespace>trace-target_s390x_kvm.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

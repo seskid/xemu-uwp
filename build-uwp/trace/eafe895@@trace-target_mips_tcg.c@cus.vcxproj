@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{6FC7C713-41C1-438C-8C99-E9C4D243F084}</ProjectGuid>
+		<ProjectGuid>{3693F036-AEA7-4E1D-868F-8B9F10C87419}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-target_mips_tcg.c</ProjectName>
 		<RootNamespace>trace-target_mips_tcg.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

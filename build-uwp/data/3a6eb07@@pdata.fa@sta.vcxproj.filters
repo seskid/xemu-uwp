@@ -1,5 +1,15 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-	<ItemGroup/>
-	<ItemGroup/>
+  <ItemGroup>
+    <CLCompile Include="../data/controller_mask.png.c" />
+    <CLCompile Include="../data/logo_sdf.png.c" />
+    <CLCompile Include="../data/xemu_64x64.png.c" />
+    <CLCompile Include="../data/abxy.ttf.c" />
+    <CLCompile Include="../data/Roboto-Medium.ttf.c" />
+    <CLCompile Include="../data/RobotoCondensed-Regular.ttf.c" />
+    <CLCompile Include="../data/font_awesome_6_1_1_solid.otf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../data/meson.build" />
+  </ItemGroup>
 </Project>

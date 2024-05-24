@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C037AF0B-971D-42FE-9CFC-4BE2E465E8AD}</ProjectGuid>
+		<ProjectGuid>{A431FCBA-CEE3-4901-8106-19779985450E}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>qemu-img-cmds.h</ProjectName>
 		<RootNamespace>qemu-img-cmds.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

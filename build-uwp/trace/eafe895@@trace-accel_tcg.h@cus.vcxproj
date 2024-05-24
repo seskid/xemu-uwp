@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{1CD95A2E-98AB-4AF0-B4B2-38AB900EC064}</ProjectGuid>
+		<ProjectGuid>{88303813-F164-44E0-9823-6DE945A4E408}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-accel_tcg.h</ProjectName>
 		<RootNamespace>trace-accel_tcg.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

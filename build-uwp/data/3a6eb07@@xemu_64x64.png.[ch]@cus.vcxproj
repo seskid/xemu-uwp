@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{033D7D6D-2A11-48AE-ACFC-44D3A01C7F61}</ProjectGuid>
+		<ProjectGuid>{70BBDA2A-1FD7-4BA6-98E4-4AE3452CA49C}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>xemu_64x64.png.[ch]</ProjectName>
 		<RootNamespace>xemu_64x64.png.[ch]</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

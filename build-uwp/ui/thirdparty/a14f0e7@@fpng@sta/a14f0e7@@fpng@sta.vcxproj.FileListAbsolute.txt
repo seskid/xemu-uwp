@@ -1,0 +1,16 @@
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\priconfig.xml
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\priconfig.xml.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\unfiltered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\unfiltered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\filtered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\filtered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\excluded.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\excluded.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\resources.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\resources.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\pri.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\pri.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\libfpng.pri
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\qualifiers.txt
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\qualifiers.txt.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\ui\thirdparty\a14f0e7@@fpng@sta\MultipleQualifiersPerDimensionFound.txt

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C63D7F00-869C-42B2-936C-ED5C3D6048EC}</ProjectGuid>
+		<ProjectGuid>{55C1696A-02B7-4FB7-851C-6443DD0CBB8B}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-backends_tpm.c</ProjectName>
 		<RootNamespace>trace-backends_tpm.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

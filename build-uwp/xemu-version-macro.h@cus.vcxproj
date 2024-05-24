@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{D4D5E722-EAC4-48D0-A696-60047DEF49D5}</ProjectGuid>
+		<ProjectGuid>{637C5FA8-20FF-491F-866F-59F20469E46E}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>xemu-version-macro.h</ProjectName>
 		<RootNamespace>xemu-version-macro.h</RootNamespace>
@@ -42,7 +42,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

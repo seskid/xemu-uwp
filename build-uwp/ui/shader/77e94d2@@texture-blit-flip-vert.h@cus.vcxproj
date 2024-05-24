@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{B74EB89B-8D87-4999-86A2-C6482A79A3C8}</ProjectGuid>
+		<ProjectGuid>{C60EB87E-1EB9-4C81-9494-66F5760014EB}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>texture-blit-flip-vert.h</ProjectName>
 		<RootNamespace>texture-blit-flip-vert.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

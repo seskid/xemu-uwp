@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{85EE78D3-262D-4113-9DE0-7DC851F42036}</ProjectGuid>
+		<ProjectGuid>{09F9B263-2E16-40D5-8BC1-0ABC6C591E2C}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>stress</ProjectName>
 		<RootNamespace>stress</RootNamespace>
@@ -68,8 +68,8 @@
 	</ItemGroup>
 	<ItemGroup>
 		<CLCompile Include="../../../tests/migration/stress.c">
-			<AdditionalOptions>&quot;/std:c11&quot; &quot;-iquote&quot; &quot;.&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/include&quot; &quot;-iquote&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/tcg/i386&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-Wstrict-prototypes&quot; &quot;-Wredundant-decls&quot; &quot;-Wundef&quot; &quot;-Wwrite-strings&quot; &quot;-Wmissing-prototypes&quot; &quot;-fno-strict-aliasing&quot; &quot;-fno-common&quot; &quot;-fwrapv&quot; &quot;-Wold-style-declaration&quot; &quot;-Wold-style-definition&quot; &quot;-Wtype-limits&quot; &quot;-Wformat-security&quot; &quot;-Wformat-y2k&quot; &quot;-Winit-self&quot; &quot;-Wignored-qualifiers&quot; &quot;-Wempty-body&quot; &quot;-Wnested-externs&quot; &quot;-Wendif-labels&quot; &quot;-Wexpansion-to-defined&quot; &quot;-Wimplicit-fallthrough=2&quot; &quot;-Wno-missing-include-dirs&quot; &quot;-Wno-shift-negative-value&quot; &quot;-Wno-psabi&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>_GNU_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE; _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalOptions>&quot;/std:c11&quot; &quot;-fno-pie&quot; &quot;-no-pie&quot; &quot;-fstack-protector-strong&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions> _XBOX_UWP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<AdditionalIncludeDirectories>8a86d40@@stress@exe;.;../../../tests/migration;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 			<ObjectFileName>$(IntDir)stress.c.obj</ObjectFileName>
 		</CLCompile>
@@ -77,7 +77,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

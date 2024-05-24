@@ -1,0 +1,16 @@
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\priconfig.xml
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\priconfig.xml.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\unfiltered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\unfiltered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\filtered.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\filtered.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\excluded.layout.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\excluded.layout.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\resources.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\resources.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\pri.resfiles
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\pri.resfiles.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\libnv2a_vsh_cpu.pri
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\qualifiers.txt
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\qualifiers.txt.intermediate
+C:\Users\seski\source\repos\xemu-uwp\build\hw\xbox\nv2a\thirdparty\81c231f@@nv2a_vsh_cpu@sta\MultipleQualifiersPerDimensionFound.txt

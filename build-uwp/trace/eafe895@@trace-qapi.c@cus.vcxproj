@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{3CDFAB56-FA60-47DF-9A54-2BF422F7A39E}</ProjectGuid>
+		<ProjectGuid>{2438F310-8211-41F1-A5EA-50A1E84F48E7}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-qapi.c</ProjectName>
 		<RootNamespace>trace-qapi.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

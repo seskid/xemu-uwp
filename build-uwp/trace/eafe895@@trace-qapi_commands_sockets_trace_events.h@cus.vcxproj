@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{6E8551FD-7F30-40FA-8F7E-B8E2BF38CC8D}</ProjectGuid>
+		<ProjectGuid>{8C846DAF-CE54-4D83-94E9-5A2E7DA25F51}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-qapi_commands_sockets_trace_events.h</ProjectName>
 		<RootNamespace>trace-qapi_commands_sockets_trace_events.h</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="../qapi/5fa0379@@shared QAPI source files@cus.vcxproj">
-			<Project>{81219883-0E73-4C5D-87D4-12F4985DACC5}</Project>
+			<Project>{C0FA00A1-C848-4295-9152-4D250E3FF3BD}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

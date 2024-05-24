@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="noc_file_dialog">
-			<UniqueIdentifier>{99485380-359C-4448-968A-92A6DF0DA8D8}</UniqueIdentifier>
+			<UniqueIdentifier>{6CA54876-B6EB-48BB-A44D-1A1768D66A8C}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

@@ -1,54 +1,51 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
-	<ItemGroup Label="ProjectConfigurations">
-		<ProjectConfiguration Include="release|x64">
-			<Configuration>release</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-	</ItemGroup>
-	<PropertyGroup Label="Globals">
-		<ProjectGuid>{F5ADA945-73BD-4BA4-9277-C340C7F0971C}</ProjectGuid>
-		<Keyword>x64Proj</Keyword>
-		<ProjectName>version.rc</ProjectName>
-		<RootNamespace>version.rc</RootNamespace>
-		<Platform>x64</Platform>
-		<WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
-		<UseMultiToolTask>true</UseMultiToolTask>
-	</PropertyGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
-	<PropertyGroup Label="Configuration">
-		<ConfigurationType>Utility</ConfigurationType>
-		<PlatformToolset>v143</PlatformToolset>
-		<CharacterSet>MultiByte</CharacterSet>
-		<UseOfMfc>false</UseOfMfc>
-	</PropertyGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
-	<PropertyGroup>
-		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-		<OutDir>.\</OutDir>
-		<IntDir>version.rc@cus\</IntDir>
-		<TargetName>version.rc</TargetName>
-		<EmbedManifest>false</EmbedManifest>
-	</PropertyGroup>
-	<ItemGroup>
-		<CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
-			<Command>&quot;C:/msys64/mingw64/bin/python3.exe&quot; &quot;C:/users/seski/source/repos/xemu-uwp/meson/meson.py&quot; &quot;--internal&quot; &quot;exe&quot; &quot;--unpickle&quot; &quot;C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_rc.EXE_4413eae27f36f27b81300c9cd47f0e1cf5882de2.dat&quot;
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{138F94E2-E32C-4E9B-BD5F-02516069DD24}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <ProjectName>version.rc</ProjectName>
+    <RootNamespace>version.rc</RootNamespace>
+    <Platform>x64</Platform>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>version.rc@cus\</IntDir>
+    <TargetName>version.rc</TargetName>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <IncludePath>C:\Users\seski\source\repos\xemu-uwp\build;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:/Users/seski/source/repos/xemu-uwp/build/meson-private/custom_target.rule">
+      <Command>"C:/msys64/mingw64/bin/python3.exe" "C:/users/seski/source/repos/xemu-uwp/meson/meson.py" "--internal" "exe" "--unpickle" "C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_rc.EXE_4413eae27f36f27b81300c9cd47f0e1cf5882de2.dat"
 </Command>
-			<Outputs>C:/Users/seski/source/repos/xemu-uwp/build/version.rc_version.res</Outputs>
-			<AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_rc.EXE_4413eae27f36f27b81300c9cd47f0e1cf5882de2.dat;C:/Users/seski/source/repos/xemu-uwp/build/../version.rc;C:/Users/seski/source/repos/xemu-uwp/pc-bios/qemu-nsis.ico;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\\x64/rc.EXE</AdditionalInputs>
-		</CustomBuild>
-	</ItemGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
-			<LinkLibraryDependencies>false</LinkLibraryDependencies>
-		</ProjectReference>
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="./xemu-version-macro.h@cus.vcxproj">
-			<Project>{D4D5E722-EAC4-48D0-A696-60047DEF49D5}</Project>
-			<LinkLibraryDependencies>false</LinkLibraryDependencies>
-		</ProjectReference>
-	</ItemGroup>
+      <Outputs>C:/Users/seski/source/repos/xemu-uwp/build/version.rc_version.res</Outputs>
+      <AdditionalInputs>C:/Users/seski/source/repos/xemu-uwp/build/meson-private/meson_exe_rc.EXE_4413eae27f36f27b81300c9cd47f0e1cf5882de2.dat;C:/Users/seski/source/repos/xemu-uwp/build/../version.rc;C:/Users/seski/source/repos/xemu-uwp/pc-bios/qemu-nsis.ico;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\\x64/rc.EXE</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
+      <Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

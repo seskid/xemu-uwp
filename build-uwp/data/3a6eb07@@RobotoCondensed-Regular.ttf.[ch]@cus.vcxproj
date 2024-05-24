@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{D2A9D05F-BEBD-4A04-8C4F-2E2DDC2926C9}</ProjectGuid>
+		<ProjectGuid>{0275ACFE-58EC-4D74-8B5C-552A77B331E1}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>RobotoCondensed-Regular.ttf.[ch]</ProjectName>
 		<RootNamespace>RobotoCondensed-Regular.ttf.[ch]</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{3F931360-A207-46C5-82C8-6151B7B2CB83}</ProjectGuid>
+		<ProjectGuid>{DA1A62CC-1C4E-4702-8B24-87135F51E11F}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>texture-blit-vert.h</ProjectName>
 		<RootNamespace>texture-blit-vert.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{86C1C7E1-CEDB-4621-BFDD-68F46B9C33F7}</ProjectGuid>
+		<ProjectGuid>{A5076EE7-A6D7-4DFF-912D-61C9BF7B6F43}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-authz.h</ProjectName>
 		<RootNamespace>trace-authz.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

@@ -2,10 +2,10 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="../qtest/libqos">
-			<UniqueIdentifier>{65042A5E-60FA-4196-ACBC-84D31356BEE7}</UniqueIdentifier>
+			<UniqueIdentifier>{72B101AB-CC3E-42DD-A104-2087702E2B83}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="../..">
-			<UniqueIdentifier>{C42BBB62-447A-42EC-9AC0-9E2B91CA8569}</UniqueIdentifier>
+			<UniqueIdentifier>{1BB4C544-FF87-45D7-A847-BEA4FA5864DF}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

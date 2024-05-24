@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{68307D97-A0F9-47F6-B5C4-40F0662BC6D0}</ProjectGuid>
+		<ProjectGuid>{6339939B-A00E-4896-A9CA-AA44AFA5F84A}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>texture-blit-frag.h</ProjectName>
 		<RootNamespace>texture-blit-frag.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

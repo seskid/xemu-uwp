@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{1355B531-A055-4156-BCF6-0C6C99251B57}</ProjectGuid>
+		<ProjectGuid>{B74F06A9-E298-484B-97E8-9420741A30CD}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>iset.py</ProjectName>
 		<RootNamespace>iset.py</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./0121e99@@gen_dectree_import@exe.vcxproj">
-			<Project>{EA656EBF-749A-441B-8231-7E087EEA3D4D}</Project>
+			<Project>{4F7EF8AB-19DD-4936-9D8D-48025708374B}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

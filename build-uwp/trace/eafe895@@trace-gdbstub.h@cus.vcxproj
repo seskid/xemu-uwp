@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{B572AC77-2AF8-4422-975F-87506269B68E}</ProjectGuid>
+		<ProjectGuid>{B2B0C136-C546-482A-8C8C-79305DB9ADE3}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-gdbstub.h</ProjectName>
 		<RootNamespace>trace-gdbstub.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

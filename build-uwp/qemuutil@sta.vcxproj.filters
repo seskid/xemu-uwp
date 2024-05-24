@@ -1,502 +1,1130 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-	<ItemGroup>
-		<Filter Include="qapi">
-			<UniqueIdentifier>{128BDE11-A529-41BC-A48B-A3DF73F23EF0}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="qobject">
-			<UniqueIdentifier>{3D44CCE8-23DA-4FAE-9979-68063264F42D}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="util">
-			<UniqueIdentifier>{DB3AA865-C7C3-4B51-BEEC-438D495F15C8}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="util\miniz">
-			<UniqueIdentifier>{29CAEB2B-9582-44A9-AB8B-91AD57BE4679}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="crypto">
-			<UniqueIdentifier>{DFB93F06-C08B-49D4-8212-7F97736B20D4}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="trace">
-			<UniqueIdentifier>{93FA7B71-3CCB-4EA4-B549-C11046A4A705}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="stubs">
-			<UniqueIdentifier>{FBCB80D8-BC25-42D9-B265-714BE36C735C}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClCompile Include="../qapi/opts-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-clone-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-dealloc-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-forward-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-util.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-visit-core.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qobject-input-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qobject-output-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/string-input-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/string-output-visitor.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qapi-type-helpers.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qmp-dispatch.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qmp-event.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qapi/qmp-registry.c">
-			<Filter>qapi</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qnull.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qnum.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qstring.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qdict.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qlist.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qbool.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qlit.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qjson.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/qobject.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/json-writer.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/json-lexer.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/json-streamer.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/json-parser.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../qobject/block-qdict.c">
-			<Filter>qobject</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/osdep.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/cutils.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/unicode.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-timer-common.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/thread-context.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/atomic64.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/aio-win32.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/event_notifier-win32.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/oslib-win32.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-thread-win32.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/envlist.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/path.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/module.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/host-utils.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/bitmap.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/bitops.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/fifo8.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/cacheflush.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/error.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/error-report.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-print.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/id.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-config.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/notify.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-option.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-progress.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/keyval.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/crc32c.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/uuid.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/getauxval.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/rcu.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/log.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qdist.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qht.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qsp.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/range.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/stats64.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/systemd.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/transactions.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/guest-random.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/yank.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/int128.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/memalign.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/miniz/miniz.c">
-			<Filter>util\miniz</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/fast-hash.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/crc-ccitt.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/aiocb.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/async.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/base64.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/lockcnt.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/main-loop.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-coroutine.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-coroutine-lock.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-coroutine-io.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/coroutine-win32.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/thread-pool.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-timer.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-sockets.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/aio-wait.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/buffer.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/bufferiszero.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/hbitmap.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/hexdump.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/iova-tree.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/iov.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/uri.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/nvdimm-utils.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/block-helpers.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-coroutine-sleep.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-co-shared-resource.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/qemu-co-timeout.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/readline.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/throttle.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/timed-average.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../util/filemonitor-stub.c">
-			<Filter>util</Filter>
-		</ClCompile>
-		<ClCompile Include="../crypto/sm4.c">
-			<Filter>crypto</Filter>
-		</ClCompile>
-		<ClCompile Include="../crypto/aes.c">
-			<Filter>crypto</Filter>
-		</ClCompile>
-		<ClCompile Include="../crypto/init.c">
-			<Filter>crypto</Filter>
-		</ClCompile>
-		<ClCompile Include="../crypto/random-platform.c">
-			<Filter>crypto</Filter>
-		</ClCompile>
-		<ClCompile Include="../trace/control.c">
-			<Filter>trace</Filter>
-		</ClCompile>
-		<ClCompile Include="../trace/qmp.c">
-			<Filter>trace</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/bdrv-next-monitor-owned.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/blk-commit-all.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/blk-exp-close-all.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/blockdev-close-all-bdrv-states.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/change-state-handler.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/cmos.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/cpu-get-clock.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/cpus-get-virtual-clock.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/qemu-timer-notify-cb.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/icount.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/dump.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/error-printf.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/fdset.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/gdbstub.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/get-vm-name.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/iothread-lock.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/iothread-lock-block.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/isa-bus.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/is-daemonized.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/migr-blocker.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/module-opts.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/monitor.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/monitor-core.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/physmem.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/qmp_memory_device.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/qmp-command-available.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/qmp-quit.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/qtest.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/ram-block.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/ramfb.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/replay.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/runstate-check.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/sysbus.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/target-get-monitor-def.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/target-monitor-defs.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/trace-control.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/uuid.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/vmgenid.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/vmstate.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/vm-stop.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/win32-kbd-hook.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/cpu-synchronize-state.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/replay-tools.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/fw_cfg.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/pci-bus.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/semihost.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/usb-dev-stub.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/xen-hw-stub.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-		<ClCompile Include="../stubs/vfio-user-obj.c">
-			<Filter>stubs</Filter>
-		</ClCompile>
-	</ItemGroup>
+  <ItemGroup>
+    <Filter Include="qapi">
+      <UniqueIdentifier>{E7E674CC-7175-4442-9E38-C730AD79B63B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="qobject">
+      <UniqueIdentifier>{F3B82A04-F5EC-4218-BD16-C746B1D4A26E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{D017D80E-849C-49D9-A620-520BF9FFE11F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\miniz">
+      <UniqueIdentifier>{A4A13A58-C22C-4FF6-A69D-D291B29C252E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{EF0FBBD2-1F31-4697-9892-7DEF5DA44988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace">
+      <UniqueIdentifier>{E4E6FA4C-87B4-4A3B-ABC0-425B138DABBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs">
+      <UniqueIdentifier>{FD55F085-F20E-42F4-AE3C-0B72F291A313}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../qapi/opts-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-clone-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-dealloc-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-forward-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-util.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-visit-core.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qobject-input-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qobject-output-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/string-input-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/string-output-visitor.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qapi-type-helpers.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qmp-dispatch.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qmp-event.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qapi/qmp-registry.c">
+      <Filter>qapi</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qnull.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qnum.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qstring.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qdict.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qlist.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qbool.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qlit.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qjson.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/qobject.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/json-writer.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/json-lexer.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/json-streamer.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/json-parser.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../qobject/block-qdict.c">
+      <Filter>qobject</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/osdep.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/cutils.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/unicode.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-timer-common.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/thread-context.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/atomic64.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/aio-win32.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/event_notifier-win32.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/oslib-win32.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-thread-win32.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/envlist.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/path.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/module.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/host-utils.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/bitmap.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/bitops.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/fifo8.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/cacheflush.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/error.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/error-report.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-print.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/id.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-config.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/notify.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-option.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-progress.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/keyval.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/crc32c.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/uuid.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/getauxval.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/rcu.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/log.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qdist.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qht.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qsp.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/range.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/stats64.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/systemd.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/transactions.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/guest-random.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/yank.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/int128.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/memalign.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/miniz/miniz.c">
+      <Filter>util\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/fast-hash.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/crc-ccitt.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/aiocb.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/async.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/base64.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/lockcnt.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/main-loop.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-coroutine.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-coroutine-lock.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-coroutine-io.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/coroutine-win32.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/thread-pool.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-timer.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-sockets.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/aio-wait.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/buffer.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/bufferiszero.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/hbitmap.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/hexdump.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/iova-tree.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/iov.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/uri.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/nvdimm-utils.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/block-helpers.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-coroutine-sleep.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-co-shared-resource.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/qemu-co-timeout.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/readline.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/throttle.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/timed-average.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../util/filemonitor-stub.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="../crypto/sm4.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="../crypto/aes.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="../crypto/init.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="../crypto/random-platform.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="../trace/control.c">
+      <Filter>trace</Filter>
+    </ClCompile>
+    <ClCompile Include="../trace/qmp.c">
+      <Filter>trace</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/bdrv-next-monitor-owned.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/blk-commit-all.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/blk-exp-close-all.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/blockdev-close-all-bdrv-states.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/change-state-handler.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/cmos.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/cpu-get-clock.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/cpus-get-virtual-clock.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/qemu-timer-notify-cb.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/icount.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/dump.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/error-printf.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/fdset.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/gdbstub.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/get-vm-name.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/iothread-lock.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/iothread-lock-block.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/isa-bus.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/is-daemonized.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/migr-blocker.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/module-opts.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/monitor.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/monitor-core.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/physmem.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/qmp_memory_device.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/qmp-command-available.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/qmp-quit.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/qtest.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/ram-block.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/ramfb.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/replay.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/runstate-check.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/sysbus.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/target-get-monitor-def.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/target-monitor-defs.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/trace-control.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/uuid.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/vmgenid.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/vmstate.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/vm-stop.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/win32-kbd-hook.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/cpu-synchronize-state.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/replay-tools.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/fw_cfg.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/pci-bus.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/semihost.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/usb-dev-stub.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/xen-hw-stub.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="../stubs/vfio-user-obj.c">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <CLCompile Include="qapi/qapi-builtin-types.c" />
+    <CLCompile Include="qapi/qapi-builtin-visit.c" />
+    <CLCompile Include="qapi/qapi-types-authz.c" />
+    <CLCompile Include="qapi/qapi-visit-authz.c" />
+    <CLCompile Include="qapi/qapi-events-authz.c" />
+    <CLCompile Include="qapi/qapi-commands-authz.c" />
+    <CLCompile Include="qapi/qapi-types-block.c" />
+    <CLCompile Include="qapi/qapi-visit-block.c" />
+    <CLCompile Include="qapi/qapi-events-block.c" />
+    <CLCompile Include="qapi/qapi-commands-block.c" />
+    <CLCompile Include="qapi/qapi-types-block-core.c" />
+    <CLCompile Include="qapi/qapi-visit-block-core.c" />
+    <CLCompile Include="qapi/qapi-events-block-core.c" />
+    <CLCompile Include="qapi/qapi-commands-block-core.c" />
+    <CLCompile Include="qapi/qapi-types-block-export.c" />
+    <CLCompile Include="qapi/qapi-visit-block-export.c" />
+    <CLCompile Include="qapi/qapi-events-block-export.c" />
+    <CLCompile Include="qapi/qapi-commands-block-export.c" />
+    <CLCompile Include="qapi/qapi-types-char.c" />
+    <CLCompile Include="qapi/qapi-visit-char.c" />
+    <CLCompile Include="qapi/qapi-events-char.c" />
+    <CLCompile Include="qapi/qapi-commands-char.c" />
+    <CLCompile Include="qapi/qapi-types-common.c" />
+    <CLCompile Include="qapi/qapi-visit-common.c" />
+    <CLCompile Include="qapi/qapi-events-common.c" />
+    <CLCompile Include="qapi/qapi-commands-common.c" />
+    <CLCompile Include="qapi/qapi-types-compat.c" />
+    <CLCompile Include="qapi/qapi-visit-compat.c" />
+    <CLCompile Include="qapi/qapi-events-compat.c" />
+    <CLCompile Include="qapi/qapi-commands-compat.c" />
+    <CLCompile Include="qapi/qapi-types-control.c" />
+    <CLCompile Include="qapi/qapi-visit-control.c" />
+    <CLCompile Include="qapi/qapi-events-control.c" />
+    <CLCompile Include="qapi/qapi-commands-control.c" />
+    <CLCompile Include="qapi/qapi-types-crypto.c" />
+    <CLCompile Include="qapi/qapi-visit-crypto.c" />
+    <CLCompile Include="qapi/qapi-events-crypto.c" />
+    <CLCompile Include="qapi/qapi-commands-crypto.c" />
+    <CLCompile Include="qapi/qapi-types-dump.c" />
+    <CLCompile Include="qapi/qapi-visit-dump.c" />
+    <CLCompile Include="qapi/qapi-events-dump.c" />
+    <CLCompile Include="qapi/qapi-commands-dump.c" />
+    <CLCompile Include="qapi/qapi-types-error.c" />
+    <CLCompile Include="qapi/qapi-visit-error.c" />
+    <CLCompile Include="qapi/qapi-events-error.c" />
+    <CLCompile Include="qapi/qapi-commands-error.c" />
+    <CLCompile Include="qapi/qapi-types-introspect.c" />
+    <CLCompile Include="qapi/qapi-visit-introspect.c" />
+    <CLCompile Include="qapi/qapi-events-introspect.c" />
+    <CLCompile Include="qapi/qapi-commands-introspect.c" />
+    <CLCompile Include="qapi/qapi-types-job.c" />
+    <CLCompile Include="qapi/qapi-visit-job.c" />
+    <CLCompile Include="qapi/qapi-events-job.c" />
+    <CLCompile Include="qapi/qapi-commands-job.c" />
+    <CLCompile Include="qapi/qapi-types-machine.c" />
+    <CLCompile Include="qapi/qapi-visit-machine.c" />
+    <CLCompile Include="qapi/qapi-events-machine.c" />
+    <CLCompile Include="qapi/qapi-commands-machine.c" />
+    <CLCompile Include="qapi/qapi-types-migration.c" />
+    <CLCompile Include="qapi/qapi-visit-migration.c" />
+    <CLCompile Include="qapi/qapi-events-migration.c" />
+    <CLCompile Include="qapi/qapi-commands-migration.c" />
+    <CLCompile Include="qapi/qapi-types-misc.c" />
+    <CLCompile Include="qapi/qapi-visit-misc.c" />
+    <CLCompile Include="qapi/qapi-events-misc.c" />
+    <CLCompile Include="qapi/qapi-commands-misc.c" />
+    <CLCompile Include="qapi/qapi-types-net.c" />
+    <CLCompile Include="qapi/qapi-visit-net.c" />
+    <CLCompile Include="qapi/qapi-events-net.c" />
+    <CLCompile Include="qapi/qapi-commands-net.c" />
+    <CLCompile Include="qapi/qapi-types-pragma.c" />
+    <CLCompile Include="qapi/qapi-visit-pragma.c" />
+    <CLCompile Include="qapi/qapi-events-pragma.c" />
+    <CLCompile Include="qapi/qapi-commands-pragma.c" />
+    <CLCompile Include="qapi/qapi-types-qom.c" />
+    <CLCompile Include="qapi/qapi-visit-qom.c" />
+    <CLCompile Include="qapi/qapi-events-qom.c" />
+    <CLCompile Include="qapi/qapi-commands-qom.c" />
+    <CLCompile Include="qapi/qapi-types-replay.c" />
+    <CLCompile Include="qapi/qapi-visit-replay.c" />
+    <CLCompile Include="qapi/qapi-events-replay.c" />
+    <CLCompile Include="qapi/qapi-commands-replay.c" />
+    <CLCompile Include="qapi/qapi-types-run-state.c" />
+    <CLCompile Include="qapi/qapi-visit-run-state.c" />
+    <CLCompile Include="qapi/qapi-events-run-state.c" />
+    <CLCompile Include="qapi/qapi-commands-run-state.c" />
+    <CLCompile Include="qapi/qapi-types-sockets.c" />
+    <CLCompile Include="qapi/qapi-visit-sockets.c" />
+    <CLCompile Include="qapi/qapi-events-sockets.c" />
+    <CLCompile Include="qapi/qapi-commands-sockets.c" />
+    <CLCompile Include="qapi/qapi-types-stats.c" />
+    <CLCompile Include="qapi/qapi-visit-stats.c" />
+    <CLCompile Include="qapi/qapi-events-stats.c" />
+    <CLCompile Include="qapi/qapi-commands-stats.c" />
+    <CLCompile Include="qapi/qapi-types-trace.c" />
+    <CLCompile Include="qapi/qapi-visit-trace.c" />
+    <CLCompile Include="qapi/qapi-events-trace.c" />
+    <CLCompile Include="qapi/qapi-commands-trace.c" />
+    <CLCompile Include="qapi/qapi-types-transaction.c" />
+    <CLCompile Include="qapi/qapi-visit-transaction.c" />
+    <CLCompile Include="qapi/qapi-events-transaction.c" />
+    <CLCompile Include="qapi/qapi-commands-transaction.c" />
+    <CLCompile Include="qapi/qapi-types-virtio.c" />
+    <CLCompile Include="qapi/qapi-visit-virtio.c" />
+    <CLCompile Include="qapi/qapi-events-virtio.c" />
+    <CLCompile Include="qapi/qapi-commands-virtio.c" />
+    <CLCompile Include="qapi/qapi-types-yank.c" />
+    <CLCompile Include="qapi/qapi-visit-yank.c" />
+    <CLCompile Include="qapi/qapi-events-yank.c" />
+    <CLCompile Include="qapi/qapi-commands-yank.c" />
+    <CLCompile Include="qapi/qapi-types-acpi.c" />
+    <CLCompile Include="qapi/qapi-visit-acpi.c" />
+    <CLCompile Include="qapi/qapi-events-acpi.c" />
+    <CLCompile Include="qapi/qapi-commands-acpi.c" />
+    <CLCompile Include="qapi/qapi-types-audio.c" />
+    <CLCompile Include="qapi/qapi-visit-audio.c" />
+    <CLCompile Include="qapi/qapi-events-audio.c" />
+    <CLCompile Include="qapi/qapi-commands-audio.c" />
+    <CLCompile Include="qapi/qapi-types-qdev.c" />
+    <CLCompile Include="qapi/qapi-visit-qdev.c" />
+    <CLCompile Include="qapi/qapi-events-qdev.c" />
+    <CLCompile Include="qapi/qapi-commands-qdev.c" />
+    <CLCompile Include="qapi/qapi-types-pci.c" />
+    <CLCompile Include="qapi/qapi-visit-pci.c" />
+    <CLCompile Include="qapi/qapi-events-pci.c" />
+    <CLCompile Include="qapi/qapi-commands-pci.c" />
+    <CLCompile Include="qapi/qapi-types-rdma.c" />
+    <CLCompile Include="qapi/qapi-visit-rdma.c" />
+    <CLCompile Include="qapi/qapi-events-rdma.c" />
+    <CLCompile Include="qapi/qapi-commands-rdma.c" />
+    <CLCompile Include="qapi/qapi-types-rocker.c" />
+    <CLCompile Include="qapi/qapi-visit-rocker.c" />
+    <CLCompile Include="qapi/qapi-events-rocker.c" />
+    <CLCompile Include="qapi/qapi-commands-rocker.c" />
+    <CLCompile Include="qapi/qapi-types-tpm.c" />
+    <CLCompile Include="qapi/qapi-visit-tpm.c" />
+    <CLCompile Include="qapi/qapi-events-tpm.c" />
+    <CLCompile Include="qapi/qapi-commands-tpm.c" />
+    <CLCompile Include="qapi/qapi-types-ui.c" />
+    <CLCompile Include="qapi/qapi-visit-ui.c" />
+    <CLCompile Include="qapi/qapi-events-ui.c" />
+    <CLCompile Include="qapi/qapi-commands-ui.c" />
+    <CLCompile Include="trace/trace-root.c" />
+    <CLCompile Include="trace/trace-crypto.c" />
+    <CLCompile Include="trace/trace-qapi.c" />
+    <CLCompile Include="trace/trace-qom.c" />
+    <CLCompile Include="trace/trace-monitor.c" />
+    <CLCompile Include="trace/trace-util.c" />
+    <CLCompile Include="trace/trace-gdbstub.c" />
+    <CLCompile Include="trace/trace-authz.c" />
+    <CLCompile Include="trace/trace-block.c" />
+    <CLCompile Include="trace/trace-io.c" />
+    <CLCompile Include="trace/trace-nbd.c" />
+    <CLCompile Include="trace/trace-scsi.c" />
+    <CLCompile Include="trace/trace-accel_kvm.c" />
+    <CLCompile Include="trace/trace-audio.c" />
+    <CLCompile Include="trace/trace-backends.c" />
+    <CLCompile Include="trace/trace-backends_tpm.c" />
+    <CLCompile Include="trace/trace-chardev.c" />
+    <CLCompile Include="trace/trace-ebpf.c" />
+    <CLCompile Include="trace/trace-hw_9pfs.c" />
+    <CLCompile Include="trace/trace-hw_acpi.c" />
+    <CLCompile Include="trace/trace-hw_adc.c" />
+    <CLCompile Include="trace/trace-hw_alpha.c" />
+    <CLCompile Include="trace/trace-hw_arm.c" />
+    <CLCompile Include="trace/trace-hw_audio.c" />
+    <CLCompile Include="trace/trace-hw_block.c" />
+    <CLCompile Include="trace/trace-hw_block_dataplane.c" />
+    <CLCompile Include="trace/trace-hw_char.c" />
+    <CLCompile Include="trace/trace-hw_display.c" />
+    <CLCompile Include="trace/trace-hw_dma.c" />
+    <CLCompile Include="trace/trace-hw_hyperv.c" />
+    <CLCompile Include="trace/trace-hw_i2c.c" />
+    <CLCompile Include="trace/trace-hw_i386.c" />
+    <CLCompile Include="trace/trace-hw_i386_xen.c" />
+    <CLCompile Include="trace/trace-hw_ide.c" />
+    <CLCompile Include="trace/trace-hw_input.c" />
+    <CLCompile Include="trace/trace-hw_intc.c" />
+    <CLCompile Include="trace/trace-hw_isa.c" />
+    <CLCompile Include="trace/trace-hw_mem.c" />
+    <CLCompile Include="trace/trace-hw_mips.c" />
+    <CLCompile Include="trace/trace-hw_misc.c" />
+    <CLCompile Include="trace/trace-hw_misc_macio.c" />
+    <CLCompile Include="trace/trace-hw_net.c" />
+    <CLCompile Include="trace/trace-hw_net_can.c" />
+    <CLCompile Include="trace/trace-hw_nubus.c" />
+    <CLCompile Include="trace/trace-hw_nvme.c" />
+    <CLCompile Include="trace/trace-hw_nvram.c" />
+    <CLCompile Include="trace/trace-hw_pci.c" />
+    <CLCompile Include="trace/trace-hw_pci_host.c" />
+    <CLCompile Include="trace/trace-hw_ppc.c" />
+    <CLCompile Include="trace/trace-hw_rdma.c" />
+    <CLCompile Include="trace/trace-hw_rdma_vmw.c" />
+    <CLCompile Include="trace/trace-hw_rtc.c" />
+    <CLCompile Include="trace/trace-hw_s390x.c" />
+    <CLCompile Include="trace/trace-hw_scsi.c" />
+    <CLCompile Include="trace/trace-hw_sd.c" />
+    <CLCompile Include="trace/trace-hw_sh4.c" />
+    <CLCompile Include="trace/trace-hw_sparc.c" />
+    <CLCompile Include="trace/trace-hw_sparc64.c" />
+    <CLCompile Include="trace/trace-hw_ssi.c" />
+    <CLCompile Include="trace/trace-hw_timer.c" />
+    <CLCompile Include="trace/trace-hw_tpm.c" />
+    <CLCompile Include="trace/trace-hw_usb.c" />
+    <CLCompile Include="trace/trace-hw_vfio.c" />
+    <CLCompile Include="trace/trace-hw_virtio.c" />
+    <CLCompile Include="trace/trace-hw_watchdog.c" />
+    <CLCompile Include="trace/trace-hw_xen.c" />
+    <CLCompile Include="trace/trace-hw_gpio.c" />
+    <CLCompile Include="trace/trace-migration.c" />
+    <CLCompile Include="trace/trace-net.c" />
+    <CLCompile Include="trace/trace-softmmu.c" />
+    <CLCompile Include="trace/trace-ui.c" />
+    <CLCompile Include="trace/trace-hw_remote.c" />
+    <CLCompile Include="trace/trace-hw_xbox_nv2a.c" />
+    <CLCompile Include="trace/trace-hw_xbox_mcpx.c" />
+    <CLCompile Include="trace/trace-hw_xbox.c" />
+    <CLCompile Include="trace/trace-accel_tcg.c" />
+    <CLCompile Include="trace/trace-hw_core.c" />
+    <CLCompile Include="trace/trace-target_arm.c" />
+    <CLCompile Include="trace/trace-target_arm_hvf.c" />
+    <CLCompile Include="trace/trace-target_hppa.c" />
+    <CLCompile Include="trace/trace-target_i386.c" />
+    <CLCompile Include="trace/trace-target_i386_kvm.c" />
+    <CLCompile Include="trace/trace-target_mips_tcg.c" />
+    <CLCompile Include="trace/trace-target_nios2.c" />
+    <CLCompile Include="trace/trace-target_ppc.c" />
+    <CLCompile Include="trace/trace-target_riscv.c" />
+    <CLCompile Include="trace/trace-target_s390x.c" />
+    <CLCompile Include="trace/trace-target_s390x_kvm.c" />
+    <CLCompile Include="trace/trace-target_sparc.c" />
+    <CLCompile Include="trace/trace-qapi_commands_authz_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_block_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_block_core_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_block_export_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_char_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_common_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_compat_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_control_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_crypto_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_dump_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_error_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_introspect_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_job_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_machine_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_migration_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_misc_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_net_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_pragma_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_qom_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_replay_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_run_state_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_sockets_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_stats_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_trace_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_transaction_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_virtio_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_yank_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_acpi_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_audio_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_qdev_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_pci_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_rdma_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_rocker_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_tpm_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_ui_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_machine_target_trace_events.c" />
+    <CLCompile Include="trace/trace-qapi_commands_misc_target_trace_events.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="config-host.h" />
+    <CLInclude Include="qapi/qapi-builtin-types.h" />
+    <CLInclude Include="qapi/qapi-builtin-visit.h" />
+    <CLInclude Include="qapi/qapi-types-authz.h" />
+    <CLInclude Include="qapi/qapi-visit-authz.h" />
+    <CLInclude Include="qapi/qapi-events-authz.h" />
+    <CLInclude Include="qapi/qapi-commands-authz.h" />
+    <CLInclude Include="qapi/qapi-commands-authz.trace-events" />
+    <CLInclude Include="qapi/qapi-types-block.h" />
+    <CLInclude Include="qapi/qapi-visit-block.h" />
+    <CLInclude Include="qapi/qapi-events-block.h" />
+    <CLInclude Include="qapi/qapi-commands-block.h" />
+    <CLInclude Include="qapi/qapi-commands-block.trace-events" />
+    <CLInclude Include="qapi/qapi-types-block-core.h" />
+    <CLInclude Include="qapi/qapi-visit-block-core.h" />
+    <CLInclude Include="qapi/qapi-events-block-core.h" />
+    <CLInclude Include="qapi/qapi-commands-block-core.h" />
+    <CLInclude Include="qapi/qapi-commands-block-core.trace-events" />
+    <CLInclude Include="qapi/qapi-types-block-export.h" />
+    <CLInclude Include="qapi/qapi-visit-block-export.h" />
+    <CLInclude Include="qapi/qapi-events-block-export.h" />
+    <CLInclude Include="qapi/qapi-commands-block-export.h" />
+    <CLInclude Include="qapi/qapi-commands-block-export.trace-events" />
+    <CLInclude Include="qapi/qapi-types-char.h" />
+    <CLInclude Include="qapi/qapi-visit-char.h" />
+    <CLInclude Include="qapi/qapi-events-char.h" />
+    <CLInclude Include="qapi/qapi-commands-char.h" />
+    <CLInclude Include="qapi/qapi-commands-char.trace-events" />
+    <CLInclude Include="qapi/qapi-types-common.h" />
+    <CLInclude Include="qapi/qapi-visit-common.h" />
+    <CLInclude Include="qapi/qapi-events-common.h" />
+    <CLInclude Include="qapi/qapi-commands-common.h" />
+    <CLInclude Include="qapi/qapi-commands-common.trace-events" />
+    <CLInclude Include="qapi/qapi-types-compat.h" />
+    <CLInclude Include="qapi/qapi-visit-compat.h" />
+    <CLInclude Include="qapi/qapi-events-compat.h" />
+    <CLInclude Include="qapi/qapi-commands-compat.h" />
+    <CLInclude Include="qapi/qapi-commands-compat.trace-events" />
+    <CLInclude Include="qapi/qapi-types-control.h" />
+    <CLInclude Include="qapi/qapi-visit-control.h" />
+    <CLInclude Include="qapi/qapi-events-control.h" />
+    <CLInclude Include="qapi/qapi-commands-control.h" />
+    <CLInclude Include="qapi/qapi-commands-control.trace-events" />
+    <CLInclude Include="qapi/qapi-types-crypto.h" />
+    <CLInclude Include="qapi/qapi-visit-crypto.h" />
+    <CLInclude Include="qapi/qapi-events-crypto.h" />
+    <CLInclude Include="qapi/qapi-commands-crypto.h" />
+    <CLInclude Include="qapi/qapi-commands-crypto.trace-events" />
+    <CLInclude Include="qapi/qapi-types-dump.h" />
+    <CLInclude Include="qapi/qapi-visit-dump.h" />
+    <CLInclude Include="qapi/qapi-events-dump.h" />
+    <CLInclude Include="qapi/qapi-commands-dump.h" />
+    <CLInclude Include="qapi/qapi-commands-dump.trace-events" />
+    <CLInclude Include="qapi/qapi-types-error.h" />
+    <CLInclude Include="qapi/qapi-visit-error.h" />
+    <CLInclude Include="qapi/qapi-events-error.h" />
+    <CLInclude Include="qapi/qapi-commands-error.h" />
+    <CLInclude Include="qapi/qapi-commands-error.trace-events" />
+    <CLInclude Include="qapi/qapi-types-introspect.h" />
+    <CLInclude Include="qapi/qapi-visit-introspect.h" />
+    <CLInclude Include="qapi/qapi-events-introspect.h" />
+    <CLInclude Include="qapi/qapi-commands-introspect.h" />
+    <CLInclude Include="qapi/qapi-commands-introspect.trace-events" />
+    <CLInclude Include="qapi/qapi-types-job.h" />
+    <CLInclude Include="qapi/qapi-visit-job.h" />
+    <CLInclude Include="qapi/qapi-events-job.h" />
+    <CLInclude Include="qapi/qapi-commands-job.h" />
+    <CLInclude Include="qapi/qapi-commands-job.trace-events" />
+    <CLInclude Include="qapi/qapi-types-machine.h" />
+    <CLInclude Include="qapi/qapi-visit-machine.h" />
+    <CLInclude Include="qapi/qapi-events-machine.h" />
+    <CLInclude Include="qapi/qapi-commands-machine.h" />
+    <CLInclude Include="qapi/qapi-commands-machine.trace-events" />
+    <CLInclude Include="qapi/qapi-types-migration.h" />
+    <CLInclude Include="qapi/qapi-visit-migration.h" />
+    <CLInclude Include="qapi/qapi-events-migration.h" />
+    <CLInclude Include="qapi/qapi-commands-migration.h" />
+    <CLInclude Include="qapi/qapi-commands-migration.trace-events" />
+    <CLInclude Include="qapi/qapi-types-misc.h" />
+    <CLInclude Include="qapi/qapi-visit-misc.h" />
+    <CLInclude Include="qapi/qapi-events-misc.h" />
+    <CLInclude Include="qapi/qapi-commands-misc.h" />
+    <CLInclude Include="qapi/qapi-commands-misc.trace-events" />
+    <CLInclude Include="qapi/qapi-types-net.h" />
+    <CLInclude Include="qapi/qapi-visit-net.h" />
+    <CLInclude Include="qapi/qapi-events-net.h" />
+    <CLInclude Include="qapi/qapi-commands-net.h" />
+    <CLInclude Include="qapi/qapi-commands-net.trace-events" />
+    <CLInclude Include="qapi/qapi-types-pragma.h" />
+    <CLInclude Include="qapi/qapi-visit-pragma.h" />
+    <CLInclude Include="qapi/qapi-events-pragma.h" />
+    <CLInclude Include="qapi/qapi-commands-pragma.h" />
+    <CLInclude Include="qapi/qapi-commands-pragma.trace-events" />
+    <CLInclude Include="qapi/qapi-types-qom.h" />
+    <CLInclude Include="qapi/qapi-visit-qom.h" />
+    <CLInclude Include="qapi/qapi-events-qom.h" />
+    <CLInclude Include="qapi/qapi-commands-qom.h" />
+    <CLInclude Include="qapi/qapi-commands-qom.trace-events" />
+    <CLInclude Include="qapi/qapi-types-replay.h" />
+    <CLInclude Include="qapi/qapi-visit-replay.h" />
+    <CLInclude Include="qapi/qapi-events-replay.h" />
+    <CLInclude Include="qapi/qapi-commands-replay.h" />
+    <CLInclude Include="qapi/qapi-commands-replay.trace-events" />
+    <CLInclude Include="qapi/qapi-types-run-state.h" />
+    <CLInclude Include="qapi/qapi-visit-run-state.h" />
+    <CLInclude Include="qapi/qapi-events-run-state.h" />
+    <CLInclude Include="qapi/qapi-commands-run-state.h" />
+    <CLInclude Include="qapi/qapi-commands-run-state.trace-events" />
+    <CLInclude Include="qapi/qapi-types-sockets.h" />
+    <CLInclude Include="qapi/qapi-visit-sockets.h" />
+    <CLInclude Include="qapi/qapi-events-sockets.h" />
+    <CLInclude Include="qapi/qapi-commands-sockets.h" />
+    <CLInclude Include="qapi/qapi-commands-sockets.trace-events" />
+    <CLInclude Include="qapi/qapi-types-stats.h" />
+    <CLInclude Include="qapi/qapi-visit-stats.h" />
+    <CLInclude Include="qapi/qapi-events-stats.h" />
+    <CLInclude Include="qapi/qapi-commands-stats.h" />
+    <CLInclude Include="qapi/qapi-commands-stats.trace-events" />
+    <CLInclude Include="qapi/qapi-types-trace.h" />
+    <CLInclude Include="qapi/qapi-visit-trace.h" />
+    <CLInclude Include="qapi/qapi-events-trace.h" />
+    <CLInclude Include="qapi/qapi-commands-trace.h" />
+    <CLInclude Include="qapi/qapi-commands-trace.trace-events" />
+    <CLInclude Include="qapi/qapi-types-transaction.h" />
+    <CLInclude Include="qapi/qapi-visit-transaction.h" />
+    <CLInclude Include="qapi/qapi-events-transaction.h" />
+    <CLInclude Include="qapi/qapi-commands-transaction.h" />
+    <CLInclude Include="qapi/qapi-commands-transaction.trace-events" />
+    <CLInclude Include="qapi/qapi-types-virtio.h" />
+    <CLInclude Include="qapi/qapi-visit-virtio.h" />
+    <CLInclude Include="qapi/qapi-events-virtio.h" />
+    <CLInclude Include="qapi/qapi-commands-virtio.h" />
+    <CLInclude Include="qapi/qapi-commands-virtio.trace-events" />
+    <CLInclude Include="qapi/qapi-types-yank.h" />
+    <CLInclude Include="qapi/qapi-visit-yank.h" />
+    <CLInclude Include="qapi/qapi-events-yank.h" />
+    <CLInclude Include="qapi/qapi-commands-yank.h" />
+    <CLInclude Include="qapi/qapi-commands-yank.trace-events" />
+    <CLInclude Include="qapi/qapi-types-acpi.h" />
+    <CLInclude Include="qapi/qapi-visit-acpi.h" />
+    <CLInclude Include="qapi/qapi-events-acpi.h" />
+    <CLInclude Include="qapi/qapi-commands-acpi.h" />
+    <CLInclude Include="qapi/qapi-commands-acpi.trace-events" />
+    <CLInclude Include="qapi/qapi-types-audio.h" />
+    <CLInclude Include="qapi/qapi-visit-audio.h" />
+    <CLInclude Include="qapi/qapi-events-audio.h" />
+    <CLInclude Include="qapi/qapi-commands-audio.h" />
+    <CLInclude Include="qapi/qapi-commands-audio.trace-events" />
+    <CLInclude Include="qapi/qapi-types-qdev.h" />
+    <CLInclude Include="qapi/qapi-visit-qdev.h" />
+    <CLInclude Include="qapi/qapi-events-qdev.h" />
+    <CLInclude Include="qapi/qapi-commands-qdev.h" />
+    <CLInclude Include="qapi/qapi-commands-qdev.trace-events" />
+    <CLInclude Include="qapi/qapi-types-pci.h" />
+    <CLInclude Include="qapi/qapi-visit-pci.h" />
+    <CLInclude Include="qapi/qapi-events-pci.h" />
+    <CLInclude Include="qapi/qapi-commands-pci.h" />
+    <CLInclude Include="qapi/qapi-commands-pci.trace-events" />
+    <CLInclude Include="qapi/qapi-types-rdma.h" />
+    <CLInclude Include="qapi/qapi-visit-rdma.h" />
+    <CLInclude Include="qapi/qapi-events-rdma.h" />
+    <CLInclude Include="qapi/qapi-commands-rdma.h" />
+    <CLInclude Include="qapi/qapi-commands-rdma.trace-events" />
+    <CLInclude Include="qapi/qapi-types-rocker.h" />
+    <CLInclude Include="qapi/qapi-visit-rocker.h" />
+    <CLInclude Include="qapi/qapi-events-rocker.h" />
+    <CLInclude Include="qapi/qapi-commands-rocker.h" />
+    <CLInclude Include="qapi/qapi-commands-rocker.trace-events" />
+    <CLInclude Include="qapi/qapi-types-tpm.h" />
+    <CLInclude Include="qapi/qapi-visit-tpm.h" />
+    <CLInclude Include="qapi/qapi-events-tpm.h" />
+    <CLInclude Include="qapi/qapi-commands-tpm.h" />
+    <CLInclude Include="qapi/qapi-commands-tpm.trace-events" />
+    <CLInclude Include="qapi/qapi-types-ui.h" />
+    <CLInclude Include="qapi/qapi-visit-ui.h" />
+    <CLInclude Include="qapi/qapi-events-ui.h" />
+    <CLInclude Include="qapi/qapi-commands-ui.h" />
+    <CLInclude Include="qapi/qapi-commands-ui.trace-events" />
+    <CLInclude Include="trace/trace-root.h" />
+    <CLInclude Include="trace/trace-crypto.h" />
+    <CLInclude Include="trace/trace-qapi.h" />
+    <CLInclude Include="trace/trace-qom.h" />
+    <CLInclude Include="trace/trace-monitor.h" />
+    <CLInclude Include="trace/trace-util.h" />
+    <CLInclude Include="trace/trace-gdbstub.h" />
+    <CLInclude Include="trace/trace-authz.h" />
+    <CLInclude Include="trace/trace-block.h" />
+    <CLInclude Include="trace/trace-io.h" />
+    <CLInclude Include="trace/trace-nbd.h" />
+    <CLInclude Include="trace/trace-scsi.h" />
+    <CLInclude Include="trace/trace-accel_kvm.h" />
+    <CLInclude Include="trace/trace-audio.h" />
+    <CLInclude Include="trace/trace-backends.h" />
+    <CLInclude Include="trace/trace-backends_tpm.h" />
+    <CLInclude Include="trace/trace-chardev.h" />
+    <CLInclude Include="trace/trace-ebpf.h" />
+    <CLInclude Include="trace/trace-hw_9pfs.h" />
+    <CLInclude Include="trace/trace-hw_acpi.h" />
+    <CLInclude Include="trace/trace-hw_adc.h" />
+    <CLInclude Include="trace/trace-hw_alpha.h" />
+    <CLInclude Include="trace/trace-hw_arm.h" />
+    <CLInclude Include="trace/trace-hw_audio.h" />
+    <CLInclude Include="trace/trace-hw_block.h" />
+    <CLInclude Include="trace/trace-hw_block_dataplane.h" />
+    <CLInclude Include="trace/trace-hw_char.h" />
+    <CLInclude Include="trace/trace-hw_display.h" />
+    <CLInclude Include="trace/trace-hw_dma.h" />
+    <CLInclude Include="trace/trace-hw_hyperv.h" />
+    <CLInclude Include="trace/trace-hw_i2c.h" />
+    <CLInclude Include="trace/trace-hw_i386.h" />
+    <CLInclude Include="trace/trace-hw_i386_xen.h" />
+    <CLInclude Include="trace/trace-hw_ide.h" />
+    <CLInclude Include="trace/trace-hw_input.h" />
+    <CLInclude Include="trace/trace-hw_intc.h" />
+    <CLInclude Include="trace/trace-hw_isa.h" />
+    <CLInclude Include="trace/trace-hw_mem.h" />
+    <CLInclude Include="trace/trace-hw_mips.h" />
+    <CLInclude Include="trace/trace-hw_misc.h" />
+    <CLInclude Include="trace/trace-hw_misc_macio.h" />
+    <CLInclude Include="trace/trace-hw_net.h" />
+    <CLInclude Include="trace/trace-hw_net_can.h" />
+    <CLInclude Include="trace/trace-hw_nubus.h" />
+    <CLInclude Include="trace/trace-hw_nvme.h" />
+    <CLInclude Include="trace/trace-hw_nvram.h" />
+    <CLInclude Include="trace/trace-hw_pci.h" />
+    <CLInclude Include="trace/trace-hw_pci_host.h" />
+    <CLInclude Include="trace/trace-hw_ppc.h" />
+    <CLInclude Include="trace/trace-hw_rdma.h" />
+    <CLInclude Include="trace/trace-hw_rdma_vmw.h" />
+    <CLInclude Include="trace/trace-hw_rtc.h" />
+    <CLInclude Include="trace/trace-hw_s390x.h" />
+    <CLInclude Include="trace/trace-hw_scsi.h" />
+    <CLInclude Include="trace/trace-hw_sd.h" />
+    <CLInclude Include="trace/trace-hw_sh4.h" />
+    <CLInclude Include="trace/trace-hw_sparc.h" />
+    <CLInclude Include="trace/trace-hw_sparc64.h" />
+    <CLInclude Include="trace/trace-hw_ssi.h" />
+    <CLInclude Include="trace/trace-hw_timer.h" />
+    <CLInclude Include="trace/trace-hw_tpm.h" />
+    <CLInclude Include="trace/trace-hw_usb.h" />
+    <CLInclude Include="trace/trace-hw_vfio.h" />
+    <CLInclude Include="trace/trace-hw_virtio.h" />
+    <CLInclude Include="trace/trace-hw_watchdog.h" />
+    <CLInclude Include="trace/trace-hw_xen.h" />
+    <CLInclude Include="trace/trace-hw_gpio.h" />
+    <CLInclude Include="trace/trace-migration.h" />
+    <CLInclude Include="trace/trace-net.h" />
+    <CLInclude Include="trace/trace-softmmu.h" />
+    <CLInclude Include="trace/trace-ui.h" />
+    <CLInclude Include="trace/trace-hw_remote.h" />
+    <CLInclude Include="trace/trace-hw_xbox_nv2a.h" />
+    <CLInclude Include="trace/trace-hw_xbox_mcpx.h" />
+    <CLInclude Include="trace/trace-hw_xbox.h" />
+    <CLInclude Include="trace/trace-accel_tcg.h" />
+    <CLInclude Include="trace/trace-hw_core.h" />
+    <CLInclude Include="trace/trace-target_arm.h" />
+    <CLInclude Include="trace/trace-target_arm_hvf.h" />
+    <CLInclude Include="trace/trace-target_hppa.h" />
+    <CLInclude Include="trace/trace-target_i386.h" />
+    <CLInclude Include="trace/trace-target_i386_kvm.h" />
+    <CLInclude Include="trace/trace-target_mips_tcg.h" />
+    <CLInclude Include="trace/trace-target_nios2.h" />
+    <CLInclude Include="trace/trace-target_ppc.h" />
+    <CLInclude Include="trace/trace-target_riscv.h" />
+    <CLInclude Include="trace/trace-target_s390x.h" />
+    <CLInclude Include="trace/trace-target_s390x_kvm.h" />
+    <CLInclude Include="trace/trace-target_sparc.h" />
+    <CLInclude Include="trace/trace-qapi_commands_authz_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_core_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_block_export_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_char_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_common_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_compat_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_control_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_crypto_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_dump_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_error_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_introspect_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_job_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_machine_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_migration_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_misc_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_net_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_pragma_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_qom_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_replay_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_run_state_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_sockets_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_stats_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_trace_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_transaction_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_virtio_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_yank_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_acpi_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_audio_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_qdev_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_pci_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_rdma_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_rocker_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_tpm_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_ui_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_machine_target_trace_events.h" />
+    <CLInclude Include="trace/trace-qapi_commands_misc_target_trace_events.h" />
+    <CLInclude Include="config-poison.h" />
+    <CLInclude Include="qemu-version.h" />
+    <CLInclude Include="xemu-version-macro.h" />
+    <CLInclude Include="xemu-config.h" />
+    <CLInclude Include="qemu-options.def" />
+    <CLInclude Include="qemu-img-cmds.h" />
+    <CLInclude Include="hmp-commands.h" />
+    <CLInclude Include="hmp-commands-info.h" />
+    <CLInclude Include="qapi/qapi-types-machine-target.h" />
+    <CLInclude Include="qapi/qapi-visit-machine-target.h" />
+    <CLInclude Include="qapi/qapi-events-machine-target.h" />
+    <CLInclude Include="qapi/qapi-commands-machine-target.h" />
+    <CLInclude Include="qapi/qapi-types-misc-target.h" />
+    <CLInclude Include="qapi/qapi-visit-misc-target.h" />
+    <CLInclude Include="qapi/qapi-events-misc-target.h" />
+    <CLInclude Include="qapi/qapi-commands-misc-target.h" />
+    <CLInclude Include="qapi/qapi-introspect.h" />
+    <CLInclude Include="qapi/qapi-types.h" />
+    <CLInclude Include="qapi/qapi-visit.h" />
+    <CLInclude Include="qapi/qapi-commands.h" />
+    <CLInclude Include="qapi/qapi-init-commands.h" />
+    <CLInclude Include="qapi/qapi-events.h" />
+    <CLInclude Include="qapi/qapi-emit-events.h" />
+    <CLInclude Include="ui/input-keymap-atset1-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-linux-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset1.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset2.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-atset3.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-linux.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-qnum.c.inc" />
+    <CLInclude Include="ui/input-keymap-qcode-to-sun.c.inc" />
+    <CLInclude Include="ui/input-keymap-qnum-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-usb-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-win32-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-x11-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgevdev-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgkbd-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgxquartz-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-xorgxwin-to-qcode.c.inc" />
+    <CLInclude Include="ui/input-keymap-osx-to-qcode.c.inc" />
+    <CLInclude Include="ui/shader/texture-blit-frag.h" />
+    <CLInclude Include="ui/shader/texture-blit-vert.h" />
+    <CLInclude Include="ui/shader/texture-blit-flip-vert.h" />
+    <CLInclude Include="ui/shader/xemu-logo-frag.h" />
+    <CLInclude Include="data/controller_mask.png.h" />
+    <CLInclude Include="data/logo_sdf.png.h" />
+    <CLInclude Include="data/xemu_64x64.png.h" />
+    <CLInclude Include="data/abxy.ttf.h" />
+    <CLInclude Include="data/Roboto-Medium.ttf.h" />
+    <CLInclude Include="data/RobotoCondensed-Regular.ttf.h" />
+    <CLInclude Include="data/font_awesome_6_1_1_solid.otf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../meson.build" />
+  </ItemGroup>
 </Project>

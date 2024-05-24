@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{1AD52548-8352-4832-A4EF-BC6D049A0730}</ProjectGuid>
+		<ProjectGuid>{243F5F69-8759-46D1-A03E-21529D587678}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>gen-features.h</ProjectName>
 		<RootNamespace>gen-features.h</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./b099ece@@gen-features@exe.vcxproj">
-			<Project>{7FB62889-B073-4C10-A798-B96DE05378CB}</Project>
+			<Project>{8961525F-8713-45F7-BB61-57D363200CA1}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

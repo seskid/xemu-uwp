@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{54EB0DF2-01EF-4702-8761-60537B3AB3F4}</ProjectGuid>
+		<ProjectGuid>{3E153914-FC61-423E-BFC3-77B32A3A0F33}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>xemu-logo-frag.h</ProjectName>
 		<RootNamespace>xemu-logo-frag.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

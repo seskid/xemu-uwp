@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C81A3261-E78A-4E5D-B86F-4481F67FFB3B}</ProjectGuid>
+		<ProjectGuid>{5DB68BBA-547B-4C3D-AB74-BF6281DF69AA}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>dectree_generated.h.inc</ProjectName>
 		<RootNamespace>dectree_generated.h.inc</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./0121e99@@iset.py@cus.vcxproj">
-			<Project>{1355B531-A055-4156-BCF6-0C6C99251B57}</Project>
+			<Project>{B74F06A9-E298-484B-97E8-9420741A30CD}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

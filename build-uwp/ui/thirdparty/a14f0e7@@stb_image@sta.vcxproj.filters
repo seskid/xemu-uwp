@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="stb_image">
-			<UniqueIdentifier>{B844BB42-A7F8-4A0C-AB04-B4A92297572A}</UniqueIdentifier>
+			<UniqueIdentifier>{B97F628B-A972-4557-B2CD-BFF457A1E8F6}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{8438694C-DF4F-426F-A790-F6B37D92A2FA}</ProjectGuid>
+		<ProjectGuid>{49E8EEFD-00A2-4591-A7C8-5F2CE14526E0}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>QAPI doc</ProjectName>
 		<RootNamespace>QAPI doc</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

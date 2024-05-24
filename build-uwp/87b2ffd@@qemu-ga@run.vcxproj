@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{27A539ED-8E74-43E6-95A1-B6BC13A1C497}</ProjectGuid>
+		<ProjectGuid>{1951337E-5B49-47F9-8885-F28F9D98E711}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>qemu-ga</ProjectName>
 		<RootNamespace>qemu-ga</RootNamespace>
@@ -33,13 +33,25 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="qga/vss-win32/bddb2cf@@qga-vss@sha.vcxproj">
+			<Project>{2FDEF8B8-5829-42A8-84AA-CED546640F97}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="qga/vss-win32/bddb2cf@@gen-tlb@cus.vcxproj">
+			<Project>{293B2111-B1E7-4BB7-A52E-44372ED73DA0}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="qga/87b2ffd@@qemu-ga@exe.vcxproj">
-			<Project>{432AEC46-9CB3-45A2-97B6-FE6B54CA953E}</Project>
+			<Project>{01E80D59-79D3-4DE9-B3A6-07B846CD8DEA}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

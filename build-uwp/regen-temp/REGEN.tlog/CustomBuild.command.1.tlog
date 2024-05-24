@@ -1,0 +1,3 @@
+^C:\USERS\SESKI\SOURCE\REPOS\XEMU-UWP\BUILD\MESON-PRIVATE\REGEN.RULE
+call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x64 > NUL
+"C:/msys64/mingw64/bin/python3.exe" "C:/users/seski/source/repos/xemu-uwp/meson/meson.py" "--internal" "regencheck" "C:/Users/seski/source/repos/xemu-uwp/build/meson-private"

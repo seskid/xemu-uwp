@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{CD796332-8175-4B19-AECA-5FBC2A02BAAC}</ProjectGuid>
+		<ProjectGuid>{AD69AB65-7786-43C2-89A6-14C6D8B8F962}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-accel_kvm.c</ProjectName>
 		<RootNamespace>trace-accel_kvm.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

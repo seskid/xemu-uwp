@@ -2,13 +2,13 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="imgui">
-			<UniqueIdentifier>{4F171A38-C104-422C-8A9E-97EC19056140}</UniqueIdentifier>
+			<UniqueIdentifier>{85567281-9480-46DE-9A5A-273A24A52648}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="imgui\backends">
-			<UniqueIdentifier>{11EE4796-003D-40DA-BD6D-0C0B4F625362}</UniqueIdentifier>
+			<UniqueIdentifier>{DEAA10E5-176C-4D1B-88BF-0ED60261FAFF}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="imgui\misc/cpp">
-			<UniqueIdentifier>{4DE756EB-D94A-44A0-8961-887A59E2C56F}</UniqueIdentifier>
+			<UniqueIdentifier>{406C2B48-1689-47FD-B8E3-9DBD25E4E1A8}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

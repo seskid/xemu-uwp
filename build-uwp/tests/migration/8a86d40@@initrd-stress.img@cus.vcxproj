@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{A4F7F2DD-BE98-4E0F-B7DE-28C6ACD92490}</ProjectGuid>
+		<ProjectGuid>{C1CA33BB-105C-4192-9379-EE4A8EB85E91}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>initrd-stress.img</ProjectName>
 		<RootNamespace>initrd-stress.img</RootNamespace>
@@ -41,13 +41,13 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="./8a86d40@@stress@exe.vcxproj">
-			<Project>{85EE78D3-262D-4113-9DE0-7DC851F42036}</Project>
+			<Project>{09F9B263-2E16-40D5-8BC1-0ABC6C591E2C}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

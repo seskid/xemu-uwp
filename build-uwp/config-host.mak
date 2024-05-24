@@ -19,8 +19,8 @@ GENISOIMAGE=
 MESON=/mingw64/bin/python3 -B /c/users/seski/source/repos/xemu-uwp/meson/meson.py
 NINJA=/usr/bin/ninja
 CC=cc
-QEMU_CFLAGS=-fno-pie -no-pie -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong
-QEMU_OBJCFLAGS= -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -Wno-typedef-redefinition -Wno-tautological-type-limit-compare -Wno-psabi -Wno-gnu-variable-sized-type-not-at-end
+QEMU_CFLAGS=-fno-pie -no-pie  -fstack-protector-strong
+QEMU_OBJCFLAGS=
 GLIB_CFLAGS=-IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include
 GLIB_LIBS=-lgthread-2.0 -lglib-2.0 -lintl
 GLIB_BINDIR=C:/msys64/mingw64/bin

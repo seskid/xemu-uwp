@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{E8D2A7F8-AEF4-4C6C-BFEE-E6A616ADFAF6}</ProjectGuid>
+		<ProjectGuid>{E1E87FD9-693B-4093-9728-F71B82DBE1AB}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>QAPI files for qemu-storage-daemon</ProjectName>
 		<RootNamespace>QAPI files for qemu-storage-daemon</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

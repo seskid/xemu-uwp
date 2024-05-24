@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{F992F7E2-212E-4AC5-A3F8-651252145DC1}</ProjectGuid>
+		<ProjectGuid>{F5E9CEAE-1842-47AB-BD4E-755D298305EC}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-ebpf.h</ProjectName>
 		<RootNamespace>trace-ebpf.h</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

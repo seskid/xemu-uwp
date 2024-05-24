@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{CAD9D447-A8EB-402C-9A55-CF02A479C96C}</ProjectGuid>
+		<ProjectGuid>{4249E54F-848D-4D7B-9611-ECF6E813A1E2}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-root.c</ProjectName>
 		<RootNamespace>trace-root.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

@@ -7,7 +7,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{EB7AFE4B-EFF6-4B5B-B12A-BBF9B03C3243}</ProjectGuid>
+		<ProjectGuid>{B7C09CEF-4958-49E2-BD28-89BDC5EFE7F7}</ProjectGuid>
 		<Keyword>x64Proj</Keyword>
 		<ProjectName>trace-chardev.c</ProjectName>
 		<RootNamespace>trace-chardev.c</RootNamespace>
@@ -41,7 +41,7 @@
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="C:/Users/seski/source/repos/xemu-uwp/build/REGEN.vcxproj">
-			<Project>{37B81B02-991E-48B4-B98D-FCF0493065EF}</Project>
+			<Project>{063BF873-B77D-4284-8187-D8B3CEA6AFFC}</Project>
 			<LinkLibraryDependencies>false</LinkLibraryDependencies>
 		</ProjectReference>
 	</ItemGroup>

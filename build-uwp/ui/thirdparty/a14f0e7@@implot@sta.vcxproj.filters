@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 	<ItemGroup>
 		<Filter Include="implot">
-			<UniqueIdentifier>{C33D81A4-62B2-42BF-8A9E-D76A02BA5766}</UniqueIdentifier>
+			<UniqueIdentifier>{6EF026B2-AABE-4ABE-8005-7505120DE1C7}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
