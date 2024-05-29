@@ -391,13 +391,7 @@ static inline void stq_be_p(void *ptr, uint64_t v)
 
 static inline unsigned long leul_to_cpu(unsigned long v)
 {
-#if HOST_LONG_BITS == 32
-    return le_bswap(v, 32);
-#elif HOST_LONG_BITS == 64
-    return le_bswap(v, 64);
-#else
-# error Unknown sizeof long
-#endif
+  return le_bswap(v, 64);
 }
 
 /* Store v to p as a sz byte value in host order */

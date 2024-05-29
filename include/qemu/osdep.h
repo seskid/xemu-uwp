@@ -28,6 +28,14 @@
 #define QEMU_OSDEP_H
 
 #include "config-host.h"
+#include <sys/stat.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <roms/u-boot/include/linux/types.h>
+
+                            
 #ifdef NEED_CPU_H
 #include CONFIG_TARGET
 #else
@@ -101,7 +109,7 @@ QEMU_EXTERN_C int daemon(int, int);
 #include <limits.h>
 /* Put unistd.h before time.h as that triggers localtime_r/gmtime_r
  * function availability on recentish Mingw-w64 platforms. */
-#include <unistd.h>
+#include "unistd.h"
 #include <time.h>
 #include <ctype.h>
 #include <errno.h>
@@ -155,6 +163,7 @@ extern "C" {
 #endif
 
 #include "qemu/typedefs.h"
+
 
 /*
  * For mingw, as of v6.0.0, the function implementing the assert macro is
@@ -494,6 +503,7 @@ void sigaction_invoke(struct sigaction *action,
  * Don't introduce new usage of this function, prefer the following
  * qemu_open/qemu_create that take an "Error **errp"
  */
+typedef int mode_t;
 int qemu_open_old(const char *name, int flags, ...);
 int qemu_open(const char *name, int flags, Error **errp);
 int qemu_create(const char *name, int flags, mode_t mode, Error **errp);
